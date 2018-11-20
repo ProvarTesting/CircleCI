@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingAppInfo>
+  <appDefinition DeveloperName="Lightning_Console_App" Label="Lightning Console App" NavType="Console" UiType="Lightning"/>
+</toolingAppInfo>

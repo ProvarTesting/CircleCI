@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Provar&apos;s Test Suite Execution object is for the storage of details of a complete test run. It contains an aggregation of the test results for each Test Case Execution that is populated. You can extend this object with your own customisations or link it to 3rd party packages such as Agile Accelerator or Flosum for example.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>provarti__Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total test suite duration. You can provide this in any format you require (hours, minutes, seconds or millseconds) but please be consistent so that you can accurately report across different test suite executions.</description>
+        <externalId>false</externalId>
+        <label>Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>provarti__Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Meaningful description of this test suite</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide a name for this test suite, it doesn&apos;t need to be unique, so you can re-use names for reporting purposes.</inlineHelpText>
+        <label>Test Suite</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>provarti__Total_Fail__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Calculated automatically from the related Test Case Execution records with a status of Fail</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total number of child test cases that failed</inlineHelpText>
+        <label>Total Fail</label>
+        <summaryFilterItems>
+            <field>provarti__Test_Case_Execution__c.provarti__Status__c</field>
+            <operation>contains</operation>
+            <value>Fail</value>
+        </summaryFilterItems>
+        <summaryForeignKey>provarti__Test_Case_Execution__c.provarti__Test_Suite_Execution__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>provarti__Total_Pass__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total number of test cases that passed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total number of child test cases that have a status of Pass</inlineHelpText>
+        <label>Total Pass</label>
+        <summaryFilterItems>
+            <field>provarti__Test_Case_Execution__c.provarti__Status__c</field>
+            <operation>equals</operation>
+            <value>Pass</value>
+        </summaryFilterItems>
+        <summaryForeignKey>provarti__Test_Case_Execution__c.provarti__Test_Suite_Execution__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>provarti__Total_Skipped__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total number of child test cases that were skipped</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total number of child test cases that were skipped</inlineHelpText>
+        <label>Total Skipped</label>
+        <summaryFilterItems>
+            <field>provarti__Test_Case_Execution__c.provarti__Status__c</field>
+            <operation>equals</operation>
+            <value>Skipped</value>
+        </summaryFilterItems>
+        <summaryForeignKey>provarti__Test_Case_Execution__c.provarti__Test_Suite_Execution__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>provarti__Total_Tests_Executed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total of all tests executed, you can use this if you wish to create a formula field of the overall Pass Rate.</description>
+        <externalId>false</externalId>
+        <formula>provarti__Total_Pass__c + provarti__Total_Fail__c + provarti__Total_Skipped__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Tests Executed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Test Suite Execution</label>
+    <listViews>
+        <fullName>Today_s_Test_Suites</fullName>
+        <columns>NAME</columns>
+        <columns>provarti__Name__c</columns>
+        <columns>provarti__Duration__c</columns>
+        <columns>provarti__Total_Pass__c</columns>
+        <columns>provarti__Total_Tests_Executed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Today&apos;s Test Suites</label>
+    </listViews>
+    <listViews>
+        <fullName>provarti__All</fullName>
+        <columns>NAME</columns>
+        <columns>provarti__Name__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>provarti__Total_Pass__c</columns>
+        <columns>provarti__Total_Tests_Executed__c</columns>
+        <columns>provarti__Duration__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>TSE-{0000}</displayFormat>
+        <label>Test Suite Execution Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Test Suite Executions</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>provarti__Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>provarti__Duration__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>provarti__Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>provarti__Duration__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>provarti__Name__c</searchFilterFields>
+        <searchFilterFields>provarti__Duration__c</searchFilterFields>
+        <searchResultsAdditionalFields>provarti__Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>provarti__Duration__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

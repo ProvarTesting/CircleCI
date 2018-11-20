@@ -1,0 +1,12 @@
+2018/11/20-14:21:21.371 34307 Reusing MANIFEST /Users/richardclark/git/DemoCI/.provarCaches/.chromeProfiles/profile0/Default/IndexedDB/https_provardemo.lightning.force.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/11/20-14:21:22.377 28675 Current memtable full; waiting...
+2018/11/20-14:21:22.377 131219 Level-0 table #5: started
+2018/11/20-14:21:22.378 131219 Level-0 table #5: 102827 bytes OK
+2018/11/20-14:21:22.378 131219 Delete type=0 #3
+2018/11/20-14:21:22.378 131219 Level-0 table #7: started
+2018/11/20-14:21:22.378 131219 Level-0 table #7: 0 bytes OK
+2018/11/20-14:21:22.379 131219 Delete type=0 #4
+2018/11/20-14:21:22.379 131219 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
+2018/11/20-14:21:54.425 131219 Level-0 table #9: started
+2018/11/20-14:21:54.436 131219 Level-0 table #9: 4018290 bytes OK
+2018/11/20-14:21:54.437 131219 Delete type=0 #6

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata"
+   >
+ <fullName>TestBuilder</fullName>
+ <active>true</active>
+ <dataCategory>
+  <dataCategory>
+   <label>Classic</label>
+   <name>Classic</name>
+  </dataCategory>
+  <dataCategory>
+   <label>Lightning</label>
+   <name>Lightning</name>
+  </dataCategory>
+  <dataCategory>
+   <label>Visualforce</label>
+   <name>Visualforce</name>
+  </dataCategory>
+  <dataCategory>
+   <label>Xpath</label>
+   <name>Xpath</name>
+  </dataCategory>
+  <dataCategory>
+   <label>SLDS Label</label>
+   <name>SLDS_Label</name>
+  </dataCategory>
+  <dataCategory>
+   <label>Label</label>
+   <name>Label</name>
+  </dataCategory>
+  <dataCategory>
+   <label>CSS</label>
+   <name>CSS</name>
+  </dataCategory>
+  <dataCategory>
+   <label>Name</label>
+   <name>Name</name>
+  </dataCategory>
+  <label>All</label>
+  <name>All</name>
+ </dataCategory>
+ <description>Information about using Provar Test Builder</description>
+ <label>TestBuilder</label>
+ <objectUsage>
+  <object>KnowledgeArticleVersion</object>
+ </objectUsage>
+</DataCategoryGroup>

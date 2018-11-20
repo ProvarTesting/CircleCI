@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata"
+   >
+ <fullName>Provar_Desktop</fullName>
+ <active>true</active>
+ <dataCategory>
+  <dataCategory>
+   <label>Navigator</label>
+   <name>Navigator</name>
+  </dataCategory>
+  <dataCategory>
+   <label>API Pallette</label>
+   <name>API_Pallette</name>
+  </dataCategory>
+  <dataCategory>
+   <label>PageObjects</label>
+   <name>PageObjects</name>
+  </dataCategory>
+  <dataCategory>
+   <label>TestRunner</label>
+   <name>TestRunner</name>
+  </dataCategory>
+  <dataCategory>
+   <label>Debugging and Variables</label>
+   <name>Debugging_and_Variables</name>
+  </dataCategory>
+  <dataCategory>
+   <label>Org Browser</label>
+   <name>Org_Browser</name>
+  </dataCategory>
+  <dataCategory>
+   <label>JIRA Integration</label>
+   <name>JIRA_Integration</name>
+  </dataCategory>
+  <dataCategory>
+   <label>VCS Integration</label>
+   <name>VCS_Integration</name>
+  </dataCategory>
+  <dataCategory>
+   <label>Run Under ANT</label>
+   <name>Run_Under_ANT</name>
+  </dataCategory>
+  <dataCategory>
+   <label>Test Results</label>
+   <name>Test_Results</name>
+  </dataCategory>
+  <dataCategory>
+   <dataCategory>
+    <label>Connections</label>
+    <name>Connections</name>
+   </dataCategory>
+   <dataCategory>
+    <label>Environments</label>
+    <name>Environments</name>
+   </dataCategory>
+   <dataCategory>
+    <label>Variables</label>
+    <name>Variables</name>
+   </dataCategory>
+   <dataCategory>
+    <label>Tags and SLAs</label>
+    <name>Tags_and_SLAs</name>
+   </dataCategory>
+   <dataCategory>
+    <label>Test Cycle</label>
+    <name>Test_Cycle</name>
+   </dataCategory>
+   <label>Test Settinga</label>
+   <name>Test_Settinga</name>
+  </dataCategory>
+  <label>All</label>
+  <name>All</name>
+ </dataCategory>
+ <description>Provar Desktop eclipse application information</description>
+ <label>Provar Desktop</label>
+ <objectUsage>
+  <object>KnowledgeArticleVersion</object>
+ </objectUsage>
+</DataCategoryGroup>

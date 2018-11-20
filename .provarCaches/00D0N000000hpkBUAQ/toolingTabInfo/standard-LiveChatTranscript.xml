@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="LiveChatTranscript" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Live Chat Transcripts" Name="standard-LiveChatTranscript" SobjectName="LiveChatTranscript" Url="https://provardemo.my.salesforce.com/570/o"/>
+</toolingTabInfo>

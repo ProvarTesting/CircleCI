@@ -1,0 +1,1356 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" feedEnabled="true" keyPrefix="00Q" label="Lead" labelPlural="Leads" layoutable="true" listViewFilterType="l" n="Lead" queryable="true" retrieveable="true" s="" searchLayoutable="true" t="Lead (00Q)" updatable="true" urlDetail="https://provardemo.my.salesforce.com/{ID}" urlEdit="https://provardemo.my.salesforce.com/{ID}/e" urlNew="https://provardemo.my.salesforce.com/00Q/e">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Lead ID" type="id" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="MasterRecordId" relationshipName="MasterRecord" t="Master Record ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>Lead</string>
+      </referenceTos>
+    </sfField>
+    <sfField extraTypeInfo="personname" length="80" n="LastName" required="true" t="Last Name"/>
+    <sfField extraTypeInfo="personname" length="40" n="FirstName" t="First Name"/>
+    <sfField extraTypeInfo="personname" length="40" n="Salutation" type="picklist">
+      <picklistEntryIds>1,2,3,4,5</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="Mr." s=""/>
+        <sfPLE id="2" n="Ms." s=""/>
+        <sfPLE id="3" n="Mrs." s=""/>
+        <sfPLE id="4" n="Dr." s=""/>
+        <sfPLE id="5" n="Prof." s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" extraTypeInfo="personname" length="121" n="Name" nameField="true" required="true" t="Full Name" updateable="false"/>
+    <sfField length="128" n="Title"/>
+    <sfField length="255" n="Company" required="true"/>
+    <sfField editPermission="false" extraTypeInfo="plaintextarea" length="255" n="Street" readPermission="false" type="textarea"/>
+    <sfField editPermission="false" length="40" n="City" readPermission="false"/>
+    <sfField editPermission="false" length="80" n="State" readPermission="false" t="State/Province"/>
+    <sfField editPermission="false" length="20" n="PostalCode" readPermission="false" t="Zip/Postal Code"/>
+    <sfField editPermission="false" length="80" n="Country" readPermission="false"/>
+    <sfField controllerName="CountryCode" dependentPicklist="true" editPermission="false" length="10" n="StateCode" readPermission="false" restrictedPicklist="true" t="State/Province Code" type="picklist">
+      <picklistEntryIds>6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="6" n="AC" s="" t="Acre"/>
+        <sfPLE id="7" n="AG" s="" t="Agrigento"/>
+        <sfPLE id="8" n="AG" s="" t="Aguascalientes"/>
+        <sfPLE id="9" n="AL" s="" t="Alabama"/>
+        <sfPLE id="10" n="AL" s="" t="Alagoas"/>
+        <sfPLE id="11" n="AK" s="" t="Alaska"/>
+        <sfPLE id="12" n="AB" s="" t="Alberta"/>
+        <sfPLE id="13" n="AL" s="" t="Alessandria"/>
+        <sfPLE id="14" n="AP" s="" t="Amapá"/>
+        <sfPLE id="15" n="AM" s="" t="Amazonas"/>
+        <sfPLE id="16" n="AN" s="" t="Ancona"/>
+        <sfPLE id="17" n="AN" s="" t="Andaman and Nicobar Islands"/>
+        <sfPLE id="18" n="AP" s="" t="Andhra Pradesh"/>
+        <sfPLE id="19" n="34" s="" t="Anhui"/>
+        <sfPLE id="20" n="AO" s="" t="Aosta"/>
+        <sfPLE id="21" n="AR" s="" t="Arezzo"/>
+        <sfPLE id="22" n="AZ" s="" t="Arizona"/>
+        <sfPLE id="23" n="AR" s="" t="Arkansas"/>
+        <sfPLE id="24" n="AR" s="" t="Arunachal Pradesh"/>
+        <sfPLE id="25" n="AP" s="" t="Ascoli Piceno"/>
+        <sfPLE id="26" n="AS" s="" t="Assam"/>
+        <sfPLE id="27" n="AT" s="" t="Asti"/>
+        <sfPLE id="28" n="ACT" s="" t="Australian Capital Territory"/>
+        <sfPLE id="29" n="AV" s="" t="Avellino"/>
+        <sfPLE id="30" n="BA" s="" t="Bahia"/>
+        <sfPLE id="31" n="BC" s="" t="Baja California"/>
+        <sfPLE id="32" n="BS" s="" t="Baja California Sur"/>
+        <sfPLE id="33" n="BA" s="" t="Bari"/>
+        <sfPLE id="34" n="BT" s="" t="Barletta-Andria-Trani"/>
+        <sfPLE id="35" n="11" s="" t="Beijing"/>
+        <sfPLE id="36" n="BL" s="" t="Belluno"/>
+        <sfPLE id="37" n="BN" s="" t="Benevento"/>
+        <sfPLE id="38" n="BG" s="" t="Bergamo"/>
+        <sfPLE id="39" n="BI" s="" t="Biella"/>
+        <sfPLE id="40" n="BR" s="" t="Bihar"/>
+        <sfPLE id="41" n="BO" s="" t="Bologna"/>
+        <sfPLE id="42" n="BZ" s="" t="Bolzano"/>
+        <sfPLE id="43" n="BS" s="" t="Brescia"/>
+        <sfPLE id="44" n="BR" s="" t="Brindisi"/>
+        <sfPLE id="45" n="BC" s="" t="British Columbia"/>
+        <sfPLE id="46" n="CA" s="" t="Cagliari"/>
+        <sfPLE id="47" n="CA" s="" t="California"/>
+        <sfPLE id="48" n="CL" s="" t="Caltanissetta"/>
+        <sfPLE id="49" n="CM" s="" t="Campeche"/>
+        <sfPLE id="50" n="CB" s="" t="Campobasso"/>
+        <sfPLE id="51" n="CI" s="" t="Carbonia-Iglesias"/>
+        <sfPLE id="52" n="CW" s="" t="Carlow"/>
+        <sfPLE id="53" n="CE" s="" t="Caserta"/>
+        <sfPLE id="54" n="CT" s="" t="Catania"/>
+        <sfPLE id="55" n="CZ" s="" t="Catanzaro"/>
+        <sfPLE id="56" n="CN" s="" t="Cavan"/>
+        <sfPLE id="57" n="CE" s="" t="Ceará"/>
+        <sfPLE id="58" n="CH" s="" t="Chandigarh"/>
+        <sfPLE id="59" n="CT" s="" t="Chhattisgarh"/>
+        <sfPLE id="60" n="CS" s="" t="Chiapas"/>
+        <sfPLE id="61" n="CH" s="" t="Chieti"/>
+        <sfPLE id="62" n="CH" s="" t="Chihuahua"/>
+        <sfPLE id="63" n="50" s="" t="Chongqing"/>
+        <sfPLE id="64" n="CE" s="" t="Clare"/>
+        <sfPLE id="65" n="CO" s="" t="Coahuila"/>
+        <sfPLE id="66" n="CL" s="" t="Colima"/>
+        <sfPLE id="67" n="CO" s="" t="Colorado"/>
+        <sfPLE id="68" n="CO" s="" t="Como"/>
+        <sfPLE id="69" n="CT" s="" t="Connecticut"/>
+        <sfPLE id="70" n="CO" s="" t="Cork"/>
+        <sfPLE id="71" n="CS" s="" t="Cosenza"/>
+        <sfPLE id="72" n="CR" s="" t="Cremona"/>
+        <sfPLE id="73" n="KR" s="" t="Crotone"/>
+        <sfPLE id="74" n="CN" s="" t="Cuneo"/>
+        <sfPLE id="75" n="DN" s="" t="Dadra and Nagar Haveli"/>
+        <sfPLE id="76" n="DD" s="" t="Daman and Diu"/>
+        <sfPLE id="77" n="DE" s="" t="Delaware"/>
+        <sfPLE id="78" n="DL" s="" t="Delhi"/>
+        <sfPLE id="79" n="DC" s="" t="District of Columbia"/>
+        <sfPLE id="80" n="DF" s="" t="Distrito Federal"/>
+        <sfPLE id="81" n="DL" s="" t="Donegal"/>
+        <sfPLE id="82" n="D" s="" t="Dublin"/>
+        <sfPLE id="83" n="DG" s="" t="Durango"/>
+        <sfPLE id="84" n="EN" s="" t="Enna"/>
+        <sfPLE id="85" n="ES" s="" t="Espírito Santo"/>
+        <sfPLE id="86" n="DF" s="" t="Federal District"/>
+        <sfPLE id="87" n="FM" s="" t="Fermo"/>
+        <sfPLE id="88" n="FE" s="" t="Ferrara"/>
+        <sfPLE id="89" n="FI" s="" t="Florence"/>
+        <sfPLE id="90" n="FL" s="" t="Florida"/>
+        <sfPLE id="91" n="FG" s="" t="Foggia"/>
+        <sfPLE id="92" n="FC" s="" t="Forlì-Cesena"/>
+        <sfPLE id="93" n="FR" s="" t="Frosinone"/>
+        <sfPLE id="94" n="35" s="" t="Fujian"/>
+        <sfPLE id="95" n="G" s="" t="Galway"/>
+        <sfPLE id="96" n="62" s="" t="Gansu"/>
+        <sfPLE id="97" n="GE" s="" t="Genoa"/>
+        <sfPLE id="98" n="GA" s="" t="Georgia"/>
+        <sfPLE id="99" n="GA" s="" t="Goa"/>
+        <sfPLE id="100" n="GO" s="" t="Goiás"/>
+        <sfPLE id="101" n="GO" s="" t="Gorizia"/>
+        <sfPLE id="102" n="GR" s="" t="Grosseto"/>
+        <sfPLE id="103" n="GT" s="" t="Guanajuato"/>
+        <sfPLE id="104" n="44" s="" t="Guangdong"/>
+        <sfPLE id="105" n="45" s="" t="Guangxi"/>
+        <sfPLE id="106" n="GR" s="" t="Guerrero"/>
+        <sfPLE id="107" n="52" s="" t="Guizhou"/>
+        <sfPLE id="108" n="GJ" s="" t="Gujarat"/>
+        <sfPLE id="109" n="46" s="" t="Hainan"/>
+        <sfPLE id="110" n="HR" s="" t="Haryana"/>
+        <sfPLE id="111" n="HI" s="" t="Hawaii"/>
+        <sfPLE id="112" n="13" s="" t="Hebei"/>
+        <sfPLE id="113" n="23" s="" t="Heilongjiang"/>
+        <sfPLE id="114" n="41" s="" t="Henan"/>
+        <sfPLE id="115" n="HG" s="" t="Hidalgo"/>
+        <sfPLE id="116" n="HP" s="" t="Himachal Pradesh"/>
+        <sfPLE id="117" n="91" s="" t="Hong Kong"/>
+        <sfPLE id="118" n="42" s="" t="Hubei"/>
+        <sfPLE id="119" n="43" s="" t="Hunan"/>
+        <sfPLE id="120" n="ID" s="" t="Idaho"/>
+        <sfPLE id="121" n="IL" s="" t="Illinois"/>
+        <sfPLE id="122" n="IM" s="" t="Imperia"/>
+        <sfPLE id="123" n="IN" s="" t="Indiana"/>
+        <sfPLE id="124" n="IA" s="" t="Iowa"/>
+        <sfPLE id="125" n="IS" s="" t="Isernia"/>
+        <sfPLE id="126" n="JA" s="" t="Jalisco"/>
+        <sfPLE id="127" n="JK" s="" t="Jammu and Kashmir"/>
+        <sfPLE id="128" n="JH" s="" t="Jharkhand"/>
+        <sfPLE id="129" n="32" s="" t="Jiangsu"/>
+        <sfPLE id="130" n="36" s="" t="Jiangxi"/>
+        <sfPLE id="131" n="22" s="" t="Jilin"/>
+        <sfPLE id="132" n="KS" s="" t="Kansas"/>
+        <sfPLE id="133" n="KA" s="" t="Karnataka"/>
+        <sfPLE id="134" n="KY" s="" t="Kentucky"/>
+        <sfPLE id="135" n="KL" s="" t="Kerala"/>
+        <sfPLE id="136" n="KY" s="" t="Kerry"/>
+        <sfPLE id="137" n="KE" s="" t="Kildare"/>
+        <sfPLE id="138" n="KK" s="" t="Kilkenny"/>
+        <sfPLE id="139" n="AQ" s="" t="L'Aquila"/>
+        <sfPLE id="140" n="LD" s="" t="Lakshadweep"/>
+        <sfPLE id="141" n="LS" s="" t="Laois"/>
+        <sfPLE id="142" n="SP" s="" t="La Spezia"/>
+        <sfPLE id="143" n="LT" s="" t="Latina"/>
+        <sfPLE id="144" n="LE" s="" t="Lecce"/>
+        <sfPLE id="145" n="LC" s="" t="Lecco"/>
+        <sfPLE id="146" n="LM" s="" t="Leitrim"/>
+        <sfPLE id="147" n="21" s="" t="Liaoning"/>
+        <sfPLE id="148" n="LK" s="" t="Limerick"/>
+        <sfPLE id="149" n="LI" s="" t="Livorno"/>
+        <sfPLE id="150" n="LO" s="" t="Lodi"/>
+        <sfPLE id="151" n="LD" s="" t="Longford"/>
+        <sfPLE id="152" n="LA" s="" t="Louisiana"/>
+        <sfPLE id="153" n="LH" s="" t="Louth"/>
+        <sfPLE id="154" n="LU" s="" t="Lucca"/>
+        <sfPLE id="155" n="92" s="" t="Macao"/>
+        <sfPLE id="156" n="MC" s="" t="Macerata"/>
+        <sfPLE id="157" n="MP" s="" t="Madhya Pradesh"/>
+        <sfPLE id="158" n="MH" s="" t="Maharashtra"/>
+        <sfPLE id="159" n="ME" s="" t="Maine"/>
+        <sfPLE id="160" n="MN" s="" t="Manipur"/>
+        <sfPLE id="161" n="MB" s="" t="Manitoba"/>
+        <sfPLE id="162" n="MN" s="" t="Mantua"/>
+        <sfPLE id="163" n="MA" s="" t="Maranhão"/>
+        <sfPLE id="164" n="MD" s="" t="Maryland"/>
+        <sfPLE id="165" n="MS" s="" t="Massa and Carrara"/>
+        <sfPLE id="166" n="MA" s="" t="Massachusetts"/>
+        <sfPLE id="167" n="MT" s="" t="Matera"/>
+        <sfPLE id="168" n="MT" s="" t="Mato Grosso"/>
+        <sfPLE id="169" n="MS" s="" t="Mato Grosso do Sul"/>
+        <sfPLE id="170" n="MO" s="" t="Mayo"/>
+        <sfPLE id="171" n="MH" s="" t="Meath"/>
+        <sfPLE id="172" n="VS" s="" t="Medio Campidano"/>
+        <sfPLE id="173" n="ML" s="" t="Meghalaya"/>
+        <sfPLE id="174" n="ME" s="" t="Messina"/>
+        <sfPLE id="175" n="ME" s="" t="Mexico State"/>
+        <sfPLE id="176" n="MI" s="" t="Michigan"/>
+        <sfPLE id="177" n="MI" s="" t="Michoacán"/>
+        <sfPLE id="178" n="MI" s="" t="Milan"/>
+        <sfPLE id="179" n="MG" s="" t="Minas Gerais"/>
+        <sfPLE id="180" n="MN" s="" t="Minnesota"/>
+        <sfPLE id="181" n="MS" s="" t="Mississippi"/>
+        <sfPLE id="182" n="MO" s="" t="Missouri"/>
+        <sfPLE id="183" n="MZ" s="" t="Mizoram"/>
+        <sfPLE id="184" n="MO" s="" t="Modena"/>
+        <sfPLE id="185" n="MN" s="" t="Monaghan"/>
+        <sfPLE id="186" n="MT" s="" t="Montana"/>
+        <sfPLE id="187" n="MB" s="" t="Monza and Brianza"/>
+        <sfPLE id="188" n="MO" s="" t="Morelos"/>
+        <sfPLE id="189" n="NL" s="" t="Nagaland"/>
+        <sfPLE id="190" n="NA" s="" t="Naples"/>
+        <sfPLE id="191" n="NA" s="" t="Nayarit"/>
+        <sfPLE id="192" n="NE" s="" t="Nebraska"/>
+        <sfPLE id="193" n="15" s="" t="Nei Mongol"/>
+        <sfPLE id="194" n="NV" s="" t="Nevada"/>
+        <sfPLE id="195" n="NB" s="" t="New Brunswick"/>
+        <sfPLE id="196" n="NL" s="" t="Newfoundland and Labrador"/>
+        <sfPLE id="197" n="NH" s="" t="New Hampshire"/>
+        <sfPLE id="198" n="NJ" s="" t="New Jersey"/>
+        <sfPLE id="199" n="NM" s="" t="New Mexico"/>
+        <sfPLE id="200" n="NSW" s="" t="New South Wales"/>
+        <sfPLE id="201" n="NY" s="" t="New York"/>
+        <sfPLE id="202" n="64" s="" t="Ningxia"/>
+        <sfPLE id="203" n="NC" s="" t="North Carolina"/>
+        <sfPLE id="204" n="ND" s="" t="North Dakota"/>
+        <sfPLE id="205" n="NT" s="" t="Northern Territory"/>
+        <sfPLE id="206" n="NT" s="" t="Northwest Territories"/>
+        <sfPLE id="207" n="NO" s="" t="Novara"/>
+        <sfPLE id="208" n="NS" s="" t="Nova Scotia"/>
+        <sfPLE id="209" n="NL" s="" t="Nuevo León"/>
+        <sfPLE id="210" n="NU" s="" t="Nunavut"/>
+        <sfPLE id="211" n="NU" s="" t="Nuoro"/>
+        <sfPLE id="212" n="OA" s="" t="Oaxaca"/>
+        <sfPLE id="213" n="OR" s="" t="Odisha"/>
+        <sfPLE id="214" n="OY" s="" t="Offaly"/>
+        <sfPLE id="215" n="OG" s="" t="Ogliastra"/>
+        <sfPLE id="216" n="OH" s="" t="Ohio"/>
+        <sfPLE id="217" n="OK" s="" t="Oklahoma"/>
+        <sfPLE id="218" n="OT" s="" t="Olbia-Tempio"/>
+        <sfPLE id="219" n="ON" s="" t="Ontario"/>
+        <sfPLE id="220" n="OR" s="" t="Oregon"/>
+        <sfPLE id="221" n="OR" s="" t="Oristano"/>
+        <sfPLE id="222" n="PD" s="" t="Padua"/>
+        <sfPLE id="223" n="PA" s="" t="Palermo"/>
+        <sfPLE id="224" n="PA" s="" t="Pará"/>
+        <sfPLE id="225" n="PB" s="" t="Paraíba"/>
+        <sfPLE id="226" n="PR" s="" t="Paraná"/>
+        <sfPLE id="227" n="PR" s="" t="Parma"/>
+        <sfPLE id="228" n="PV" s="" t="Pavia"/>
+        <sfPLE id="229" n="PA" s="" t="Pennsylvania"/>
+        <sfPLE id="230" n="PE" s="" t="Pernambuco"/>
+        <sfPLE id="231" n="PG" s="" t="Perugia"/>
+        <sfPLE id="232" n="PU" s="" t="Pesaro and Urbino"/>
+        <sfPLE id="233" n="PE" s="" t="Pescara"/>
+        <sfPLE id="234" n="PC" s="" t="Piacenza"/>
+        <sfPLE id="235" n="PI" s="" t="Piauí"/>
+        <sfPLE id="236" n="PI" s="" t="Pisa"/>
+        <sfPLE id="237" n="PT" s="" t="Pistoia"/>
+        <sfPLE id="238" n="PN" s="" t="Pordenone"/>
+        <sfPLE id="239" n="PZ" s="" t="Potenza"/>
+        <sfPLE id="240" n="PO" s="" t="Prato"/>
+        <sfPLE id="241" n="PE" s="" t="Prince Edward Island"/>
+        <sfPLE id="242" n="PY" s="" t="Puducherry"/>
+        <sfPLE id="243" n="PB" s="" t="Puebla"/>
+        <sfPLE id="244" n="PB" s="" t="Punjab"/>
+        <sfPLE id="245" n="63" s="" t="Qinghai"/>
+        <sfPLE id="246" n="QC" s="" t="Quebec"/>
+        <sfPLE id="247" n="QLD" s="" t="Queensland"/>
+        <sfPLE id="248" n="QE" s="" t="Querétaro"/>
+        <sfPLE id="249" n="QR" s="" t="Quintana Roo"/>
+        <sfPLE id="250" n="RG" s="" t="Ragusa"/>
+        <sfPLE id="251" n="RJ" s="" t="Rajasthan"/>
+        <sfPLE id="252" n="RA" s="" t="Ravenna"/>
+        <sfPLE id="253" n="RC" s="" t="Reggio Calabria"/>
+        <sfPLE id="254" n="RE" s="" t="Reggio Emilia"/>
+        <sfPLE id="255" n="RI" s="" t="Rhode Island"/>
+        <sfPLE id="256" n="RI" s="" t="Rieti"/>
+        <sfPLE id="257" n="RN" s="" t="Rimini"/>
+        <sfPLE id="258" n="RJ" s="" t="Rio de Janeiro"/>
+        <sfPLE id="259" n="RN" s="" t="Rio Grande do Norte"/>
+        <sfPLE id="260" n="RS" s="" t="Rio Grande do Sul"/>
+        <sfPLE id="261" n="RM" s="" t="Rome"/>
+        <sfPLE id="262" n="RO" s="" t="Rondônia"/>
+        <sfPLE id="263" n="RR" s="" t="Roraima"/>
+        <sfPLE id="264" n="RN" s="" t="Roscommon"/>
+        <sfPLE id="265" n="RO" s="" t="Rovigo"/>
+        <sfPLE id="266" n="SA" s="" t="Salerno"/>
+        <sfPLE id="267" n="SL" s="" t="San Luis Potosí"/>
+        <sfPLE id="268" n="SC" s="" t="Santa Catarina"/>
+        <sfPLE id="269" n="SP" s="" t="São Paulo"/>
+        <sfPLE id="270" n="SK" s="" t="Saskatchewan"/>
+        <sfPLE id="271" n="SS" s="" t="Sassari"/>
+        <sfPLE id="272" n="SV" s="" t="Savona"/>
+        <sfPLE id="273" n="SE" s="" t="Sergipe"/>
+        <sfPLE id="274" n="61" s="" t="Shaanxi"/>
+        <sfPLE id="275" n="37" s="" t="Shandong"/>
+        <sfPLE id="276" n="31" s="" t="Shanghai"/>
+        <sfPLE id="277" n="14" s="" t="Shanxi"/>
+        <sfPLE id="278" n="51" s="" t="Sichuan"/>
+        <sfPLE id="279" n="SI" s="" t="Siena"/>
+        <sfPLE id="280" n="SK" s="" t="Sikkim"/>
+        <sfPLE id="281" n="SI" s="" t="Sinaloa"/>
+        <sfPLE id="282" n="SO" s="" t="Sligo"/>
+        <sfPLE id="283" n="SO" s="" t="Sondrio"/>
+        <sfPLE id="284" n="SO" s="" t="Sonora"/>
+        <sfPLE id="285" n="SA" s="" t="South Australia"/>
+        <sfPLE id="286" n="SC" s="" t="South Carolina"/>
+        <sfPLE id="287" n="SD" s="" t="South Dakota"/>
+        <sfPLE id="288" n="SR" s="" t="Syracuse"/>
+        <sfPLE id="289" n="TB" s="" t="Tabasco"/>
+        <sfPLE id="290" n="71" s="" t="Taiwan"/>
+        <sfPLE id="291" n="TM" s="" t="Tamaulipas"/>
+        <sfPLE id="292" n="TN" s="" t="Tamil Nadu"/>
+        <sfPLE id="293" n="TA" s="" t="Taranto"/>
+        <sfPLE id="294" n="TAS" s="" t="Tasmania"/>
+        <sfPLE id="295" n="TN" s="" t="Tennessee"/>
+        <sfPLE id="296" n="TE" s="" t="Teramo"/>
+        <sfPLE id="297" n="TR" s="" t="Terni"/>
+        <sfPLE id="298" n="TX" s="" t="Texas"/>
+        <sfPLE id="299" n="12" s="" t="Tianjin"/>
+        <sfPLE id="300" n="TA" s="" t="Tipperary"/>
+        <sfPLE id="301" n="TL" s="" t="Tlaxcala"/>
+        <sfPLE id="302" n="TO" s="" t="Tocantins"/>
+        <sfPLE id="303" n="TP" s="" t="Trapani"/>
+        <sfPLE id="304" n="TN" s="" t="Trento"/>
+        <sfPLE id="305" n="TV" s="" t="Treviso"/>
+        <sfPLE id="306" n="TS" s="" t="Trieste"/>
+        <sfPLE id="307" n="TR" s="" t="Tripura"/>
+        <sfPLE id="308" n="TO" s="" t="Turin"/>
+        <sfPLE id="309" n="UD" s="" t="Udine"/>
+        <sfPLE id="310" n="UT" s="" t="Utah"/>
+        <sfPLE id="311" n="UT" s="" t="Uttarakhand"/>
+        <sfPLE id="312" n="UP" s="" t="Uttar Pradesh"/>
+        <sfPLE id="313" n="VA" s="" t="Varese"/>
+        <sfPLE id="314" n="VE" s="" t="Venice"/>
+        <sfPLE id="315" n="VE" s="" t="Veracruz"/>
+        <sfPLE id="316" n="VB" s="" t="Verbano-Cusio-Ossola"/>
+        <sfPLE id="317" n="VC" s="" t="Vercelli"/>
+        <sfPLE id="318" n="VT" s="" t="Vermont"/>
+        <sfPLE id="319" n="VR" s="" t="Verona"/>
+        <sfPLE id="320" n="VV" s="" t="Vibo Valentia"/>
+        <sfPLE id="321" n="VI" s="" t="Vicenza"/>
+        <sfPLE id="322" n="VIC" s="" t="Victoria"/>
+        <sfPLE id="323" n="VA" s="" t="Virginia"/>
+        <sfPLE id="324" n="VT" s="" t="Viterbo"/>
+        <sfPLE id="325" n="WA" s="" t="Washington"/>
+        <sfPLE id="326" n="WD" s="" t="Waterford"/>
+        <sfPLE id="327" n="WB" s="" t="West Bengal"/>
+        <sfPLE id="328" n="WA" s="" t="Western Australia"/>
+        <sfPLE id="329" n="WH" s="" t="Westmeath"/>
+        <sfPLE id="330" n="WV" s="" t="West Virginia"/>
+        <sfPLE id="331" n="WX" s="" t="Wexford"/>
+        <sfPLE id="332" n="WW" s="" t="Wicklow"/>
+        <sfPLE id="333" n="WI" s="" t="Wisconsin"/>
+        <sfPLE id="334" n="WY" s="" t="Wyoming"/>
+        <sfPLE id="335" n="65" s="" t="Xinjiang"/>
+        <sfPLE id="336" n="54" s="" t="Xizang"/>
+        <sfPLE id="337" n="YU" s="" t="Yucatán"/>
+        <sfPLE id="338" n="YT" s="" t="Yukon Territories"/>
+        <sfPLE id="339" n="53" s="" t="Yunnan"/>
+        <sfPLE id="340" n="ZA" s="" t="Zacatecas"/>
+        <sfPLE id="341" n="33" s="" t="Zhejiang"/>
+      </picklistEntries>
+    </sfField>
+    <sfField editPermission="false" length="10" n="CountryCode" readPermission="false" restrictedPicklist="true" t="Country Code" type="picklist">
+      <picklistEntryIds>342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,519,520,521,522,523,524,525,526,527,528,529,530,531,532,533,534,535,536,537,538,539,540,541,542,543,544,545,546,547,548,549,550,551,552,553,554,555,556,557,558,559,560,561,562,563,564,565,566,567,568,569,570,571,572,573,574,575,576,577,578,579,580</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="342" n="AF" s="" t="Afghanistan"/>
+        <sfPLE id="343" n="AX" s="" t="Aland Islands"/>
+        <sfPLE id="344" n="AL" s="" t="Albania"/>
+        <sfPLE id="345" n="DZ" s="" t="Algeria"/>
+        <sfPLE id="346" n="AD" s="" t="Andorra"/>
+        <sfPLE id="347" n="AO" s="" t="Angola"/>
+        <sfPLE id="348" n="AI" s="" t="Anguilla"/>
+        <sfPLE id="349" n="AQ" s="" t="Antarctica"/>
+        <sfPLE id="350" n="AG" s="" t="Antigua and Barbuda"/>
+        <sfPLE id="351" n="AR" s="" t="Argentina"/>
+        <sfPLE id="352" n="AM" s="" t="Armenia"/>
+        <sfPLE id="353" n="AW" s="" t="Aruba"/>
+        <sfPLE id="354" n="AU" s="" t="Australia"/>
+        <sfPLE id="355" n="AT" s="" t="Austria"/>
+        <sfPLE id="356" n="AZ" s="" t="Azerbaijan"/>
+        <sfPLE id="357" n="BS" s="" t="Bahamas"/>
+        <sfPLE id="358" n="BH" s="" t="Bahrain"/>
+        <sfPLE id="359" n="BD" s="" t="Bangladesh"/>
+        <sfPLE id="360" n="BB" s="" t="Barbados"/>
+        <sfPLE id="361" n="BY" s="" t="Belarus"/>
+        <sfPLE id="362" n="BE" s="" t="Belgium"/>
+        <sfPLE id="363" n="BZ" s="" t="Belize"/>
+        <sfPLE id="364" n="BJ" s="" t="Benin"/>
+        <sfPLE id="365" n="BM" s="" t="Bermuda"/>
+        <sfPLE id="366" n="BT" s="" t="Bhutan"/>
+        <sfPLE id="367" n="BO" s="" t="Bolivia, Plurinational State of"/>
+        <sfPLE id="368" n="BQ" s="" t="Bonaire, Sint Eustatius and Saba"/>
+        <sfPLE id="369" n="BA" s="" t="Bosnia and Herzegovina"/>
+        <sfPLE id="370" n="BW" s="" t="Botswana"/>
+        <sfPLE id="371" n="BV" s="" t="Bouvet Island"/>
+        <sfPLE id="372" n="BR" s="" t="Brazil"/>
+        <sfPLE id="373" n="IO" s="" t="British Indian Ocean Territory"/>
+        <sfPLE id="374" n="BN" s="" t="Brunei Darussalam"/>
+        <sfPLE id="375" n="BG" s="" t="Bulgaria"/>
+        <sfPLE id="376" n="BF" s="" t="Burkina Faso"/>
+        <sfPLE id="377" n="BI" s="" t="Burundi"/>
+        <sfPLE id="378" n="KH" s="" t="Cambodia"/>
+        <sfPLE id="379" n="CM" s="" t="Cameroon"/>
+        <sfPLE id="380" n="CA" s="" t="Canada"/>
+        <sfPLE id="381" n="CV" s="" t="Cape Verde"/>
+        <sfPLE id="382" n="KY" s="" t="Cayman Islands"/>
+        <sfPLE id="383" n="CF" s="" t="Central African Republic"/>
+        <sfPLE id="384" n="TD" s="" t="Chad"/>
+        <sfPLE id="385" n="CL" s="" t="Chile"/>
+        <sfPLE id="386" n="CN" s="" t="China"/>
+        <sfPLE id="387" n="CX" s="" t="Christmas Island"/>
+        <sfPLE id="388" n="CC" s="" t="Cocos (Keeling) Islands"/>
+        <sfPLE id="389" n="CO" s="" t="Colombia"/>
+        <sfPLE id="390" n="KM" s="" t="Comoros"/>
+        <sfPLE id="391" n="CG" s="" t="Congo"/>
+        <sfPLE id="392" n="CD" s="" t="Congo, the Democratic Republic of the"/>
+        <sfPLE id="393" n="CK" s="" t="Cook Islands"/>
+        <sfPLE id="394" n="CR" s="" t="Costa Rica"/>
+        <sfPLE id="395" n="CI" s="" t="Cote d'Ivoire"/>
+        <sfPLE id="396" n="HR" s="" t="Croatia"/>
+        <sfPLE id="397" n="CU" s="" t="Cuba"/>
+        <sfPLE id="398" n="CW" s="" t="Curaçao"/>
+        <sfPLE id="399" n="CY" s="" t="Cyprus"/>
+        <sfPLE id="400" n="CZ" s="" t="Czech Republic"/>
+        <sfPLE id="401" n="DK" s="" t="Denmark"/>
+        <sfPLE id="402" n="DJ" s="" t="Djibouti"/>
+        <sfPLE id="403" n="DM" s="" t="Dominica"/>
+        <sfPLE id="404" n="DO" s="" t="Dominican Republic"/>
+        <sfPLE id="405" n="EC" s="" t="Ecuador"/>
+        <sfPLE id="406" n="EG" s="" t="Egypt"/>
+        <sfPLE id="407" n="SV" s="" t="El Salvador"/>
+        <sfPLE id="408" n="GQ" s="" t="Equatorial Guinea"/>
+        <sfPLE id="409" n="ER" s="" t="Eritrea"/>
+        <sfPLE id="410" n="EE" s="" t="Estonia"/>
+        <sfPLE id="411" n="ET" s="" t="Ethiopia"/>
+        <sfPLE id="412" n="FK" s="" t="Falkland Islands (Malvinas)"/>
+        <sfPLE id="413" n="FO" s="" t="Faroe Islands"/>
+        <sfPLE id="414" n="FJ" s="" t="Fiji"/>
+        <sfPLE id="415" n="FI" s="" t="Finland"/>
+        <sfPLE id="416" n="FR" s="" t="France"/>
+        <sfPLE id="417" n="GF" s="" t="French Guiana"/>
+        <sfPLE id="418" n="PF" s="" t="French Polynesia"/>
+        <sfPLE id="419" n="TF" s="" t="French Southern Territories"/>
+        <sfPLE id="420" n="GA" s="" t="Gabon"/>
+        <sfPLE id="421" n="GM" s="" t="Gambia"/>
+        <sfPLE id="422" n="GE" s="" t="Georgia"/>
+        <sfPLE id="423" n="DE" s="" t="Germany"/>
+        <sfPLE id="424" n="GH" s="" t="Ghana"/>
+        <sfPLE id="425" n="GI" s="" t="Gibraltar"/>
+        <sfPLE id="426" n="GR" s="" t="Greece"/>
+        <sfPLE id="427" n="GL" s="" t="Greenland"/>
+        <sfPLE id="428" n="GD" s="" t="Grenada"/>
+        <sfPLE id="429" n="GP" s="" t="Guadeloupe"/>
+        <sfPLE id="430" n="GT" s="" t="Guatemala"/>
+        <sfPLE id="431" n="GG" s="" t="Guernsey"/>
+        <sfPLE id="432" n="GN" s="" t="Guinea"/>
+        <sfPLE id="433" n="GW" s="" t="Guinea-Bissau"/>
+        <sfPLE id="434" n="GY" s="" t="Guyana"/>
+        <sfPLE id="435" n="HT" s="" t="Haiti"/>
+        <sfPLE id="436" n="HM" s="" t="Heard Island and McDonald Islands"/>
+        <sfPLE id="437" n="VA" s="" t="Holy See (Vatican City State)"/>
+        <sfPLE id="438" n="HN" s="" t="Honduras"/>
+        <sfPLE id="439" n="HU" s="" t="Hungary"/>
+        <sfPLE id="440" n="IS" s="" t="Iceland"/>
+        <sfPLE id="441" n="IN" s="" t="India"/>
+        <sfPLE id="442" n="ID" s="" t="Indonesia"/>
+        <sfPLE id="443" n="IR" s="" t="Iran, Islamic Republic of"/>
+        <sfPLE id="444" n="IQ" s="" t="Iraq"/>
+        <sfPLE id="445" n="IE" s="" t="Ireland"/>
+        <sfPLE id="446" n="IM" s="" t="Isle of Man"/>
+        <sfPLE id="447" n="IL" s="" t="Israel"/>
+        <sfPLE id="448" n="IT" s="" t="Italy"/>
+        <sfPLE id="449" n="JM" s="" t="Jamaica"/>
+        <sfPLE id="450" n="JP" s="" t="Japan"/>
+        <sfPLE id="451" n="JE" s="" t="Jersey"/>
+        <sfPLE id="452" n="JO" s="" t="Jordan"/>
+        <sfPLE id="453" n="KZ" s="" t="Kazakhstan"/>
+        <sfPLE id="454" n="KE" s="" t="Kenya"/>
+        <sfPLE id="455" n="KI" s="" t="Kiribati"/>
+        <sfPLE id="456" n="KP" s="" t="Korea, Democratic People's Republic of"/>
+        <sfPLE id="457" n="KR" s="" t="Korea, Republic of"/>
+        <sfPLE id="458" n="KW" s="" t="Kuwait"/>
+        <sfPLE id="459" n="KG" s="" t="Kyrgyzstan"/>
+        <sfPLE id="460" n="LA" s="" t="Lao People's Democratic Republic"/>
+        <sfPLE id="461" n="LV" s="" t="Latvia"/>
+        <sfPLE id="462" n="LB" s="" t="Lebanon"/>
+        <sfPLE id="463" n="LS" s="" t="Lesotho"/>
+        <sfPLE id="464" n="LR" s="" t="Liberia"/>
+        <sfPLE id="465" n="LY" s="" t="Libya"/>
+        <sfPLE id="466" n="LI" s="" t="Liechtenstein"/>
+        <sfPLE id="467" n="LT" s="" t="Lithuania"/>
+        <sfPLE id="468" n="LU" s="" t="Luxembourg"/>
+        <sfPLE id="469" n="MO" s="" t="Macao"/>
+        <sfPLE id="470" n="MK" s="" t="Macedonia, the former Yugoslav Republic of"/>
+        <sfPLE id="471" n="MG" s="" t="Madagascar"/>
+        <sfPLE id="472" n="MW" s="" t="Malawi"/>
+        <sfPLE id="473" n="MY" s="" t="Malaysia"/>
+        <sfPLE id="474" n="MV" s="" t="Maldives"/>
+        <sfPLE id="475" n="ML" s="" t="Mali"/>
+        <sfPLE id="476" n="MT" s="" t="Malta"/>
+        <sfPLE id="477" n="MQ" s="" t="Martinique"/>
+        <sfPLE id="478" n="MR" s="" t="Mauritania"/>
+        <sfPLE id="479" n="MU" s="" t="Mauritius"/>
+        <sfPLE id="480" n="YT" s="" t="Mayotte"/>
+        <sfPLE id="481" n="MX" s="" t="Mexico"/>
+        <sfPLE id="482" n="MD" s="" t="Moldova, Republic of"/>
+        <sfPLE id="483" n="MC" s="" t="Monaco"/>
+        <sfPLE id="484" n="MN" s="" t="Mongolia"/>
+        <sfPLE id="485" n="ME" s="" t="Montenegro"/>
+        <sfPLE id="486" n="MS" s="" t="Montserrat"/>
+        <sfPLE id="487" n="MA" s="" t="Morocco"/>
+        <sfPLE id="488" n="MZ" s="" t="Mozambique"/>
+        <sfPLE id="489" n="MM" s="" t="Myanmar"/>
+        <sfPLE id="490" n="NA" s="" t="Namibia"/>
+        <sfPLE id="491" n="NR" s="" t="Nauru"/>
+        <sfPLE id="492" n="NP" s="" t="Nepal"/>
+        <sfPLE id="493" n="NL" s="" t="Netherlands"/>
+        <sfPLE id="494" n="NC" s="" t="New Caledonia"/>
+        <sfPLE id="495" n="NZ" s="" t="New Zealand"/>
+        <sfPLE id="496" n="NI" s="" t="Nicaragua"/>
+        <sfPLE id="497" n="NE" s="" t="Niger"/>
+        <sfPLE id="498" n="NG" s="" t="Nigeria"/>
+        <sfPLE id="499" n="NU" s="" t="Niue"/>
+        <sfPLE id="500" n="NF" s="" t="Norfolk Island"/>
+        <sfPLE id="501" n="NO" s="" t="Norway"/>
+        <sfPLE id="502" n="OM" s="" t="Oman"/>
+        <sfPLE id="503" n="PK" s="" t="Pakistan"/>
+        <sfPLE id="504" n="PS" s="" t="Palestine"/>
+        <sfPLE id="505" n="PA" s="" t="Panama"/>
+        <sfPLE id="506" n="PG" s="" t="Papua New Guinea"/>
+        <sfPLE id="507" n="PY" s="" t="Paraguay"/>
+        <sfPLE id="508" n="PE" s="" t="Peru"/>
+        <sfPLE id="509" n="PH" s="" t="Philippines"/>
+        <sfPLE id="510" n="PN" s="" t="Pitcairn"/>
+        <sfPLE id="511" n="PL" s="" t="Poland"/>
+        <sfPLE id="512" n="PT" s="" t="Portugal"/>
+        <sfPLE id="513" n="QA" s="" t="Qatar"/>
+        <sfPLE id="514" n="RE" s="" t="Reunion"/>
+        <sfPLE id="515" n="RO" s="" t="Romania"/>
+        <sfPLE id="516" n="RU" s="" t="Russian Federation"/>
+        <sfPLE id="517" n="RW" s="" t="Rwanda"/>
+        <sfPLE id="518" n="BL" s="" t="Saint Barthélemy"/>
+        <sfPLE id="519" n="SH" s="" t="Saint Helena, Ascension and Tristan da Cunha"/>
+        <sfPLE id="520" n="KN" s="" t="Saint Kitts and Nevis"/>
+        <sfPLE id="521" n="LC" s="" t="Saint Lucia"/>
+        <sfPLE id="522" n="MF" s="" t="Saint Martin (French part)"/>
+        <sfPLE id="523" n="PM" s="" t="Saint Pierre and Miquelon"/>
+        <sfPLE id="524" n="VC" s="" t="Saint Vincent and the Grenadines"/>
+        <sfPLE id="525" n="WS" s="" t="Samoa"/>
+        <sfPLE id="526" n="SM" s="" t="San Marino"/>
+        <sfPLE id="527" n="ST" s="" t="Sao Tome and Principe"/>
+        <sfPLE id="528" n="SA" s="" t="Saudi Arabia"/>
+        <sfPLE id="529" n="SN" s="" t="Senegal"/>
+        <sfPLE id="530" n="RS" s="" t="Serbia"/>
+        <sfPLE id="531" n="SC" s="" t="Seychelles"/>
+        <sfPLE id="532" n="SL" s="" t="Sierra Leone"/>
+        <sfPLE id="533" n="SG" s="" t="Singapore"/>
+        <sfPLE id="534" n="SX" s="" t="Sint Maarten (Dutch part)"/>
+        <sfPLE id="535" n="SK" s="" t="Slovakia"/>
+        <sfPLE id="536" n="SI" s="" t="Slovenia"/>
+        <sfPLE id="537" n="SB" s="" t="Solomon Islands"/>
+        <sfPLE id="538" n="SO" s="" t="Somalia"/>
+        <sfPLE id="539" n="ZA" s="" t="South Africa"/>
+        <sfPLE id="540" n="GS" s="" t="South Georgia and the South Sandwich Islands"/>
+        <sfPLE id="541" n="SS" s="" t="South Sudan"/>
+        <sfPLE id="542" n="ES" s="" t="Spain"/>
+        <sfPLE id="543" n="LK" s="" t="Sri Lanka"/>
+        <sfPLE id="544" n="SD" s="" t="Sudan"/>
+        <sfPLE id="545" n="SR" s="" t="Suriname"/>
+        <sfPLE id="546" n="SJ" s="" t="Svalbard and Jan Mayen"/>
+        <sfPLE id="547" n="SZ" s="" t="Swaziland"/>
+        <sfPLE id="548" n="SE" s="" t="Sweden"/>
+        <sfPLE id="549" n="CH" s="" t="Switzerland"/>
+        <sfPLE id="550" n="SY" s="" t="Syrian Arab Republic"/>
+        <sfPLE id="551" n="TW" s="" t="Taiwan"/>
+        <sfPLE id="552" n="TJ" s="" t="Tajikistan"/>
+        <sfPLE id="553" n="TZ" s="" t="Tanzania, United Republic of"/>
+        <sfPLE id="554" n="TH" s="" t="Thailand"/>
+        <sfPLE id="555" n="TL" s="" t="Timor-Leste"/>
+        <sfPLE id="556" n="TG" s="" t="Togo"/>
+        <sfPLE id="557" n="TK" s="" t="Tokelau"/>
+        <sfPLE id="558" n="TO" s="" t="Tonga"/>
+        <sfPLE id="559" n="TT" s="" t="Trinidad and Tobago"/>
+        <sfPLE id="560" n="TN" s="" t="Tunisia"/>
+        <sfPLE id="561" n="TR" s="" t="Turkey"/>
+        <sfPLE id="562" n="TM" s="" t="Turkmenistan"/>
+        <sfPLE id="563" n="TC" s="" t="Turks and Caicos Islands"/>
+        <sfPLE id="564" n="TV" s="" t="Tuvalu"/>
+        <sfPLE id="565" n="UG" s="" t="Uganda"/>
+        <sfPLE id="566" n="UA" s="" t="Ukraine"/>
+        <sfPLE id="567" n="AE" s="" t="United Arab Emirates"/>
+        <sfPLE id="568" n="GB" s="" t="United Kingdom"/>
+        <sfPLE defaultValue="true" id="569" n="US" s="" t="United States"/>
+        <sfPLE id="570" n="UY" s="" t="Uruguay"/>
+        <sfPLE id="571" n="UZ" s="" t="Uzbekistan"/>
+        <sfPLE id="572" n="VU" s="" t="Vanuatu"/>
+        <sfPLE id="573" n="VE" s="" t="Venezuela, Bolivarian Republic of"/>
+        <sfPLE id="574" n="VN" s="" t="Vietnam"/>
+        <sfPLE id="575" n="VG" s="" t="Virgin Islands, British"/>
+        <sfPLE id="576" n="WF" s="" t="Wallis and Futuna"/>
+        <sfPLE id="577" n="EH" s="" t="Western Sahara"/>
+        <sfPLE id="578" n="YE" s="" t="Yemen"/>
+        <sfPLE id="579" n="ZM" s="" t="Zambia"/>
+        <sfPLE id="580" n="ZW" s="" t="Zimbabwe"/>
+      </picklistEntries>
+    </sfField>
+    <sfField editPermission="false" n="Latitude" precision="18" readPermission="false" scale="15" type="_double"/>
+    <sfField editPermission="false" n="Longitude" precision="18" readPermission="false" scale="15" type="_double"/>
+    <sfField editPermission="false" length="40" n="GeocodeAccuracy" readPermission="false" restrictedPicklist="true" t="Geocode Accuracy" type="picklist">
+      <picklistEntryIds>581,582,583,584,585,586,587,588,589,590,591</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="581" n="Address" s=""/>
+        <sfPLE id="582" n="NearAddress" s=""/>
+        <sfPLE id="583" n="Block" s=""/>
+        <sfPLE id="584" n="Street" s=""/>
+        <sfPLE id="585" n="ExtendedZip" s=""/>
+        <sfPLE id="586" n="Zip" s=""/>
+        <sfPLE id="587" n="Neighborhood" s=""/>
+        <sfPLE id="588" n="City" s=""/>
+        <sfPLE id="589" n="County" s=""/>
+        <sfPLE id="590" n="State" s=""/>
+        <sfPLE id="591" n="Unknown" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" n="Address" type="address" updateable="false"/>
+    <sfField length="40" n="Phone" type="phone"/>
+    <sfField length="80" n="Email" type="email"/>
+    <sfField length="255" n="Website" type="url"/>
+    <sfField createable="false" extraTypeInfo="imageurl" length="255" n="PhotoUrl" t="Photo URL" type="url" updateable="false"/>
+    <sfField extraTypeInfo="plaintextarea" filterable="false" length="32000" n="Description" type="textarea"/>
+    <sfField length="40" n="LeadSource" t="Lead Source" type="picklist">
+      <picklistEntryIds>592,593,594,595,596,597,598,599,600,601,602</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="592" n="Advertisement" s=""/>
+        <sfPLE id="593" n="Employee Referral" s=""/>
+        <sfPLE id="594" n="External Referral" s=""/>
+        <sfPLE id="595" n="Partner" s=""/>
+        <sfPLE id="596" n="Public Relations" s=""/>
+        <sfPLE id="597" n="Seminar - Internal" s=""/>
+        <sfPLE id="598" n="Seminar - Partner" s=""/>
+        <sfPLE id="599" n="Trade Show" s=""/>
+        <sfPLE id="600" n="Web" s=""/>
+        <sfPLE id="601" n="Word of mouth" s=""/>
+        <sfPLE id="602" n="Other" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="40" n="Status" type="picklist">
+      <picklistEntryIds>603,604,605,606,607</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE defaultValue="true" id="603" n="New" s=""/>
+        <sfPLE id="604" n="Contacted" s=""/>
+        <sfPLE id="605" n="Nurturing" s=""/>
+        <sfPLE id="606" n="Qualified" s=""/>
+        <sfPLE id="607" n="Unqualified" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="40" n="Industry" type="picklist">
+      <picklistEntryIds>608,609,610,611,612,613,614,615,616,617,618,619,620,621,622,623,624,625,626,627,628,629,630,631,602,632,633,634,635,636,637,638</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="608" n="Agriculture" s=""/>
+        <sfPLE id="609" n="Apparel" s=""/>
+        <sfPLE id="610" n="Banking" s=""/>
+        <sfPLE id="611" n="Biotechnology" s=""/>
+        <sfPLE id="612" n="Chemicals" s=""/>
+        <sfPLE id="613" n="Communications" s=""/>
+        <sfPLE id="614" n="Construction" s=""/>
+        <sfPLE id="615" n="Consulting" s=""/>
+        <sfPLE id="616" n="Education" s=""/>
+        <sfPLE id="617" n="Electronics" s=""/>
+        <sfPLE id="618" n="Energy" s=""/>
+        <sfPLE id="619" n="Engineering" s=""/>
+        <sfPLE id="620" n="Entertainment" s=""/>
+        <sfPLE id="621" n="Environmental" s=""/>
+        <sfPLE id="622" n="Finance" s=""/>
+        <sfPLE id="623" n="Food &amp; Beverage" s=""/>
+        <sfPLE id="624" n="Government" s=""/>
+        <sfPLE id="625" n="Healthcare" s=""/>
+        <sfPLE id="626" n="Hospitality" s=""/>
+        <sfPLE id="627" n="Insurance" s=""/>
+        <sfPLE id="628" n="Machinery" s=""/>
+        <sfPLE id="629" n="Manufacturing" s=""/>
+        <sfPLE id="630" n="Media" s=""/>
+        <sfPLE id="631" n="Not For Profit" s=""/>
+        <sfPLE id="602" n="Other" s=""/>
+        <sfPLE id="632" n="Recreation" s=""/>
+        <sfPLE id="633" n="Retail" s=""/>
+        <sfPLE id="634" n="Shipping" s=""/>
+        <sfPLE id="635" n="Technology" s=""/>
+        <sfPLE id="636" n="Telecommunications" s=""/>
+        <sfPLE id="637" n="Transportation" s=""/>
+        <sfPLE id="638" n="Utilities" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="40" n="Rating" type="picklist">
+      <picklistEntryIds>639,640,641</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="639" n="Hot" s=""/>
+        <sfPLE id="640" n="Warm" s=""/>
+        <sfPLE id="641" n="Cold" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField n="AnnualRevenue" precision="18" t="Annual Revenue" type="currency"/>
+    <sfField digits="8" n="NumberOfEmployees" t="Employees" type="_int"/>
+    <sfField length="18" n="OwnerId" relationshipName="Owner" t="Owner ID" type="reference">
+      <referenceTos>
+        <string>Group</string>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField editPermission="false" n="IsConverted" t="Converted" type="_boolean" updateable="false"/>
+    <sfField editPermission="false" n="ConvertedDate" t="Converted Date" type="date" updateable="false"/>
+    <sfField length="18" n="ConvertedAccountId" relationshipName="ConvertedAccount" t="Converted Account ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>Account</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="ConvertedContactId" relationshipName="ConvertedContact" t="Converted Contact ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>Contact</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="ConvertedOpportunityId" relationshipName="ConvertedOpportunity" t="Converted Opportunity ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>Opportunity</string>
+      </referenceTos>
+    </sfField>
+    <sfField editPermission="false" n="IsUnreadByOwner" t="Unread By Owner" type="_boolean"/>
+    <sfField editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastActivityDate" t="Last Activity" type="date" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastReferencedDate" t="Last Referenced Date" type="datetime" updateable="false"/>
+    <sfField length="20" n="Jigsaw" t="Data.com Key"/>
+    <sfField createable="false" editPermission="false" length="20" n="JigsawContactId" readPermission="false" relationshipName="JigsawContact" t="Jigsaw Contact ID" updateable="false"/>
+    <sfField createable="false" length="255" n="EmailBouncedReason" t="Email Bounced Reason"/>
+    <sfField createable="false" n="EmailBouncedDate" t="Email Bounced Date" type="datetime"/>
+    <sfField extraTypeInfo="plaintextarea" filterable="false" length="32768" n="HowHelp__c" t="How can we help?" type="textarea"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="IF (LEN(Company) &gt; 1, 1, 0) +  \n IF (LEN(City) &gt; 1, 1, 0) +   \n IF (LEN(FirstName) &gt; 1, 1, 0) + \n IF (LEN(Email) &gt; 1, 1, 0) + \n IF (LEN(Country) &gt; 1 || \n     NOT(ISBLANK(TEXT(CountryCode))),\n      1, 0)" n="Data_Quality__c" precision="18" t="Data Quality" type="_double" updateable="false"/>
+    <sfField filterable="false" internal="true" n="CampaignId" notVisibleToMetadataUser="true"/>
+    <sfField editPermission="false" filterable="false" n="DoNotCall" notVisibleToMetadataUser="true" readPermission="false"/>
+    <sfField editPermission="false" filterable="false" n="Fax" notVisibleToMetadataUser="true" readPermission="false"/>
+    <sfField editPermission="false" filterable="false" n="HasOptedOutOfEmail" notVisibleToMetadataUser="true" readPermission="false"/>
+    <sfField editPermission="false" filterable="false" n="HasOptedOutOfFax" notVisibleToMetadataUser="true" readPermission="false"/>
+    <sfField editPermission="false" filterable="false" n="LastTransferDate" notVisibleToMetadataUser="true" readPermission="false"/>
+    <sfField editPermission="false" filterable="false" n="MobilePhone" notVisibleToMetadataUser="true" readPermission="false"/>
+    <sfField editPermission="false" filterable="false" n="PartnerAccountId" notVisibleToMetadataUser="true" readPermission="false"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship alias="RelatedEventAttendeeAccept" childName="AcceptedEventRelation" field="RelationId" n="AcceptedEventRelations" relationshipName="AcceptedEventRelations" s="2-" t="AcceptedEventRelation"/>
+    <sfObjectRelationship alias="RelatedHistoryList" childName="ActivityHistory" field="WhoId" n="ActivityHistories" relationshipName="ActivityHistories" s="2-" t="ActivityHistory"/>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship alias="RelatedActivityAttachmentList" childName="Attachment" field="ParentId" n="Attachments" relationshipName="Attachments" s="2-" t="Attachment"/>
+    <sfObjectRelationship alias="RelatedCampaignList" childName="CampaignMember" field="LeadId" n="CampaignMembers" relationshipName="CampaignMembers" s="2-" t="CampaignMember"/>
+    <sfObjectRelationship alias="RelatedGroupsListOnRecord" childName="CollaborationGroupRecord" field="RecordId" n="RecordAssociatedGroups" relationshipName="RecordAssociatedGroups" s="2-" t="CollaborationGroupRecord"/>
+    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
+    <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
+    <sfObjectRelationship alias="RelatedEventAttendeeDecline" childName="DeclinedEventRelation" field="RelationId" n="DeclinedEventRelations" relationshipName="DeclinedEventRelations" s="2-" t="DeclinedEventRelation"/>
+    <sfObjectRelationship childName="DuplicateRecordItem" field="RecordId" n="DuplicateRecordItems" relationshipName="DuplicateRecordItems" s="2-" t="DuplicateRecordItem"/>
+    <sfObjectRelationship childName="EmailMessageRelation" field="RelationId" n="EmailMessageRelations" relationshipName="EmailMessageRelations" s="2-" t="EmailMessageRelation"/>
+    <sfObjectRelationship alias="RelatedEmailStatusList" childName="EmailStatus" field="WhoId" n="EmailStatuses" relationshipName="EmailStatuses" s="2-" t="EmailStatus"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship childName="Event" field="WhoId" n="Events" relationshipName="Events" s="2-" t="Event"/>
+    <sfObjectRelationship childName="EventRelation" field="RelationId" n="EventRelations" relationshipName="EventRelations" s="2-" t="EventRelation"/>
+    <sfObjectRelationship childName="LeadAssociation__c" field="Lead_Name__c" n="Prospect__r" relationshipName="Prospect__r" s="2-" t="LeadAssociation__c"/>
+    <sfObjectRelationship childName="LeadFeed" field="ParentId" n="Feeds" relationshipName="Feeds" s="2-" t="LeadFeed"/>
+    <sfObjectRelationship alias="RelatedEntityHistoryList" childName="LeadHistory" field="LeadId" n="Histories" relationshipName="Histories" s="2-" t="LeadHistory"/>
+    <sfObjectRelationship childName="LeadShare" field="LeadId" n="Shares" relationshipName="Shares" s="2-" t="LeadShare"/>
+    <sfObjectRelationship childName="LiveChatTranscript" field="LeadId" n="LiveChatTranscripts" relationshipName="LiveChatTranscripts" s="2-" t="LiveChatTranscript"/>
+    <sfObjectRelationship childName="NetworkActivityAudit" field="ParentEntityId" n="ParentEntities" relationshipName="ParentEntities" s="2-" t="NetworkActivityAudit"/>
+    <sfObjectRelationship childName="Note" field="ParentId" n="Notes" relationshipName="Notes" s="2-" t="Note"/>
+    <sfObjectRelationship childName="NoteAndAttachment" field="ParentId" n="NotesAndAttachments" relationshipName="NotesAndAttachments" s="2-" t="NoteAndAttachment"/>
+    <sfObjectRelationship alias="RelatedActivityList" childName="OpenActivity" field="WhoId" n="OpenActivities" relationshipName="OpenActivities" s="2-" t="OpenActivity"/>
+    <sfObjectRelationship alias="RelatedProcessInstanceHistory" childName="ProcessInstance" field="TargetObjectId" n="ProcessInstances" relationshipName="ProcessInstances" s="2-" t="ProcessInstance"/>
+    <sfObjectRelationship alias="RelatedProcessHistoryList" childName="ProcessInstanceHistory" field="TargetObjectId" n="ProcessSteps" relationshipName="ProcessSteps" s="2-" t="ProcessInstanceHistory"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="SocialPersona" field="ParentId" n="Personas" relationshipName="Personas" s="2-" t="SocialPersona"/>
+    <sfObjectRelationship childName="SocialPost" field="WhoId" n="Posts" relationshipName="Posts" s="2-" t="SocialPost"/>
+    <sfObjectRelationship childName="Task" field="WhoId" n="Tasks" relationshipName="Tasks" s="2-" t="Task"/>
+    <sfObjectRelationship childName="TopicAssignment" field="EntityId" n="TopicAssignments" relationshipName="TopicAssignments" s="2-" t="TopicAssignment"/>
+    <sfObjectRelationship alias="RelatedEventAttendeeNotDecided" childName="UndecidedEventRelation" field="RelationId" n="UndecidedEventRelations" relationshipName="UndecidedEventRelations" s="2-" t="UndecidedEventRelation"/>
+    <sfObjectRelationship childName="ProcessInstanceHistory" field="TargetObjectId" n="RelatedProcessHistoryList" relationshipName="RelatedProcessHistoryList" s="2-"/>
+    <sfObjectRelationship alias="RelatedOpportunityList" childName="Opportunity" field="LeadId" n="Opportunities" relationshipName="Opportunities" s="2-" t="Opportunity"/>
+    <sfObjectRelationship alias="RelatedContentDistributionList" childName="ContentDistribution" field="RelatedRecordId" n="RelatedContentDistributionList" relationshipName="RelatedContentDistributionList" s="2-" t="Content Deliveries"/>
+  </childRelationships>
+  <recordTypes>
+    <sfRecordType n="&lt;default&gt;" t="Web Record Type Mapping">
+      <children>
+        <sfLayout layoutFileName="Lead-Lead Layout" n="Primary" profileLayout="false" s="" t="Page Layout">
+          <layoutTypes>
+            <sfLayoutType layoutType="Edit" n="Edit" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" n="Lead Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Lead Owner" n="Lead Owner" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OwnerId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Lead Status" n="Lead Status" required="true" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Status" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Lead Name" n="Lead Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Phone" n="Phone" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Phone" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI label="Company" n="Company" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Company" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Email" n="Email" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Email" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Data Quality" n="Data Quality" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Data_Quality__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Rating" n="Rating" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Rating" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" n="Address Information" s="" seqNum="1" style="TwoColumnsTopToBottom" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Address" n="Address" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Address" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Website" n="Website" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Website" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" n="Additional Information" s="" seqNum="2" style="TwoColumnsLeftToRight" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Employees" n="Employees" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="NumberOfEmployees" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Lead Source" n="Lead Source" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="LeadSource" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Annual Revenue" n="Annual Revenue" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="AnnualRevenue" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Industry" n="Industry" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Industry" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" n="Description Information" s="" seqNum="3" style="OneColumn" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Description" n="Description" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Description" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="How can we help?" n="How can we help?" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="HowHelp__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="Custom Links" s="" seqNum="5" style="CustomLinks" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="GoogleSearch" s="" seqNum="0" t="Web Layout Field" type="CustomLink"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="GoogleMaps" s="" seqNum="0" t="Web Layout Field" type="CustomLink"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" s="" seqNum="2" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="SendGmail" s="" seqNum="0" t="Web Layout Field" type="CustomLink"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="GoogleNews" s="" seqNum="0" t="Web Layout Field" type="CustomLink"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="HooversProfile" s="" seqNum="0" t="Web Layout Field" type="CustomLink"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="2" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="true" detailHeading="false" n="Optional" s="" seqNum="4" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="RulesLayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Assign using active assignment rule" n="showRunAssignmentRulesCheckbox" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC fieldType="checkbox" locator="/table//tr[1]//td[1]//input" n="showRunAssignmentRulesCheckbox" s="" seqNum="0" t="Assign using active assignment rule" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+            <sfLayoutType layoutType="Detail" n="Detail" s="2-" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="Lead Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Lead Owner" n="Lead Owner" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OwnerId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Lead Status" n="Lead Status" required="true" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Status" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Lead Name" n="Lead Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Phone" n="Phone" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Phone" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI label="Company" n="Company" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Company" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Email" n="Email" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Email" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Data Quality" n="Data Quality" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Data_Quality__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Rating" n="Rating" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Rating" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" editHeading="false" n="Address Information" s="" seqNum="1" style="TwoColumnsTopToBottom" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Address" n="Address" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Address" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Website" n="Website" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Website" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" editHeading="false" n="Additional Information" s="" seqNum="2" style="TwoColumnsLeftToRight" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Employees" n="Employees" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="NumberOfEmployees" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Lead Source" n="Lead Source" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="LeadSource" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Annual Revenue" n="Annual Revenue" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="AnnualRevenue" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Industry" n="Industry" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Industry" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="Description Information" s="" seqNum="3" style="OneColumn" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Description" n="Description" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Description" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="How can we help?" n="How can we help?" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="HowHelp__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="System Information" s="" seqNum="4" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Created By" n="Created By" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="CreatedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Last Modified By" n="Last Modified By" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="LastModifiedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" editHeading="false" n="Custom Links" s="" seqNum="5" style="CustomLinks" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="GoogleSearch" s="" seqNum="0" t="Web Layout Field" type="CustomLink"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="GoogleMaps" s="" seqNum="0" t="Web Layout Field" type="CustomLink"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" s="" seqNum="2" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="SendGmail" s="" seqNum="0" t="Web Layout Field" type="CustomLink"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="GoogleNews" s="" seqNum="0" t="Web Layout Field" type="CustomLink"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="HooversProfile" s="" seqNum="0" t="Web Layout Field" type="CustomLink"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="2" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+          </layoutTypes>
+          <relatedLists>
+            <sfRelatedList fieldName="WhoId" label="Open Activities" n="OpenActivities" nameAlias="RelatedActivityList" relationshipName="OpenActivities" s="3-" t="Open Activities (WhoId)">
+              <children>
+                <sfRelatedListColumn alias="Subject" n="TASK.SUBJECT" s="" seq="0" t="Subject"/>
+                <sfRelatedListColumn alias="IsTask" n="ACTIVITY.TASK" s="" seq="1" t="Task"/>
+                <sfRelatedListColumn alias="ActivityDate" n="TASK.DUE_DATE" s="" seq="2" t="Due Date"/>
+                <sfRelatedListColumn alias="toLabel(Status)" n="TASK.STATUS" s="" seq="3" t="Status"/>
+                <sfRelatedListColumn alias="toLabel(Priority)" n="TASK.PRIORITY" s="" seq="4" t="Priority"/>
+                <sfRelatedListColumn alias="OwnerId" n="OwnerId" s="" seq="5" t="Assigned To"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="WhoId" label="Activity History" n="ActivityHistories" nameAlias="RelatedHistoryList" relationshipName="ActivityHistories" s="3-" t="Activity History (WhoId)">
+              <children>
+                <sfRelatedListColumn alias="Subject" n="TASK.SUBJECT" s="" seq="0" t="Subject"/>
+                <sfRelatedListColumn alias="IsTask" n="ACTIVITY.TASK" s="" seq="1" t="Task"/>
+                <sfRelatedListColumn alias="ActivityDate" n="TASK.DUE_DATE" s="" seq="2" t="Due Date"/>
+                <sfRelatedListColumn alias="OwnerId" n="OwnerId" s="" seq="3" t="Assigned To"/>
+                <sfRelatedListColumn alias="LastModifiedDate" n="TASK.LAST_UPDATE" s="" seq="4" t="Last Modified Date/Time"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="WhoId" label="Email Status" n="EmailStatuses" nameAlias="RelatedEmailStatusList" relationshipName="EmailStatuses" s="3-" t="Email Status (WhoId)">
+              <children>
+                <sfRelatedListColumn alias="Subject" n="ACTIVITY.SUBJECT" s="" seq="0" t="Subject"/>
+                <sfRelatedListColumn alias="CreatedDate" n="EMAIL_STATUS.CREATED_DATE" s="" seq="1" t="Date Sent"/>
+                <sfRelatedListColumn alias="FirstOpenDate" n="EMAIL_STATUS.FIRST_OPEN_DATE" s="" seq="2" t="Date Opened"/>
+                <sfRelatedListColumn alias="TimesOpened" n="EMAIL_STATUS.TIMES_OPENED" s="" seq="3" t="# Times Opened"/>
+                <sfRelatedListColumn alias="LastOpenDate" n="EMAIL_STATUS.LAST_OPEN_DATE" s="" seq="4" t="Last Opened"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="LeadId" label="Campaign History" n="CampaignMembers" nameAlias="RelatedCampaignList" relationshipName="CampaignMembers" s="3-" t="Campaign Members (LeadId)">
+              <children>
+                <sfRelatedListColumn alias="Campaign.Name" n="CAMPAIGN.NAME" s="" seq="0" t="Campaign Name"/>
+                <sfRelatedListColumn alias="Campaign.StartDate" n="CAMPAIGN.START_DATE" s="" seq="1" t="Start Date"/>
+                <sfRelatedListColumn alias="Campaign.Type" n="CAMPAIGN.CAMPAIGN_TYPE" s="" seq="2" t="Type"/>
+                <sfRelatedListColumn alias="toLabel(Status)" n="CM.STATUS" s="" seq="3" t="Status"/>
+                <sfRelatedListColumn alias="HasResponded" n="CM.RESPONDED" s="" seq="4" t="Responded"/>
+                <sfRelatedListColumn alias="LastModifiedDate" n="CM.LAST_UPDATE" s="" seq="5" t="Member Status Updated"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+          </relatedLists>
+          <actionLinks/>
+          <excludeButtons>
+            <string>Submit</string>
+          </excludeButtons>
+          <customTags/>
+          <quickActionNames>
+            <string>FeedItem.TextPost</string>
+            <string>FeedItem.ContentPost</string>
+            <string>NewTask</string>
+            <string>LogACall</string>
+            <string>NewCase</string>
+            <string>NewNote</string>
+            <string>NewEvent</string>
+            <string>FeedItem.RypplePost</string>
+            <string>FeedItem.LinkPost</string>
+            <string>FeedItem.PollPost</string>
+            <string>FeedItem.QuestionPost</string>
+            <string>SendEmail</string>
+          </quickActionNames>
+          <consoleComponents/>
+          <platformActionNames/>
+          <miniLayout>
+            <fields>
+              <string>Name</string>
+              <string>Company</string>
+              <string>Email</string>
+              <string>Status</string>
+            </fields>
+          </miniLayout>
+        </sfLayout>
+      </children>
+    </sfRecordType>
+  </recordTypes>
+  <standardActions>
+    <sfActionLink n="Accept" s=""/>
+    <sfActionLink n="AddToCampaign" s=""/>
+    <sfActionLink modes="View" n="CallHighlightAction" t="Call"/>
+    <sfActionLink modes="View" n="CancelEdit"/>
+    <sfActionLink n="ChangeStatus"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink n="Convert" s=""/>
+    <sfActionLink modes="View" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="View" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View" n="EmailHighlightAction" t="Send Email"/>
+    <sfActionLink buttonName="dupes" modes="View" n="FindDup" t="Find Duplicates"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink buttonName="datadotcomclean" modes="View" n="ListClean" t="Clean"/>
+    <sfActionLink modes="ObjectHome List" n="New"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit"/>
+    <sfActionLink modes="View" n="SmsHighlightAction" t="Send Text"/>
+    <sfActionLink n="Tab" s=""/>
+    <sfActionLink locator="Lead_Record_Page" modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="View" n="XClean" t="Check Integration Status"/>
+    <sfActionLink massAction="true" modes="List" n="2" t="Change Status"/>
+    <sfActionLink massAction="true" modes="List" n="assign" t="Change Owner"/>
+    <sfActionLink massAction="true" modes="List" n="3" t="Add to Campaign"/>
+    <sfActionLink modes="View" n="ChooseCampaign" t="Choose a Campaign"/>
+    <sfActionLink modes="List Home" n="MassAddToCampaign" t="Add to Campaign"/>
+    <sfActionLink modes="List Home" n="SendListEmailAction" t="Send List Email"/>
+  </standardActions>
+  <homeListColumns>
+    <string>FULL_NAME</string>
+    <string>LEAD.COMPANY</string>
+    <string>LEAD.PHONE</string>
+  </homeListColumns>
+  <lookupColumns>
+    <string>FULL_NAME</string>
+    <string>LEAD.COMPANY</string>
+  </lookupColumns>
+  <weblinks>
+    <sfWeblink displayType="link" linkType="url" n="AltavistaNews" s="" t="Altavista News" url="http://news.altavista.com/search?nc=0&amp;q={!Lead_Company}"/>
+    <sfWeblink displayType="link" linkType="url" n="GoogleMaps" s="" t="Google Maps" url="http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Lead_Street}+{!Lead_City}+{!Lead_State}&amp;om=1"/>
+    <sfWeblink displayType="link" linkType="url" n="GoogleNews" s="" t="Google News" url="http://www.google.com/news?&amp;q={!Lead_Company}&amp;btnG=Search+News"/>
+    <sfWeblink displayType="link" linkType="url" n="GoogleSearch" s="" t="Google Search" url="http://www.google.com/search?q={!Lead_Company}"/>
+    <sfWeblink displayType="link" linkType="url" n="HooversProfile" s="" t="Hoovers Profile" url="http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Lead_Company}"/>
+    <sfWeblink displayType="link" linkType="url" n="SendGmail" s="" t="Send Gmail" url="https://mail.google.com/mail?view=cm&amp;tf=0&amp;to={!Lead_Email}&lt;{!Lead_LastName}, {!Lead_FirstName}&gt;&amp;tf=1"/>
+    <sfWeblink displayType="link" linkType="url" n="YahooMaps" s="" t="Yahoo Maps" url="http://maps.yahoo.com/py/maps.py?cn={!Lead_Country}&amp;csz={!Lead_City}+{!Lead_State}+{!Lead_PostalCode}+&amp;addr={!Lead_Address}"/>
+  </weblinks>
+  <searchResultColumns>
+    <string>FULL_NAME</string>
+    <string>LEAD.TITLE</string>
+    <string>LEAD.COMPANY</string>
+    <string>LEAD.PHONE</string>
+    <string>LEAD.MOBILE_PHONE</string>
+    <string>LEAD.EMAIL</string>
+    <string>LEAD.STATUS</string>
+    <string>CORE.USERS.ALIAS</string>
+  </searchResultColumns>
+  <compactLayoutFields>
+    <string>Name</string>
+    <string>Company</string>
+    <string>Phone</string>
+    <string>Email</string>
+    <string>Address</string>
+    <string>Data_Quality__c</string>
+    <string>OwnerId</string>
+  </compactLayoutFields>
+  <listViewActions/>
+</sfObject>

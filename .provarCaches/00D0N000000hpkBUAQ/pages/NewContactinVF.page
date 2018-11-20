@@ -1,0 +1,28 @@
+<apex:page standardStylesheets="true" applyBodyTag="false">
+
+    <apex:includeLightning />
+    <style>
+        html, body {
+        margin: 0;
+        padding: 0;
+        }
+        #lightningComponent {width: 100%;}
+    </style>
+
+    <div id="content">
+        <div id="lightningComponent" />
+        <script>
+             $Lightning.use("c:DependencyApp", function() {
+             $Lightning.createComponent("c:NewContact",
+             { 
+             label : "Lightning Component in VF!"
+             },
+             "lightningComponent",
+             function(cmp) {
+                 console.log('Component created, do something cool here');
+             });
+             });
+         </script>        
+    </div>
+
+</apex:page>

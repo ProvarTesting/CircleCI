@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" keyPrefix="012" label="Record Type" labelPlural="Record Types" n="RecordType" queryable="true" retrieveable="true" s="" t="Record Type (012)" updatable="true">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Record Type ID" type="id" updateable="false"/>
+    <sfField length="80" n="Name" nameField="true" required="true"/>
+    <sfField length="80" n="DeveloperName" required="true" t="Record Type Name"/>
+    <sfField createable="false" length="15" n="NamespacePrefix" t="Namespace Prefix" updateable="false"/>
+    <sfField length="255" n="Description"/>
+    <sfField length="18" n="BusinessProcessId" t="Business Process ID" type="reference">
+      <referenceTos>
+        <string>BusinessProcess</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="40" n="SobjectType" required="true" restrictedPicklist="true" t="Sobject Type Name" type="picklist" updateable="false">
+      <picklistEntryIds>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="Account" s=""/>
+        <sfPLE id="2" n="AccountBrand" s=""/>
+        <sfPLE id="3" n="Announcement" s=""/>
+        <sfPLE id="4" n="Asset" s=""/>
+        <sfPLE id="5" n="AssetRelationship" s=""/>
+        <sfPLE id="6" n="AssistantProgress" s=""/>
+        <sfPLE id="7" n="AutomatedTestingQueue__c" s=""/>
+        <sfPLE id="8" n="Broker__c" s=""/>
+        <sfPLE id="9" n="Campaign" s=""/>
+        <sfPLE id="10" n="CampaignMember" s=""/>
+        <sfPLE id="11" n="Case" s=""/>
+        <sfPLE id="12" n="CaseExternalDocument" s=""/>
+        <sfPLE id="13" n="ChannelProgram" s=""/>
+        <sfPLE id="14" n="ChannelProgramLevel" s=""/>
+        <sfPLE id="15" n="CollaborationGroup" s=""/>
+        <sfPLE id="16" n="CollaborationGroupRank" s=""/>
+        <sfPLE id="17" n="CollaborationGroupRecord" s=""/>
+        <sfPLE id="18" n="ComponentResponseCache" s=""/>
+        <sfPLE id="19" n="Contact" s=""/>
+        <sfPLE id="20" n="ContentFolderDistribution" s=""/>
+        <sfPLE id="21" n="ContentVersion" s=""/>
+        <sfPLE id="22" n="Contract" s=""/>
+        <sfPLE id="23" n="CustomSettingNameIndex" s=""/>
+        <sfPLE id="24" n="DeflectionSignal" s=""/>
+        <sfPLE id="25" n="DuplicateErrorLog" s=""/>
+        <sfPLE id="26" n="DuplicateRecordItem" s=""/>
+        <sfPLE id="27" n="DuplicateRecordSet" s=""/>
+        <sfPLE id="28" n="Event" s=""/>
+        <sfPLE id="29" n="FAQ__kav" s=""/>
+        <sfPLE id="30" n="Favorite__c" s=""/>
+        <sfPLE id="31" n="FileInspectionResult" s=""/>
+        <sfPLE id="32" n="FileSearchActivity" s=""/>
+        <sfPLE id="33" n="FlowRecordRelation" s=""/>
+        <sfPLE id="34" n="FlowStageRelation" s=""/>
+        <sfPLE id="35" n="Goal" s=""/>
+        <sfPLE id="36" n="GoalLink" s=""/>
+        <sfPLE id="37" n="Idea" s=""/>
+        <sfPLE id="38" n="InboundSocialPost" s=""/>
+        <sfPLE id="39" n="JunctionTest__c" s=""/>
+        <sfPLE id="40" n="Knowledge__kav" s=""/>
+        <sfPLE id="41" n="Lead" s=""/>
+        <sfPLE id="42" n="LeadAssociation__c" s=""/>
+        <sfPLE id="43" n="LinkedArticle" s=""/>
+        <sfPLE id="44" n="ListEmail" s=""/>
+        <sfPLE id="45" n="ListEmailIndividualRecipient" s=""/>
+        <sfPLE id="46" n="ListEmailRecipientSource" s=""/>
+        <sfPLE id="47" n="ListEmailSentResult" s=""/>
+        <sfPLE id="48" n="LiveAgentSession" s=""/>
+        <sfPLE id="49" n="LiveChatFileToken" s=""/>
+        <sfPLE id="50" n="LiveChatTranscript" s=""/>
+        <sfPLE id="51" n="Macro" s=""/>
+        <sfPLE id="52" n="MacroAction" s=""/>
+        <sfPLE id="53" n="MacroInstruction" s=""/>
+        <sfPLE id="54" n="ManagedContent" s=""/>
+        <sfPLE id="55" n="ManagedContentBlock" s=""/>
+        <sfPLE id="56" n="ManagedContentBlockVersion" s=""/>
+        <sfPLE id="57" n="ManagedContentNode" s=""/>
+        <sfPLE id="58" n="ManagedContentNodeRendition" s=""/>
+        <sfPLE id="59" n="ManagedContentSet" s=""/>
+        <sfPLE id="60" n="ManagedContentSetLink" s=""/>
+        <sfPLE id="61" n="ManagedContentVersion" s=""/>
+        <sfPLE id="62" n="Metric" s=""/>
+        <sfPLE id="63" n="MetricDataLink" s=""/>
+        <sfPLE id="64" n="NetworkSearchQueryFrequency" s=""/>
+        <sfPLE id="65" n="NetworkUserHistoryRecent" s=""/>
+        <sfPLE id="66" n="Opportunity" s=""/>
+        <sfPLE id="67" n="Order" s=""/>
+        <sfPLE id="68" n="OrgDeleteRequest" s=""/>
+        <sfPLE id="69" n="PartnerFundAllocation" s=""/>
+        <sfPLE id="70" n="PartnerFundClaim" s=""/>
+        <sfPLE id="71" n="PartnerFundRequest" s=""/>
+        <sfPLE id="72" n="PartnerMarketingBudget" s=""/>
+        <sfPLE id="73" n="PersonalizationResource" s=""/>
+        <sfPLE id="74" n="Pricebook2" s=""/>
+        <sfPLE id="75" n="Product2" s=""/>
+        <sfPLE id="76" n="ProfileSkill" s=""/>
+        <sfPLE id="77" n="ProfileSkillEndorsement" s=""/>
+        <sfPLE id="78" n="ProfileSkillUser" s=""/>
+        <sfPLE id="79" n="Property__c" s=""/>
+        <sfPLE id="80" n="provarti__Test_Case_Execution__c" s=""/>
+        <sfPLE id="81" n="provarti__Test_Suite_Execution__c" s=""/>
+        <sfPLE id="82" n="QuickText" s=""/>
+        <sfPLE id="83" n="Quote" s=""/>
+        <sfPLE id="84" n="RecordAction" s=""/>
+        <sfPLE id="85" n="RecordOrigin" s=""/>
+        <sfPLE id="86" n="Scorecard" s=""/>
+        <sfPLE id="87" n="ScorecardAssociation" s=""/>
+        <sfPLE id="88" n="ScorecardMetric" s=""/>
+        <sfPLE id="89" n="SearchActivity" s=""/>
+        <sfPLE id="90" n="SearchPromotionRule" s=""/>
+        <sfPLE id="91" n="SetupAssistantAnswer" s=""/>
+        <sfPLE id="92" n="SetupAssistantProgress" s=""/>
+        <sfPLE id="93" n="SetupFlowProgress" s=""/>
+        <sfPLE id="94" n="SocialPost" s=""/>
+        <sfPLE id="95" n="Solution" s=""/>
+        <sfPLE id="96" n="SOSSession" s=""/>
+        <sfPLE id="97" n="SyncTransactionLog" s=""/>
+        <sfPLE id="98" n="Task" s=""/>
+        <sfPLE id="99" n="UserEmailPreferredPerson" s=""/>
+        <sfPLE id="100" n="UserMetrics" s=""/>
+        <sfPLE id="101" n="UserNavItem" s=""/>
+        <sfPLE id="102" n="WorkAccess" s=""/>
+        <sfPLE id="103" n="WorkBadge" s=""/>
+        <sfPLE id="104" n="WorkBadgeDefinition" s=""/>
+        <sfPLE id="105" n="WorkCoaching" s=""/>
+        <sfPLE id="106" n="WorkFeedback" s=""/>
+        <sfPLE id="107" n="WorkFeedbackQuestion" s=""/>
+        <sfPLE id="108" n="WorkFeedbackQuestionSet" s=""/>
+        <sfPLE id="109" n="WorkFeedbackRequest" s=""/>
+        <sfPLE id="110" n="WorkFeedbackTemplate" s=""/>
+        <sfPLE id="111" n="WorkOrder" s=""/>
+        <sfPLE id="112" n="WorkOrderLineItem" s=""/>
+        <sfPLE id="113" n="WorkPerformanceCycle" s=""/>
+        <sfPLE id="114" n="WorkReward" s=""/>
+        <sfPLE id="115" n="WorkRewardFund" s=""/>
+        <sfPLE id="116" n="WorkRewardFundType" s=""/>
+        <sfPLE id="117" n="WorkThanks" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="IsActive" t="Active" type="_boolean"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship childName="RecordTypeLocalization" field="ParentId" n="Localization" relationshipName="Localization" s="2-" t="RecordTypeLocalization"/>
+  </childRelationships>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="ObjectHome List" n="New"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>

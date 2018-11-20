@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Configuration settings for the optional callout to a CI server based on an event defined locally in the subscriber org.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>provarti__API_Token__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API Token is used to authenticate the CI Username for access to carry out the build.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>API Token for the CI Username, not the Password</inlineHelpText>
+        <label>API Token</label>
+        <length>32</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>provarti__Authentication_Token__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The authentication token for the build to be executed remotely</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>If required, the authentication token that needs to be passed for the corresponding CI Job name to be executed</inlineHelpText>
+        <label>Authentication Token</label>
+        <length>32</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>provarti__CI_Server_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The CI Server URL to be called excluding any user authentication or parameters, e.g. http://ec2-user@ec2-35-242-69-170.eu-west-1.compute.amazonaws.com:8080/job/</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the CI Server URL to be called excluding any user details or parameters</inlineHelpText>
+        <label>CI Server URL</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>provarti__CI_Username__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Username used to authenticate against the CI Server in order to call the API for a remote build. This should ideally be a separate user with limited permissions rather than the admin user for your CI server.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Username to be used for remote API calls to the CI Server URL</inlineHelpText>
+        <label>CI Username</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Provar CI Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

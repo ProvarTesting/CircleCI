@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingObjectInfo>
+  <entityDefinition DefaultCompactLayoutId="Contact.SYSTEM" DetailUrl="/{ID}" EditUrl="/{ID}/e" IsFeedEnabled="true" IsSearchLayoutable="true" MasterLabel="Contact" NewUrl="/003/e">
+    <Metadata>&lt;CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"   &gt; &lt;actionOverrides&gt;  &lt;actionName&gt;AddCampaign&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;AddToCampaign&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;CallHighlightAction&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;CancelEdit&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;Clone&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;Delete&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;Edit&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;EmailHighlightAction&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;EnableCustomerPortal&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;EnablePartnerPortalUser&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;EnableSelfService&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;List&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;ListClean&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;Merge&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;NewContact&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;RequestUpdate&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;SaveEdit&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;SmsHighlightAction&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;Tab&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;View&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;ViewCustomerPortal&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;ViewPartnerPortalUser&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;actionOverrides&gt;  &lt;actionName&gt;ViewSelfService&lt;/actionName&gt;        &lt;skipRecordTypeSelect&gt;false&lt;/skipRecordTypeSelect&gt;  &lt;type&gt;Default&lt;/type&gt; &lt;/actionOverrides&gt; &lt;allowInChatterGroups&gt;false&lt;/allowInChatterGroups&gt;  &lt;compactLayoutAssignment&gt;SYSTEM&lt;/compactLayoutAssignment&gt;       &lt;deprecated&gt;false&lt;/deprecated&gt;  &lt;enableActivities&gt;false&lt;/enableActivities&gt; &lt;enableBulkApi&gt;false&lt;/enableBulkApi&gt; &lt;enableChangeDataCapture&gt;false&lt;/enableChangeDataCapture&gt; &lt;enableDivisions&gt;false&lt;/enableDivisions&gt; &lt;enableEnhancedLookup&gt;false&lt;/enableEnhancedLookup&gt; &lt;enableFeeds&gt;true&lt;/enableFeeds&gt; &lt;enableHistory&gt;false&lt;/enableHistory&gt; &lt;enableReports&gt;false&lt;/enableReports&gt; &lt;enableSearch&gt;false&lt;/enableSearch&gt; &lt;enableSharing&gt;false&lt;/enableSharing&gt; &lt;enableStreamingApi&gt;false&lt;/enableStreamingApi&gt;        &lt;household&gt;false&lt;/household&gt;    &lt;recordTypeTrackFeedHistory&gt;false&lt;/recordTypeTrackFeedHistory&gt; &lt;recordTypeTrackHistory&gt;false&lt;/recordTypeTrackHistory&gt; &lt;searchLayouts&gt;  &lt;customTabListAdditionalFields&gt;FULL_NAME&lt;/customTabListAdditionalFields&gt;  &lt;customTabListAdditionalFields&gt;ACCOUNT.NAME&lt;/customTabListAdditionalFields&gt;  &lt;customTabListAdditionalFields&gt;CONTACT.PHONE1&lt;/customTabListAdditionalFields&gt;  &lt;lookupDialogsAdditionalFields&gt;FULL_NAME&lt;/lookupDialogsAdditionalFields&gt;  &lt;lookupDialogsAdditionalFields&gt;ACCOUNT.NAME&lt;/lookupDialogsAdditionalFields&gt;  &lt;lookupDialogsAdditionalFields&gt;ACCOUNT.SITE&lt;/lookupDialogsAdditionalFields&gt;    &lt;lookupPhoneDialogsAdditionalFields&gt;FULL_NAME&lt;/lookupPhoneDialogsAdditionalFields&gt;  &lt;lookupPhoneDialogsAdditionalFields&gt;ACCOUNT.NAME&lt;/lookupPhoneDialogsAdditionalFields&gt;  &lt;lookupPhoneDialogsAdditionalFields&gt;ACCOUNT.SITE&lt;/lookupPhoneDialogsAdditionalFields&gt;  &lt;lookupPhoneDialogsAdditionalFields&gt;CONTACT.PHONE1&lt;/lookupPhoneDialogsAdditionalFields&gt;  &lt;lookupPhoneDialogsAdditionalFields&gt;CONTACT.PHONE3&lt;/lookupPhoneDialogsAdditionalFields&gt;  &lt;lookupPhoneDialogsAdditionalFields&gt;CONTACT.PHONE4&lt;/lookupPhoneDialogsAdditionalFields&gt;  &lt;lookupPhoneDialogsAdditionalFields&gt;CONTACT.PHONE5&lt;/lookupPhoneDialogsAdditionalFields&gt;  &lt;lookupPhoneDialogsAdditionalFields&gt;CONTACT.PHONE6&lt;/lookupPhoneDialogsAdditionalFields&gt;  &lt;searchResultsAdditionalFields&gt;FULL_NAME&lt;/searchResultsAdditionalFields&gt;  &lt;searchResultsAdditionalFields&gt;ACCOUNT.NAME&lt;/searchResultsAdditionalFields&gt;  &lt;searchResultsAdditionalFields&gt;ACCOUNT.SITE&lt;/searchResultsAdditionalFields&gt;  &lt;searchResultsAdditionalFields&gt;CONTACT.PHONE1&lt;/searchResultsAdditionalFields&gt;  &lt;searchResultsAdditionalFields&gt;CONTACT.EMAIL&lt;/searchResultsAdditionalFields&gt;  &lt;searchResultsAdditionalFields&gt;CORE.USERS.ALIAS&lt;/searchResultsAdditionalFields&gt; &lt;/searchLayouts&gt; &lt;sharingModel&gt;ControlledByParent&lt;/sharingModel&gt;  &lt;/CustomObject&gt;</Metadata>
+    <recordTypeInfos>
+      <string>&lt;RecordTypeInfo xmlns="http://soap.sforce.com/2006/04/metadata"&gt; &lt;n2:active xmlns:n2="urn:partner.soap.sforce.com"&gt;true&lt;/n2:active&gt; &lt;n3:available xmlns:n3="urn:partner.soap.sforce.com"&gt;true&lt;/n3:available&gt; &lt;n4:defaultRecordTypeMapping xmlns:n4="urn:partner.soap.sforce.com"&gt;false&lt;/n4:defaultRecordTypeMapping&gt; &lt;n5:developerName xmlns:n5="urn:partner.soap.sforce.com"&gt;Customer&lt;/n5:developerName&gt; &lt;n6:master xmlns:n6="urn:partner.soap.sforce.com"&gt;false&lt;/n6:master&gt; &lt;n7:name xmlns:n7="urn:partner.soap.sforce.com"&gt;Customer&lt;/n7:name&gt; &lt;n8:recordTypeId xmlns:n8="urn:partner.soap.sforce.com"&gt;0120N000000UkWnQAK&lt;/n8:recordTypeId&gt;&lt;/RecordTypeInfo&gt;</string>
+      <string>&lt;RecordTypeInfo xmlns="http://soap.sforce.com/2006/04/metadata"&gt; &lt;n2:active xmlns:n2="urn:partner.soap.sforce.com"&gt;true&lt;/n2:active&gt; &lt;n3:available xmlns:n3="urn:partner.soap.sforce.com"&gt;true&lt;/n3:available&gt; &lt;n4:defaultRecordTypeMapping xmlns:n4="urn:partner.soap.sforce.com"&gt;true&lt;/n4:defaultRecordTypeMapping&gt; &lt;n5:developerName xmlns:n5="urn:partner.soap.sforce.com"&gt;Employee&lt;/n5:developerName&gt; &lt;n6:master xmlns:n6="urn:partner.soap.sforce.com"&gt;false&lt;/n6:master&gt; &lt;n7:name xmlns:n7="urn:partner.soap.sforce.com"&gt;Employee&lt;/n7:name&gt; &lt;n8:recordTypeId xmlns:n8="urn:partner.soap.sforce.com"&gt;0120N000000UkWoQAK&lt;/n8:recordTypeId&gt;&lt;/RecordTypeInfo&gt;</string>
+      <string>&lt;RecordTypeInfo xmlns="http://soap.sforce.com/2006/04/metadata"&gt; &lt;n2:active xmlns:n2="urn:partner.soap.sforce.com"&gt;true&lt;/n2:active&gt; &lt;n3:available xmlns:n3="urn:partner.soap.sforce.com"&gt;true&lt;/n3:available&gt; &lt;n4:defaultRecordTypeMapping xmlns:n4="urn:partner.soap.sforce.com"&gt;false&lt;/n4:defaultRecordTypeMapping&gt; &lt;n5:developerName xmlns:n5="urn:partner.soap.sforce.com"&gt;Master&lt;/n5:developerName&gt; &lt;n6:master xmlns:n6="urn:partner.soap.sforce.com"&gt;true&lt;/n6:master&gt; &lt;n7:name xmlns:n7="urn:partner.soap.sforce.com"&gt;Master&lt;/n7:name&gt; &lt;n8:recordTypeId xmlns:n8="urn:partner.soap.sforce.com"&gt;012000000000000AAA&lt;/n8:recordTypeId&gt;&lt;/RecordTypeInfo&gt;</string>
+    </recordTypeInfos>
+    <standardActions>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="Contacts Tab" Name="Tab"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="List" Name="List"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="Clone" Name="Clone"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="Enable Customer User" Name="EnableCustomerPortal"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="Enable Partner User" Name="EnablePartnerPortalUser"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="View Customer User" Name="ViewCustomerPortal"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="View Partner User" Name="ViewPartnerPortalUser"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="Log in to Community as User" Name="LoginToNetworkAsUser"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="Log in to Portal as User" Name="LoginToPortalAsUser"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="Add to Campaign" Name="AddToCampaign"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="Add to Campaign" Name="AddCampaign"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="New" Name="NewContact"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="Check for New Data" Name="XClean"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="Add to Call List" Name="CreateCallList"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="Edit" Name="Edit"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="Delete" Name="Delete"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="View" Name="View"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="Add to Campaign" Name="MassAddToCampaign"/>
+      <toolingStandardAction ContentType="Standard" IsOverridden="false" Label="View Contact Hierarchy" Name="ContactHierarchy"/>
+    </standardActions>
+    <webLinks>
+      <toolingWebLink DisplayType="L" LinkType="url" MasterLabel="Google Maps" Name="GoogleMaps" Url="http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1"/>
+      <toolingWebLink DisplayType="L" LinkType="url" MasterLabel="Google Search" Name="GoogleSearch" Url="http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}"/>
+      <toolingWebLink DisplayType="L" LinkType="url" MasterLabel="Yahoo! Weather" Name="YahooWeather" Url="http://weather.yahoo.com/search/weather2?p={!Contact_MailingPostalCode}"/>
+      <toolingWebLink DisplayType="L" LinkType="url" MasterLabel="Yahoo! Maps" Name="YahooMaps" Url="http://maps.yahoo.com/py/maps.py?cn={!Contact_MailingCountry}&amp;csz={!Contact_MailingCity}+{!Contact_MailingState}+{!Contact_MailingPostalCode}+&amp;addr={!Contact_MailingAddress}"/>
+      <toolingWebLink DisplayType="L" LinkType="url" MasterLabel="Send Gmail" Name="SendGmail" Url="https://mail.google.com/mail?view=cm&amp;tf=0&amp;to={!Contact_Email}&lt;{!Contact_LastName}, {!Contact_FirstName}&gt;&amp;tf=1"/>
+    </webLinks>
+  </entityDefinition>
+  <compactLayoutInfo DeveloperName="SYSTEM">
+    <Metadata>&lt;CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata"   &gt; &lt;fields&gt;Name&lt;/fields&gt; &lt;fields&gt;Title&lt;/fields&gt; &lt;fields&gt;AccountId&lt;/fields&gt; &lt;fields&gt;Phone&lt;/fields&gt; &lt;fields&gt;Email&lt;/fields&gt; &lt;fields&gt;MobilePhone&lt;/fields&gt; &lt;fields&gt;OwnerId&lt;/fields&gt; &lt;label&gt;System Default&lt;/label&gt;&lt;/CompactLayout&gt;</Metadata>
+  </compactLayoutInfo>
+  <fieldDefinitions>
+    <toolingFieldDefinition DataType="Lookup()" DeveloperName="Id" Label="Contact ID" QualifiedApiName="Id"/>
+    <toolingFieldDefinition DataType="Checkbox" DeveloperName="IsDeleted" Label="Deleted" QualifiedApiName="IsDeleted"/>
+    <toolingFieldDefinition DataType="Lookup(Contact)" DeveloperName="MasterRecord" Label="Contact" QualifiedApiName="MasterRecordId" ReferenceTo="Contact" RelationshipName="MasterRecord"/>
+    <toolingFieldDefinition DataType="Lookup(Account)" DeveloperName="Account" Label="Account Name" QualifiedApiName="AccountId" ReferenceTo="Account" RelationshipName="Account"/>
+    <toolingFieldDefinition DataType="Name" DeveloperName="Name" IsNameField="true" Label="Name" QualifiedApiName="Name"/>
+    <toolingFieldDefinition DataType="Record Type" DeveloperName="RecordType" Label="Contact Record Type" QualifiedApiName="RecordTypeId" ReferenceTo="RecordType" RelationshipName="RecordType"/>
+    <toolingFieldDefinition DataType="Address" DeveloperName="OtherAddress" Label="Other Address" QualifiedApiName="OtherAddress"/>
+    <toolingFieldDefinition DataType="Address" DeveloperName="MailingAddress" Label="Mailing Address" QualifiedApiName="MailingAddress"/>
+    <toolingFieldDefinition DataType="Phone" DeveloperName="Phone" Label="Phone" QualifiedApiName="Phone"/>
+    <toolingFieldDefinition DataType="Fax" DeveloperName="Fax" Label="Fax" QualifiedApiName="Fax"/>
+    <toolingFieldDefinition DataType="Phone" DeveloperName="MobilePhone" Label="Mobile" QualifiedApiName="MobilePhone"/>
+    <toolingFieldDefinition DataType="Phone" DeveloperName="HomePhone" Label="Home Phone" QualifiedApiName="HomePhone"/>
+    <toolingFieldDefinition DataType="Phone" DeveloperName="OtherPhone" Label="Other Phone" QualifiedApiName="OtherPhone"/>
+    <toolingFieldDefinition DataType="Phone" DeveloperName="AssistantPhone" Label="Asst. Phone" QualifiedApiName="AssistantPhone"/>
+    <toolingFieldDefinition DataType="Lookup(Contact)" DeveloperName="ReportsTo" Label="Reports To" QualifiedApiName="ReportsToId" ReferenceTo="Contact" RelationshipName="ReportsTo"/>
+    <toolingFieldDefinition DataType="Email" DeveloperName="Email" Label="Email" QualifiedApiName="Email"/>
+    <toolingFieldDefinition DataType="Text(128)" DeveloperName="Title" Label="Title" QualifiedApiName="Title"/>
+    <toolingFieldDefinition DataType="Text(80)" DeveloperName="Department" Label="Department" QualifiedApiName="Department"/>
+    <toolingFieldDefinition DataType="Text(40)" DeveloperName="AssistantName" Label="Assistant" QualifiedApiName="AssistantName"/>
+    <toolingFieldDefinition DataType="Picklist" DeveloperName="LeadSource" Label="Lead Source" QualifiedApiName="LeadSource"/>
+    <toolingFieldDefinition DataType="Date" DeveloperName="Birthdate" Label="Birthdate" QualifiedApiName="Birthdate"/>
+    <toolingFieldDefinition DataType="Long Text Area(32000)" DeveloperName="Description" Label="Description" QualifiedApiName="Description"/>
+    <toolingFieldDefinition DataType="Lookup(User)" DeveloperName="Owner" Label="Contact Owner" QualifiedApiName="OwnerId" ReferenceTo="User" RelationshipName="Owner"/>
+    <toolingFieldDefinition DataType="Checkbox" DeveloperName="HasOptedOutOfEmail" Label="Email Opt Out" QualifiedApiName="HasOptedOutOfEmail"/>
+    <toolingFieldDefinition DataType="Checkbox" DeveloperName="HasOptedOutOfFax" Label="Fax Opt Out" QualifiedApiName="HasOptedOutOfFax"/>
+    <toolingFieldDefinition DataType="Checkbox" DeveloperName="DoNotCall" Label="Do Not Call" QualifiedApiName="DoNotCall"/>
+    <toolingFieldDefinition DataType="Date/Time" DeveloperName="CreatedDate" Label="Created Date" QualifiedApiName="CreatedDate"/>
+    <toolingFieldDefinition DataType="Lookup(User)" DeveloperName="CreatedBy" Label="Created By" QualifiedApiName="CreatedById" ReferenceTo="User" RelationshipName="CreatedBy"/>
+    <toolingFieldDefinition DataType="Date/Time" DeveloperName="LastModifiedDate" Label="Last Modified Date" QualifiedApiName="LastModifiedDate"/>
+    <toolingFieldDefinition DataType="Lookup(User)" DeveloperName="LastModifiedBy" Label="Last Modified By" QualifiedApiName="LastModifiedById" ReferenceTo="User" RelationshipName="LastModifiedBy"/>
+    <toolingFieldDefinition DataType="Date/Time" DeveloperName="SystemModstamp" Label="System Modstamp" QualifiedApiName="SystemModstamp"/>
+    <toolingFieldDefinition DataType="Date" DeveloperName="LastActivityDate" Label="Last Activity" QualifiedApiName="LastActivityDate"/>
+    <toolingFieldDefinition DataType="Date/Time" DeveloperName="LastCURequestDate" Label="Last Stay-in-Touch Request Date" QualifiedApiName="LastCURequestDate"/>
+    <toolingFieldDefinition DataType="Date/Time" DeveloperName="LastCUUpdateDate" Label="Last Stay-in-Touch Save Date" QualifiedApiName="LastCUUpdateDate"/>
+    <toolingFieldDefinition DataType="Text(255)" DeveloperName="AccountName" Label="Account Name" QualifiedApiName="AccountName"/>
+    <toolingFieldDefinition DataType="Text(121)" DeveloperName="ReportsToName" Label="Reports To Name" QualifiedApiName="ReportsToName"/>
+    <toolingFieldDefinition DataType="Date/Time" DeveloperName="LastViewedDate" Label="Last Viewed Date" QualifiedApiName="LastViewedDate"/>
+    <toolingFieldDefinition DataType="Date/Time" DeveloperName="LastReferencedDate" Label="Last Referenced Date" QualifiedApiName="LastReferencedDate"/>
+    <toolingFieldDefinition DataType="Lookup(User Record Access)" DeveloperName="UserRecordAccess" Label="Object Access Level" QualifiedApiName="UserRecordAccessId" ReferenceTo="UserRecordAccess" RelationshipName="UserRecordAccess"/>
+    <toolingFieldDefinition DataType="Lookup(Record Visibility)" DeveloperName="RecordVisibility" Label="Record Visibility" QualifiedApiName="RecordVisibilityId" RelationshipName="RecordVisibility"/>
+    <toolingFieldDefinition DataType="Text(255)" DeveloperName="EmailBouncedReason" Label="Email Bounced Reason" QualifiedApiName="EmailBouncedReason"/>
+    <toolingFieldDefinition DataType="Date/Time" DeveloperName="EmailBouncedDate" Label="Email Bounced Date" QualifiedApiName="EmailBouncedDate"/>
+    <toolingFieldDefinition DataType="Checkbox" DeveloperName="IsEmailBounced" Label="Is Email Bounced" QualifiedApiName="IsEmailBounced"/>
+    <toolingFieldDefinition DataType="URL(255)" DeveloperName="PhotoUrl" Label="Photo URL" QualifiedApiName="PhotoUrl"/>
+    <toolingFieldDefinition DataType="Text(20)" DeveloperName="Jigsaw" Label="Data.com Key" QualifiedApiName="Jigsaw"/>
+    <toolingFieldDefinition DataType="External Lookup" DeveloperName="JigsawContact" Label="Jigsaw Contact Id" QualifiedApiName="JigsawContactId" RelationshipName="JigsawContact"/>
+    <toolingFieldDefinition DataType="Date/Time" DeveloperName="ConnectionReceivedDate" Label="Received Connection Date" QualifiedApiName="ConnectionReceivedDate"/>
+    <toolingFieldDefinition DataType="Date/Time" DeveloperName="ConnectionSentDate" Label="Sent Connection Date" QualifiedApiName="ConnectionSentDate"/>
+    <toolingFieldDefinition DataType="Text (Encrypted)(30)" DeveloperName="Encrypted_Text" Label="Encrypted Text" QualifiedApiName="Encrypted_Text__c"/>
+  </fieldDefinitions>
+  <entityParticles>
+    <toolingEntityParticle DataType="id" DeveloperName="Id" IsApiFilterable="true" IsDefaultedOnCreate="true" Label="Contact ID" Length="18" MasterLabel="Contact ID" Name="Id" QualifiedApiName="Id"/>
+    <toolingEntityParticle DataType="boolean" DeveloperName="IsDeleted" IsApiFilterable="true" IsDefaultedOnCreate="true" Label="Deleted" MasterLabel="Deleted" Name="IsDeleted" QualifiedApiName="IsDeleted"/>
+    <toolingEntityParticle DataType="reference" DeveloperName="MasterRecord" IsApiFilterable="true" IsNillable="true" Label="Master Record ID" Length="18" MasterLabel="Contact" Name="MasterRecordId" QualifiedApiName="MasterRecordId">
+      <Metadata>&lt;CustomField xmlns="http://soap.sforce.com/2006/04/metadata"   &gt; &lt;fullName&gt;Contact.MasterRecordId&lt;/fullName&gt;    &lt;caseSensitive&gt;false&lt;/caseSensitive&gt;    &lt;deprecated&gt;false&lt;/deprecated&gt;   &lt;encrypted&gt;false&lt;/encrypted&gt; &lt;escapeMarkup&gt;false&lt;/escapeMarkup&gt;  &lt;externalId&gt;false&lt;/externalId&gt;     &lt;isAIPredictionField&gt;false&lt;/isAIPredictionField&gt;  &lt;isConvertLeadDisabled&gt;false&lt;/isConvertLeadDisabled&gt; &lt;isFilteringDisabled&gt;false&lt;/isFilteringDisabled&gt; &lt;isNameField&gt;false&lt;/isNameField&gt; &lt;isSortingDisabled&gt;false&lt;/isSortingDisabled&gt;  &lt;length&gt;0&lt;/length&gt;     &lt;populateExistingRows&gt;false&lt;/populateExistingRows&gt; &lt;precision&gt;0&lt;/precision&gt;     &lt;relationshipOrder&gt;0&lt;/relationshipOrder&gt; &lt;reparentableMasterDetail&gt;false&lt;/reparentableMasterDetail&gt; &lt;required&gt;false&lt;/required&gt; &lt;restrictedAdminField&gt;false&lt;/restrictedAdminField&gt; &lt;scale&gt;0&lt;/scale&gt;  &lt;startingNumber&gt;0&lt;/startingNumber&gt; &lt;stripMarkup&gt;false&lt;/stripMarkup&gt;    &lt;trackFeedHistory&gt;false&lt;/trackFeedHistory&gt; &lt;trackHistory&gt;false&lt;/trackHistory&gt; &lt;trackTrending&gt;false&lt;/trackTrending&gt;  &lt;unique&gt;false&lt;/unique&gt;  &lt;visibleLines&gt;0&lt;/visibleLines&gt; &lt;writeRequiresMasterRead&gt;false&lt;/writeRequiresMasterRead&gt;&lt;/CustomField&gt;</Metadata>
+    </toolingEntityParticle>
+    <toolingEntityParticle DataType="reference" DeveloperName="Account" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Account ID" Length="18" MasterLabel="Account Name" Name="AccountId" QualifiedApiName="AccountId">
+      <Metadata>&lt;CustomField xmlns="http://soap.sforce.com/2006/04/metadata"   &gt; &lt;fullName&gt;Contact.AccountId&lt;/fullName&gt;    &lt;caseSensitive&gt;false&lt;/caseSensitive&gt;    &lt;deprecated&gt;false&lt;/deprecated&gt;   &lt;encrypted&gt;false&lt;/encrypted&gt; &lt;escapeMarkup&gt;false&lt;/escapeMarkup&gt;  &lt;externalId&gt;false&lt;/externalId&gt;     &lt;isAIPredictionField&gt;false&lt;/isAIPredictionField&gt;  &lt;isConvertLeadDisabled&gt;false&lt;/isConvertLeadDisabled&gt; &lt;isFilteringDisabled&gt;false&lt;/isFilteringDisabled&gt; &lt;isNameField&gt;false&lt;/isNameField&gt; &lt;isSortingDisabled&gt;false&lt;/isSortingDisabled&gt;  &lt;length&gt;0&lt;/length&gt;     &lt;populateExistingRows&gt;false&lt;/populateExistingRows&gt; &lt;precision&gt;0&lt;/precision&gt;     &lt;relationshipOrder&gt;0&lt;/relationshipOrder&gt; &lt;reparentableMasterDetail&gt;false&lt;/reparentableMasterDetail&gt; &lt;required&gt;false&lt;/required&gt; &lt;restrictedAdminField&gt;false&lt;/restrictedAdminField&gt; &lt;scale&gt;0&lt;/scale&gt;  &lt;startingNumber&gt;0&lt;/startingNumber&gt; &lt;stripMarkup&gt;false&lt;/stripMarkup&gt;    &lt;trackFeedHistory&gt;true&lt;/trackFeedHistory&gt; &lt;trackHistory&gt;false&lt;/trackHistory&gt; &lt;trackTrending&gt;false&lt;/trackTrending&gt; &lt;type&gt;Lookup&lt;/type&gt; &lt;unique&gt;false&lt;/unique&gt;  &lt;visibleLines&gt;0&lt;/visibleLines&gt; &lt;writeRequiresMasterRead&gt;false&lt;/writeRequiresMasterRead&gt;&lt;/CustomField&gt;</Metadata>
+    </toolingEntityParticle>
+    <toolingEntityParticle DataType="string" DeveloperName="Name" ExtraTypeInfo="personname" IsApiFilterable="true" IsCreatable="true" IsUpdatable="true" Label="Last Name" Length="80" MasterLabel="Name" Name="LastName" QualifiedApiName="LastName"/>
+    <toolingEntityParticle DataType="string" DeveloperName="Name" ExtraTypeInfo="personname" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="First Name" Length="40" MasterLabel="Name" Name="FirstName" QualifiedApiName="FirstName"/>
+    <toolingEntityParticle DataType="picklist" DeveloperName="Name" ExtraTypeInfo="personname" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Salutation" Length="40" MasterLabel="Name" Name="Salutation" QualifiedApiName="Salutation"/>
+    <toolingEntityParticle DataType="string" DeveloperName="Name" ExtraTypeInfo="personname" IsApiFilterable="true" Label="Full Name" Length="121" MasterLabel="Name" Name="Name" QualifiedApiName="Name"/>
+    <toolingEntityParticle DataType="reference" DeveloperName="RecordType" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Record Type ID" Length="18" MasterLabel="Contact Record Type" Name="RecordTypeId" QualifiedApiName="RecordTypeId">
+      <Metadata>&lt;CustomField xmlns="http://soap.sforce.com/2006/04/metadata"   &gt; &lt;fullName&gt;Contact.RecordTypeId&lt;/fullName&gt;    &lt;caseSensitive&gt;false&lt;/caseSensitive&gt;    &lt;deprecated&gt;false&lt;/deprecated&gt;   &lt;encrypted&gt;false&lt;/encrypted&gt; &lt;escapeMarkup&gt;false&lt;/escapeMarkup&gt;  &lt;externalId&gt;false&lt;/externalId&gt;     &lt;isAIPredictionField&gt;false&lt;/isAIPredictionField&gt;  &lt;isConvertLeadDisabled&gt;false&lt;/isConvertLeadDisabled&gt; &lt;isFilteringDisabled&gt;false&lt;/isFilteringDisabled&gt; &lt;isNameField&gt;false&lt;/isNameField&gt; &lt;isSortingDisabled&gt;false&lt;/isSortingDisabled&gt;  &lt;length&gt;0&lt;/length&gt;     &lt;populateExistingRows&gt;false&lt;/populateExistingRows&gt; &lt;precision&gt;0&lt;/precision&gt;     &lt;relationshipOrder&gt;0&lt;/relationshipOrder&gt; &lt;reparentableMasterDetail&gt;false&lt;/reparentableMasterDetail&gt; &lt;required&gt;false&lt;/required&gt; &lt;restrictedAdminField&gt;false&lt;/restrictedAdminField&gt; &lt;scale&gt;0&lt;/scale&gt;  &lt;startingNumber&gt;0&lt;/startingNumber&gt; &lt;stripMarkup&gt;false&lt;/stripMarkup&gt;    &lt;trackFeedHistory&gt;false&lt;/trackFeedHistory&gt; &lt;trackHistory&gt;false&lt;/trackHistory&gt; &lt;trackTrending&gt;false&lt;/trackTrending&gt;  &lt;unique&gt;false&lt;/unique&gt;  &lt;visibleLines&gt;0&lt;/visibleLines&gt; &lt;writeRequiresMasterRead&gt;false&lt;/writeRequiresMasterRead&gt;&lt;/CustomField&gt;</Metadata>
+    </toolingEntityParticle>
+    <toolingEntityParticle DataType="textarea" DeveloperName="OtherAddress" ExtraTypeInfo="plaintextarea" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Other Street" Length="255" MasterLabel="Other Address" Name="OtherStreet" QualifiedApiName="OtherStreet"/>
+    <toolingEntityParticle DataType="string" DeveloperName="OtherAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Other City" Length="40" MasterLabel="Other Address" Name="OtherCity" QualifiedApiName="OtherCity"/>
+    <toolingEntityParticle DataType="string" DeveloperName="OtherAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Other State/Province" Length="80" MasterLabel="Other Address" Name="OtherState" QualifiedApiName="OtherState"/>
+    <toolingEntityParticle DataType="string" DeveloperName="OtherAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Other Zip/Postal Code" Length="20" MasterLabel="Other Address" Name="OtherPostalCode" QualifiedApiName="OtherPostalCode"/>
+    <toolingEntityParticle DataType="string" DeveloperName="OtherAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Other Country" Length="80" MasterLabel="Other Address" Name="OtherCountry" QualifiedApiName="OtherCountry"/>
+    <toolingEntityParticle DataType="picklist" DeveloperName="OtherAddress" IsApiFilterable="true" IsCreatable="true" IsDependentPicklist="true" IsNillable="true" IsUpdatable="true" Label="Other State/Province Code" Length="10" MasterLabel="Other Address" Name="OtherStateCode" QualifiedApiName="OtherStateCode"/>
+    <toolingEntityParticle DataType="picklist" DeveloperName="OtherAddress" IsApiFilterable="true" IsCreatable="true" IsDefaultedOnCreate="true" IsNillable="true" IsUpdatable="true" Label="Other Country Code" Length="10" MasterLabel="Other Address" Name="OtherCountryCode" QualifiedApiName="OtherCountryCode"/>
+    <toolingEntityParticle DataType="double" DeveloperName="OtherAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Other Latitude" MasterLabel="Other Address" Name="OtherLatitude" Precision="18" QualifiedApiName="OtherLatitude" Scale="15"/>
+    <toolingEntityParticle DataType="double" DeveloperName="OtherAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Other Longitude" MasterLabel="Other Address" Name="OtherLongitude" Precision="18" QualifiedApiName="OtherLongitude" Scale="15"/>
+    <toolingEntityParticle DataType="picklist" DeveloperName="OtherAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Other Geocode Accuracy" Length="40" MasterLabel="Other Address" Name="OtherGeocodeAccuracy" QualifiedApiName="OtherGeocodeAccuracy"/>
+    <toolingEntityParticle DataType="address" DeveloperName="OtherAddress" IsApiFilterable="true" IsNillable="true" Label="Other Address" MasterLabel="Other Address" Name="OtherAddress" QualifiedApiName="OtherAddress"/>
+    <toolingEntityParticle DataType="textarea" DeveloperName="MailingAddress" ExtraTypeInfo="plaintextarea" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Mailing Street" Length="255" MasterLabel="Mailing Address" Name="MailingStreet" QualifiedApiName="MailingStreet"/>
+    <toolingEntityParticle DataType="string" DeveloperName="MailingAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Mailing City" Length="40" MasterLabel="Mailing Address" Name="MailingCity" QualifiedApiName="MailingCity"/>
+    <toolingEntityParticle DataType="string" DeveloperName="MailingAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Mailing State/Province" Length="80" MasterLabel="Mailing Address" Name="MailingState" QualifiedApiName="MailingState"/>
+    <toolingEntityParticle DataType="string" DeveloperName="MailingAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Mailing Zip/Postal Code" Length="20" MasterLabel="Mailing Address" Name="MailingPostalCode" QualifiedApiName="MailingPostalCode"/>
+    <toolingEntityParticle DataType="string" DeveloperName="MailingAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Mailing Country" Length="80" MasterLabel="Mailing Address" Name="MailingCountry" QualifiedApiName="MailingCountry"/>
+    <toolingEntityParticle DataType="picklist" DeveloperName="MailingAddress" IsApiFilterable="true" IsCreatable="true" IsDependentPicklist="true" IsNillable="true" IsUpdatable="true" Label="Mailing State/Province Code" Length="10" MasterLabel="Mailing Address" Name="MailingStateCode" QualifiedApiName="MailingStateCode"/>
+    <toolingEntityParticle DataType="picklist" DeveloperName="MailingAddress" IsApiFilterable="true" IsCreatable="true" IsDefaultedOnCreate="true" IsNillable="true" IsUpdatable="true" Label="Mailing Country Code" Length="10" MasterLabel="Mailing Address" Name="MailingCountryCode" QualifiedApiName="MailingCountryCode"/>
+    <toolingEntityParticle DataType="double" DeveloperName="MailingAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Mailing Latitude" MasterLabel="Mailing Address" Name="MailingLatitude" Precision="18" QualifiedApiName="MailingLatitude" Scale="15"/>
+    <toolingEntityParticle DataType="double" DeveloperName="MailingAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Mailing Longitude" MasterLabel="Mailing Address" Name="MailingLongitude" Precision="18" QualifiedApiName="MailingLongitude" Scale="15"/>
+    <toolingEntityParticle DataType="picklist" DeveloperName="MailingAddress" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Mailing Geocode Accuracy" Length="40" MasterLabel="Mailing Address" Name="MailingGeocodeAccuracy" QualifiedApiName="MailingGeocodeAccuracy"/>
+    <toolingEntityParticle DataType="address" DeveloperName="MailingAddress" IsApiFilterable="true" IsNillable="true" Label="Mailing Address" MasterLabel="Mailing Address" Name="MailingAddress" QualifiedApiName="MailingAddress"/>
+    <toolingEntityParticle DataType="phone" DeveloperName="Phone" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Business Phone" Length="40" MasterLabel="Phone" Name="Phone" QualifiedApiName="Phone"/>
+    <toolingEntityParticle DataType="phone" DeveloperName="Fax" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Business Fax" Length="40" MasterLabel="Fax" Name="Fax" QualifiedApiName="Fax"/>
+    <toolingEntityParticle DataType="phone" DeveloperName="MobilePhone" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Mobile Phone" Length="40" MasterLabel="Mobile" Name="MobilePhone" QualifiedApiName="MobilePhone"/>
+    <toolingEntityParticle DataType="phone" DeveloperName="HomePhone" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Home Phone" Length="40" MasterLabel="Home Phone" Name="HomePhone" QualifiedApiName="HomePhone"/>
+    <toolingEntityParticle DataType="phone" DeveloperName="OtherPhone" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Other Phone" Length="40" MasterLabel="Other Phone" Name="OtherPhone" QualifiedApiName="OtherPhone"/>
+    <toolingEntityParticle DataType="phone" DeveloperName="AssistantPhone" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Asst. Phone" Length="40" MasterLabel="Asst. Phone" Name="AssistantPhone" QualifiedApiName="AssistantPhone"/>
+    <toolingEntityParticle DataType="reference" DeveloperName="ReportsTo" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Reports To ID" Length="18" MasterLabel="Reports To" Name="ReportsToId" QualifiedApiName="ReportsToId">
+      <Metadata>&lt;CustomField xmlns="http://soap.sforce.com/2006/04/metadata"   &gt; &lt;fullName&gt;Contact.ReportsToId&lt;/fullName&gt;    &lt;caseSensitive&gt;false&lt;/caseSensitive&gt;    &lt;deprecated&gt;false&lt;/deprecated&gt;   &lt;encrypted&gt;false&lt;/encrypted&gt; &lt;escapeMarkup&gt;false&lt;/escapeMarkup&gt;  &lt;externalId&gt;false&lt;/externalId&gt;     &lt;isAIPredictionField&gt;false&lt;/isAIPredictionField&gt;  &lt;isConvertLeadDisabled&gt;false&lt;/isConvertLeadDisabled&gt; &lt;isFilteringDisabled&gt;false&lt;/isFilteringDisabled&gt; &lt;isNameField&gt;false&lt;/isNameField&gt; &lt;isSortingDisabled&gt;false&lt;/isSortingDisabled&gt;  &lt;length&gt;0&lt;/length&gt;     &lt;populateExistingRows&gt;false&lt;/populateExistingRows&gt; &lt;precision&gt;0&lt;/precision&gt;     &lt;relationshipOrder&gt;0&lt;/relationshipOrder&gt; &lt;reparentableMasterDetail&gt;false&lt;/reparentableMasterDetail&gt; &lt;required&gt;false&lt;/required&gt; &lt;restrictedAdminField&gt;false&lt;/restrictedAdminField&gt; &lt;scale&gt;0&lt;/scale&gt;  &lt;startingNumber&gt;0&lt;/startingNumber&gt; &lt;stripMarkup&gt;false&lt;/stripMarkup&gt;    &lt;trackFeedHistory&gt;false&lt;/trackFeedHistory&gt; &lt;trackHistory&gt;false&lt;/trackHistory&gt; &lt;trackTrending&gt;false&lt;/trackTrending&gt; &lt;type&gt;Lookup&lt;/type&gt; &lt;unique&gt;false&lt;/unique&gt;  &lt;visibleLines&gt;0&lt;/visibleLines&gt; &lt;writeRequiresMasterRead&gt;false&lt;/writeRequiresMasterRead&gt;&lt;/CustomField&gt;</Metadata>
+    </toolingEntityParticle>
+    <toolingEntityParticle DataType="email" DeveloperName="Email" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Email" Length="80" MasterLabel="Email" Name="Email" QualifiedApiName="Email"/>
+    <toolingEntityParticle DataType="string" DeveloperName="Title" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Title" Length="128" MasterLabel="Title" Name="Title" QualifiedApiName="Title"/>
+    <toolingEntityParticle DataType="string" DeveloperName="Department" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Department" Length="80" MasterLabel="Department" Name="Department" QualifiedApiName="Department"/>
+    <toolingEntityParticle DataType="string" DeveloperName="AssistantName" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Assistant's Name" Length="40" MasterLabel="Assistant" Name="AssistantName" QualifiedApiName="AssistantName"/>
+    <toolingEntityParticle DataType="picklist" DeveloperName="LeadSource" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Lead Source" Length="40" MasterLabel="Lead Source" Name="LeadSource" QualifiedApiName="LeadSource"/>
+    <toolingEntityParticle DataType="date" DeveloperName="Birthdate" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Birthdate" MasterLabel="Birthdate" Name="Birthdate" QualifiedApiName="Birthdate"/>
+    <toolingEntityParticle DataType="textarea" DeveloperName="Description" ExtraTypeInfo="plaintextarea" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Contact Description" Length="32000" MasterLabel="Description" Name="Description" QualifiedApiName="Description"/>
+    <toolingEntityParticle DataType="reference" DeveloperName="Owner" IsApiFilterable="true" IsCreatable="true" IsDefaultedOnCreate="true" IsUpdatable="true" Label="Owner ID" Length="18" MasterLabel="Contact Owner" Name="OwnerId" QualifiedApiName="OwnerId">
+      <Metadata>&lt;CustomField xmlns="http://soap.sforce.com/2006/04/metadata"   &gt; &lt;fullName&gt;Contact.OwnerId&lt;/fullName&gt;    &lt;caseSensitive&gt;false&lt;/caseSensitive&gt;    &lt;deprecated&gt;false&lt;/deprecated&gt;   &lt;encrypted&gt;false&lt;/encrypted&gt; &lt;escapeMarkup&gt;false&lt;/escapeMarkup&gt;  &lt;externalId&gt;false&lt;/externalId&gt;     &lt;isAIPredictionField&gt;false&lt;/isAIPredictionField&gt;  &lt;isConvertLeadDisabled&gt;false&lt;/isConvertLeadDisabled&gt; &lt;isFilteringDisabled&gt;false&lt;/isFilteringDisabled&gt; &lt;isNameField&gt;false&lt;/isNameField&gt; &lt;isSortingDisabled&gt;false&lt;/isSortingDisabled&gt;  &lt;length&gt;0&lt;/length&gt;     &lt;populateExistingRows&gt;false&lt;/populateExistingRows&gt; &lt;precision&gt;0&lt;/precision&gt;     &lt;relationshipOrder&gt;0&lt;/relationshipOrder&gt; &lt;reparentableMasterDetail&gt;false&lt;/reparentableMasterDetail&gt; &lt;required&gt;false&lt;/required&gt; &lt;restrictedAdminField&gt;false&lt;/restrictedAdminField&gt; &lt;scale&gt;0&lt;/scale&gt;  &lt;startingNumber&gt;0&lt;/startingNumber&gt; &lt;stripMarkup&gt;false&lt;/stripMarkup&gt;    &lt;trackFeedHistory&gt;true&lt;/trackFeedHistory&gt; &lt;trackHistory&gt;false&lt;/trackHistory&gt; &lt;trackTrending&gt;false&lt;/trackTrending&gt; &lt;type&gt;Lookup&lt;/type&gt; &lt;unique&gt;false&lt;/unique&gt;  &lt;visibleLines&gt;0&lt;/visibleLines&gt; &lt;writeRequiresMasterRead&gt;false&lt;/writeRequiresMasterRead&gt;&lt;/CustomField&gt;</Metadata>
+    </toolingEntityParticle>
+    <toolingEntityParticle DataType="boolean" DeveloperName="HasOptedOutOfEmail" IsApiFilterable="true" IsCreatable="true" IsDefaultedOnCreate="true" IsUpdatable="true" Label="Email Opt Out" MasterLabel="Email Opt Out" Name="HasOptedOutOfEmail" QualifiedApiName="HasOptedOutOfEmail"/>
+    <toolingEntityParticle DataType="boolean" DeveloperName="HasOptedOutOfFax" IsApiFilterable="true" IsCreatable="true" IsDefaultedOnCreate="true" IsUpdatable="true" Label="Fax Opt Out" MasterLabel="Fax Opt Out" Name="HasOptedOutOfFax" QualifiedApiName="HasOptedOutOfFax"/>
+    <toolingEntityParticle DataType="boolean" DeveloperName="DoNotCall" IsApiFilterable="true" IsCreatable="true" IsDefaultedOnCreate="true" IsUpdatable="true" Label="Do Not Call" MasterLabel="Do Not Call" Name="DoNotCall" QualifiedApiName="DoNotCall"/>
+    <toolingEntityParticle DataType="datetime" DeveloperName="CreatedDate" IsApiFilterable="true" IsCreatable="true" IsDefaultedOnCreate="true" Label="Created Date" MasterLabel="Created Date" Name="CreatedDate" QualifiedApiName="CreatedDate"/>
+    <toolingEntityParticle DataType="reference" DeveloperName="CreatedBy" IsApiFilterable="true" IsCreatable="true" IsDefaultedOnCreate="true" Label="Created By ID" Length="18" MasterLabel="Created By" Name="CreatedById" QualifiedApiName="CreatedById">
+      <Metadata>&lt;CustomField xmlns="http://soap.sforce.com/2006/04/metadata"   &gt; &lt;fullName&gt;Contact.CreatedById&lt;/fullName&gt;    &lt;caseSensitive&gt;false&lt;/caseSensitive&gt;    &lt;deprecated&gt;false&lt;/deprecated&gt;   &lt;encrypted&gt;false&lt;/encrypted&gt; &lt;escapeMarkup&gt;false&lt;/escapeMarkup&gt;  &lt;externalId&gt;false&lt;/externalId&gt;     &lt;isAIPredictionField&gt;false&lt;/isAIPredictionField&gt;  &lt;isConvertLeadDisabled&gt;false&lt;/isConvertLeadDisabled&gt; &lt;isFilteringDisabled&gt;false&lt;/isFilteringDisabled&gt; &lt;isNameField&gt;false&lt;/isNameField&gt; &lt;isSortingDisabled&gt;false&lt;/isSortingDisabled&gt;  &lt;length&gt;0&lt;/length&gt;     &lt;populateExistingRows&gt;false&lt;/populateExistingRows&gt; &lt;precision&gt;0&lt;/precision&gt;     &lt;relationshipOrder&gt;0&lt;/relationshipOrder&gt; &lt;reparentableMasterDetail&gt;false&lt;/reparentableMasterDetail&gt; &lt;required&gt;false&lt;/required&gt; &lt;restrictedAdminField&gt;false&lt;/restrictedAdminField&gt; &lt;scale&gt;0&lt;/scale&gt;  &lt;startingNumber&gt;0&lt;/startingNumber&gt; &lt;stripMarkup&gt;false&lt;/stripMarkup&gt;    &lt;trackFeedHistory&gt;false&lt;/trackFeedHistory&gt; &lt;trackHistory&gt;false&lt;/trackHistory&gt; &lt;trackTrending&gt;false&lt;/trackTrending&gt;  &lt;unique&gt;false&lt;/unique&gt;  &lt;visibleLines&gt;0&lt;/visibleLines&gt; &lt;writeRequiresMasterRead&gt;false&lt;/writeRequiresMasterRead&gt;&lt;/CustomField&gt;</Metadata>
+    </toolingEntityParticle>
+    <toolingEntityParticle DataType="datetime" DeveloperName="LastModifiedDate" IsApiFilterable="true" IsCreatable="true" IsDefaultedOnCreate="true" Label="Last Modified Date" MasterLabel="Last Modified Date" Name="LastModifiedDate" QualifiedApiName="LastModifiedDate"/>
+    <toolingEntityParticle DataType="reference" DeveloperName="LastModifiedBy" IsApiFilterable="true" IsCreatable="true" IsDefaultedOnCreate="true" Label="Last Modified By ID" Length="18" MasterLabel="Last Modified By" Name="LastModifiedById" QualifiedApiName="LastModifiedById">
+      <Metadata>&lt;CustomField xmlns="http://soap.sforce.com/2006/04/metadata"   &gt; &lt;fullName&gt;Contact.LastModifiedById&lt;/fullName&gt;    &lt;caseSensitive&gt;false&lt;/caseSensitive&gt;    &lt;deprecated&gt;false&lt;/deprecated&gt;   &lt;encrypted&gt;false&lt;/encrypted&gt; &lt;escapeMarkup&gt;false&lt;/escapeMarkup&gt;  &lt;externalId&gt;false&lt;/externalId&gt;     &lt;isAIPredictionField&gt;false&lt;/isAIPredictionField&gt;  &lt;isConvertLeadDisabled&gt;false&lt;/isConvertLeadDisabled&gt; &lt;isFilteringDisabled&gt;false&lt;/isFilteringDisabled&gt; &lt;isNameField&gt;false&lt;/isNameField&gt; &lt;isSortingDisabled&gt;false&lt;/isSortingDisabled&gt;  &lt;length&gt;0&lt;/length&gt;     &lt;populateExistingRows&gt;false&lt;/populateExistingRows&gt; &lt;precision&gt;0&lt;/precision&gt;     &lt;relationshipOrder&gt;0&lt;/relationshipOrder&gt; &lt;reparentableMasterDetail&gt;false&lt;/reparentableMasterDetail&gt; &lt;required&gt;false&lt;/required&gt; &lt;restrictedAdminField&gt;false&lt;/restrictedAdminField&gt; &lt;scale&gt;0&lt;/scale&gt;  &lt;startingNumber&gt;0&lt;/startingNumber&gt; &lt;stripMarkup&gt;false&lt;/stripMarkup&gt;    &lt;trackFeedHistory&gt;false&lt;/trackFeedHistory&gt; &lt;trackHistory&gt;false&lt;/trackHistory&gt; &lt;trackTrending&gt;false&lt;/trackTrending&gt;  &lt;unique&gt;false&lt;/unique&gt;  &lt;visibleLines&gt;0&lt;/visibleLines&gt; &lt;writeRequiresMasterRead&gt;false&lt;/writeRequiresMasterRead&gt;&lt;/CustomField&gt;</Metadata>
+    </toolingEntityParticle>
+    <toolingEntityParticle DataType="datetime" DeveloperName="SystemModstamp" IsApiFilterable="true" IsDefaultedOnCreate="true" Label="System Modstamp" MasterLabel="System Modstamp" Name="SystemModstamp" QualifiedApiName="SystemModstamp"/>
+    <toolingEntityParticle DataType="date" DeveloperName="LastActivityDate" IsApiFilterable="true" IsNillable="true" Label="Last Activity" MasterLabel="Last Activity" Name="LastActivityDate" QualifiedApiName="LastActivityDate"/>
+    <toolingEntityParticle DataType="datetime" DeveloperName="LastCURequestDate" IsApiFilterable="true" IsNillable="true" Label="Last Stay-in-Touch Request Date" MasterLabel="Last Stay-in-Touch Request Date" Name="LastCURequestDate" QualifiedApiName="LastCURequestDate"/>
+    <toolingEntityParticle DataType="datetime" DeveloperName="LastCUUpdateDate" IsApiFilterable="true" IsNillable="true" Label="Last Stay-in-Touch Save Date" MasterLabel="Last Stay-in-Touch Save Date" Name="LastCUUpdateDate" QualifiedApiName="LastCUUpdateDate"/>
+    <toolingEntityParticle DataType="string" DeveloperName="AccountName" IsApiFilterable="true" IsNillable="true" Label="Account Name" Length="255" MasterLabel="Account Name" Name="AccountName" QualifiedApiName="AccountName"/>
+    <toolingEntityParticle DataType="string" DeveloperName="ReportsToName" IsApiFilterable="true" IsNillable="true" Label="Reports To Name" Length="121" MasterLabel="Reports To Name" Name="ReportsToName" QualifiedApiName="ReportsToName"/>
+    <toolingEntityParticle DataType="datetime" DeveloperName="LastViewedDate" IsApiFilterable="true" IsNillable="true" Label="Last Viewed Date" MasterLabel="Last Viewed Date" Name="LastViewedDate" QualifiedApiName="LastViewedDate"/>
+    <toolingEntityParticle DataType="datetime" DeveloperName="LastReferencedDate" IsApiFilterable="true" IsNillable="true" Label="Last Referenced Date" MasterLabel="Last Referenced Date" Name="LastReferencedDate" QualifiedApiName="LastReferencedDate"/>
+    <toolingEntityParticle DataType="string" DeveloperName="EmailBouncedReason" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Email Bounced Reason" Length="255" MasterLabel="Email Bounced Reason" Name="EmailBouncedReason" QualifiedApiName="EmailBouncedReason"/>
+    <toolingEntityParticle DataType="datetime" DeveloperName="EmailBouncedDate" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Email Bounced Date" MasterLabel="Email Bounced Date" Name="EmailBouncedDate" QualifiedApiName="EmailBouncedDate"/>
+    <toolingEntityParticle DataType="boolean" DeveloperName="IsEmailBounced" IsApiFilterable="true" IsDefaultedOnCreate="true" Label="Is Email Bounced" MasterLabel="Is Email Bounced" Name="IsEmailBounced" QualifiedApiName="IsEmailBounced"/>
+    <toolingEntityParticle DataType="url" DeveloperName="PhotoUrl" ExtraTypeInfo="imageurl" IsApiFilterable="true" IsNillable="true" Label="Photo URL" Length="255" MasterLabel="Photo URL" Name="PhotoUrl" QualifiedApiName="PhotoUrl"/>
+    <toolingEntityParticle DataType="string" DeveloperName="Jigsaw" IsApiFilterable="true" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Data.com Key" Length="20" MasterLabel="Data.com Key" Name="Jigsaw" QualifiedApiName="Jigsaw"/>
+    <toolingEntityParticle DataType="string" DeveloperName="JigsawContact" IsApiFilterable="true" IsNillable="true" Label="Jigsaw Contact ID" Length="20" MasterLabel="Jigsaw Contact Id" Name="JigsawContactId" QualifiedApiName="JigsawContactId"/>
+    <toolingEntityParticle DataType="datetime" DeveloperName="ConnectionReceivedDate" IsApiFilterable="true" IsNillable="true" Label="Received Connection Date" MasterLabel="Received Connection Date" Name="ConnectionReceivedDate" QualifiedApiName="ConnectionReceivedDate"/>
+    <toolingEntityParticle DataType="datetime" DeveloperName="ConnectionSentDate" IsApiFilterable="true" IsNillable="true" Label="Sent Connection Date" MasterLabel="Sent Connection Date" Name="ConnectionSentDate" QualifiedApiName="ConnectionSentDate"/>
+    <toolingEntityParticle DataType="encryptedstring" DeveloperName="Encrypted_Text" InlineHelpText="Example encrypted text field" IsCreatable="true" IsNillable="true" IsUpdatable="true" Label="Encrypted Text" Length="30" MasterLabel="Encrypted Text" Name="Encrypted_Text__c" QualifiedApiName="Encrypted_Text__c"/>
+  </entityParticles>
+  <childRelationships>
+    <toolingRelationshipDomain ChildSobjectId="Contract" FieldId="Contract.CustomerSigned" ParentSobjectId="Contact" RelationshipName="ContractsSigned"/>
+    <toolingRelationshipDomain ChildSobjectId="ContractContactRole" FieldId="ContractContactRole.Contact" ParentSobjectId="Contact" RelationshipName="ContractContactRoles"/>
+    <toolingRelationshipDomain ChildSobjectId="EntityHistory" FieldId="EntityHistory.Parent" ParentSobjectId="Contact" RelationshipName="EntityHistories"/>
+    <toolingRelationshipDomain ChildSobjectId="EmailStatus" FieldId="EmailStatus.Who" ParentSobjectId="Contact" RelationshipName="EmailStatuses"/>
+    <toolingRelationshipDomain ChildSobjectId="CampaignMember" FieldId="CampaignMember.Contact" ParentSobjectId="Contact" RelationshipName="CampaignMembers"/>
+    <toolingRelationshipDomain ChildSobjectId="Opportunity" FieldId="Opportunity.Contact" ParentSobjectId="Contact" RelationshipName="Opportunities"/>
+    <toolingRelationshipDomain ChildSobjectId="OpportunityContactRole" FieldId="OpportunityContactRole.Contact" ParentSobjectId="Contact" RelationshipName="OpportunityContactRoles"/>
+    <toolingRelationshipDomain ChildSobjectId="Attachment" FieldId="Attachment.Parent" ParentSobjectId="Contact" RelationshipName="Attachments"/>
+    <toolingRelationshipDomain ChildSobjectId="Asset" FieldId="Asset.Contact" ParentSobjectId="Contact" RelationshipName="Assets"/>
+    <toolingRelationshipDomain ChildSobjectId="Case" FieldId="Case.Contact" ParentSobjectId="Contact" RelationshipName="Cases"/>
+    <toolingRelationshipDomain ChildSobjectId="CaseContactRole" FieldId="CaseContactRole.Contact" ParentSobjectId="Contact" RelationshipName="CaseContactRoles"/>
+    <toolingRelationshipDomain ChildSobjectId="ContentDocumentLink" FieldId="ContentDocumentLink.LinkedEntity" ParentSobjectId="Contact" RelationshipName="ContentDocumentLinks"/>
+    <toolingRelationshipDomain ChildSobjectId="AttachedContentDocument" FieldId="AttachedContentDocument.LinkedEntity" ParentSobjectId="Contact" RelationshipName="AttachedContentDocuments"/>
+    <toolingRelationshipDomain ChildSobjectId="CombinedAttachment" FieldId="CombinedAttachment.Parent" ParentSobjectId="Contact" RelationshipName="CombinedAttachments"/>
+    <toolingRelationshipDomain ChildSobjectId="Note" FieldId="Note.Parent" ParentSobjectId="Contact" RelationshipName="Notes"/>
+    <toolingRelationshipDomain ChildSobjectId="NoteAndAttachment" FieldId="NoteAndAttachment.Parent" ParentSobjectId="Contact" RelationshipName="NotesAndAttachments"/>
+    <toolingRelationshipDomain ChildSobjectId="EntitySubscription" FieldId="EntitySubscription.Parent" ParentSobjectId="Contact" RelationshipName="FeedSubscriptionsForEntity"/>
+    <toolingRelationshipDomain ChildSobjectId="ProcessInstance" FieldId="ProcessInstance.TargetObject" ParentSobjectId="Contact" RelationshipName="ProcessInstances"/>
+    <toolingRelationshipDomain ChildSobjectId="ProcessInstanceHistory" FieldId="ProcessInstanceHistory.TargetObject" ParentSobjectId="Contact" RelationshipName="ProcessSteps"/>
+    <toolingRelationshipDomain ChildSobjectId="Task" FieldId="Task.Who" ParentSobjectId="Contact" RelationshipName="Tasks"/>
+    <toolingRelationshipDomain ChildSobjectId="Event" FieldId="Event.Who" ParentSobjectId="Contact" RelationshipName="Events"/>
+    <toolingRelationshipDomain ChildSobjectId="TaskRelation" FieldId="TaskRelation.Relation" ParentSobjectId="Contact" RelationshipName="TaskRelations"/>
+    <toolingRelationshipDomain ChildSobjectId="EventRelation" FieldId="EventRelation.Relation" ParentSobjectId="Contact" RelationshipName="EventRelations"/>
+    <toolingRelationshipDomain ChildSobjectId="TaskWhoRelation" FieldId="TaskWhoRelation.Relation" ParentSobjectId="Contact" RelationshipName="TaskWhoRelations"/>
+    <toolingRelationshipDomain ChildSobjectId="EventWhoRelation" FieldId="EventWhoRelation.Relation" ParentSobjectId="Contact" RelationshipName="EventWhoRelations"/>
+    <toolingRelationshipDomain ChildSobjectId="AcceptedEventRelation" FieldId="AcceptedEventRelation.Relation" ParentSobjectId="Contact" RelationshipName="AcceptedEventRelations"/>
+    <toolingRelationshipDomain ChildSobjectId="UndecidedEventRelation" FieldId="UndecidedEventRelation.Relation" ParentSobjectId="Contact" RelationshipName="UndecidedEventRelations"/>
+    <toolingRelationshipDomain ChildSobjectId="DeclinedEventRelation" FieldId="DeclinedEventRelation.Relation" ParentSobjectId="Contact" RelationshipName="DeclinedEventRelations"/>
+    <toolingRelationshipDomain ChildSobjectId="OpenActivity" FieldId="OpenActivity.Who" ParentSobjectId="Contact" RelationshipName="OpenActivities"/>
+    <toolingRelationshipDomain ChildSobjectId="ActivityHistory" FieldId="ActivityHistory.Who" ParentSobjectId="Contact" RelationshipName="ActivityHistories"/>
+    <toolingRelationshipDomain ChildSobjectId="TopicAssignment" FieldId="TopicAssignment.Entity" ParentSobjectId="Contact" RelationshipName="TopicAssignments"/>
+    <toolingRelationshipDomain ChildSobjectId="User" FieldId="User.Contact" ParentSobjectId="Contact" RelationshipName="Users"/>
+    <toolingRelationshipDomain ChildSobjectId="CombinedNote" FieldId="CombinedNote.Parent" ParentSobjectId="Contact" RelationshipName="CombinedNotes"/>
+    <toolingRelationshipDomain ChildSobjectId="EmailMessageRelation" FieldId="EmailMessageRelation.Relation" ParentSobjectId="Contact" RelationshipName="EmailMessageRelations"/>
+    <toolingRelationshipDomain ChildSobjectId="CleanInfo" FieldId="CleanInfo.TargetEntity" ParentSobjectId="Contact" RelationshipName="CleanInfos"/>
+    <toolingRelationshipDomain ChildSobjectId="AccountContactRole" FieldId="AccountContactRole.Contact" ParentSobjectId="Contact" RelationshipName="AccountContactRoles"/>
+    <toolingRelationshipDomain ChildSobjectId="Quote" FieldId="Quote.Contact" ParentSobjectId="Contact" RelationshipName="Quotes"/>
+    <toolingRelationshipDomain ChildSobjectId="WorkOrder" FieldId="WorkOrder.Contact" ParentSobjectId="Contact" RelationshipName="WorkOrders"/>
+    <toolingRelationshipDomain ChildSobjectId="CollaborationGroupRecord" FieldId="CollaborationGroupRecord.Record" ParentSobjectId="Contact" RelationshipName="RecordAssociatedGroups"/>
+    <toolingRelationshipDomain ChildSobjectId="LiveChatTranscript" FieldId="LiveChatTranscript.Contact" ParentSobjectId="Contact" RelationshipName="LiveChatTranscripts"/>
+    <toolingRelationshipDomain ChildSobjectId="SOSSession" FieldId="SOSSession.Contact" ParentSobjectId="Contact" RelationshipName="SOSSessions"/>
+    <toolingRelationshipDomain ChildSobjectId="NetworkActivityAudit" FieldId="NetworkActivityAudit.ParentEntity" ParentSobjectId="Contact" RelationshipName="ParentEntities"/>
+    <toolingRelationshipDomain ChildSobjectId="SocialPersona" FieldId="SocialPersona.Parent" ParentSobjectId="Contact" RelationshipName="Personas"/>
+    <toolingRelationshipDomain ChildSobjectId="SocialPost" FieldId="SocialPost.Who" ParentSobjectId="Contact" RelationshipName="Posts"/>
+    <toolingRelationshipDomain ChildSobjectId="WorkFeedbackRequest" FieldId="WorkFeedbackRequest.RelatedObject" ParentSobjectId="Contact" RelationshipName="RelatedObjects"/>
+    <toolingRelationshipDomain ChildSobjectId="DuplicateErrorLog" FieldId="DuplicateErrorLog.Record" ParentSobjectId="Contact" RelationshipName="DuplicateErrorLogs"/>
+    <toolingRelationshipDomain ChildSobjectId="DuplicateRecordItem" FieldId="DuplicateRecordItem.Record" ParentSobjectId="Contact" RelationshipName="DuplicateRecordItems"/>
+    <toolingRelationshipDomain ChildSobjectId="OutgoingEmailRelation" FieldId="OutgoingEmailRelation.Relation" ParentSobjectId="Contact" RelationshipName="OutgoingEmailRelations"/>
+    <toolingRelationshipDomain ChildSobjectId="CleanEntityError" FieldId="CleanEntityError.CleanEntity" ParentSobjectId="Contact" RelationshipName="CleanEntityErrors"/>
+    <toolingRelationshipDomain ChildSobjectId="ListEmailSentResult" FieldId="ListEmailSentResult.Recipient" ParentSobjectId="Contact" RelationshipName="ListEmailRecipients"/>
+    <toolingRelationshipDomain ChildSobjectId="RecordAction" FieldId="RecordAction.Record" ParentSobjectId="Contact" RelationshipName="RecordActions"/>
+    <toolingRelationshipDomain ChildSobjectId="ListEmailIndividualRecipient" FieldId="ListEmailIndividualRecipient.Recipient" ParentSobjectId="Contact" RelationshipName="ListEmailIndividualRecipients"/>
+    <toolingRelationshipDomain ChildSobjectId="UserEmailPreferredPerson" FieldId="UserEmailPreferredPerson.PersonRecord" ParentSobjectId="Contact" RelationshipName="PersonRecord"/>
+    <toolingRelationshipDomain ChildSobjectId="RecordActionHistory" FieldId="RecordActionHistory.ParentRecord" ParentSobjectId="Contact" RelationshipName="RecordActionHistories"/>
+    <toolingRelationshipDomain ChildSobjectId="ContactHistory" FieldId="ContactHistory.Contact" ParentSobjectId="Contact" RelationshipName="Histories"/>
+    <toolingRelationshipDomain ChildSobjectId="ContactFeed" FieldId="ContactFeed.Parent" ParentSobjectId="Contact" RelationshipName="Feeds"/>
+    <toolingRelationshipDomain ChildSobjectId="ContactShare" FieldId="ContactShare.Contact" ParentSobjectId="Contact" RelationshipName="Shares"/>
+    <toolingRelationshipDomain ChildSobjectId="01I0N000000hy2l" FieldId="01I0N000000hy2l.00N0N00000GpcLF" ParentSobjectId="Contact" RelationshipName="JuntionTests__r"/>
+  </childRelationships>
+  <standardValueSets>
+    <entry>
+      <key valueClass="string">LeadSource</key>
+      <value fullName="LeadSource" valueClass="sfValueSetMetadata">
+        <values>
+          <sfValueSetValueMetadata fullName="Advertisement" label="Advertisement"/>
+          <sfValueSetValueMetadata fullName="Employee Referral" label="Employee Referral"/>
+          <sfValueSetValueMetadata fullName="External Referral" label="External Referral"/>
+          <sfValueSetValueMetadata fullName="Partner" label="Partner"/>
+          <sfValueSetValueMetadata fullName="Public Relations" label="Public Relations"/>
+          <sfValueSetValueMetadata fullName="Seminar - Internal" label="Seminar - Internal"/>
+          <sfValueSetValueMetadata fullName="Seminar - Partner" label="Seminar - Partner"/>
+          <sfValueSetValueMetadata fullName="Trade Show" label="Trade Show"/>
+          <sfValueSetValueMetadata fullName="Web" label="Web"/>
+          <sfValueSetValueMetadata fullName="Word of mouth" label="Word of mouth"/>
+          <sfValueSetValueMetadata fullName="Other" label="Other"/>
+        </values>
+      </value>
+    </entry>
+    <entry>
+      <key valueClass="string">GeocodeAccuracy</key>
+      <value fullName="GeocodeAccuracy" restricted="true" valueClass="sfValueSetMetadata">
+        <values>
+          <sfValueSetValueMetadata fullName="Address" label="Address"/>
+          <sfValueSetValueMetadata fullName="NearAddress" label="NearAddress"/>
+          <sfValueSetValueMetadata fullName="Block" label="Block"/>
+          <sfValueSetValueMetadata fullName="Street" label="Street"/>
+          <sfValueSetValueMetadata fullName="ExtendedZip" label="ExtendedZip"/>
+          <sfValueSetValueMetadata fullName="Zip" label="Zip"/>
+          <sfValueSetValueMetadata fullName="Neighborhood" label="Neighborhood"/>
+          <sfValueSetValueMetadata fullName="City" label="City"/>
+          <sfValueSetValueMetadata fullName="County" label="County"/>
+          <sfValueSetValueMetadata fullName="State" label="State"/>
+          <sfValueSetValueMetadata fullName="Unknown" label="Unknown"/>
+        </values>
+      </value>
+    </entry>
+    <entry>
+      <key valueClass="string">StateCode</key>
+      <value fullName="StateCode" restricted="true" valueClass="sfValueSetMetadata">
+        <values>
+          <sfValueSetValueMetadata fullName="AC" label="Acre"/>
+          <sfValueSetValueMetadata fullName="AG" label="Agrigento"/>
+          <sfValueSetValueMetadata fullName="AG" label="Aguascalientes"/>
+          <sfValueSetValueMetadata fullName="AL" label="Alabama"/>
+          <sfValueSetValueMetadata fullName="AL" label="Alagoas"/>
+          <sfValueSetValueMetadata fullName="AK" label="Alaska"/>
+          <sfValueSetValueMetadata fullName="AB" label="Alberta"/>
+          <sfValueSetValueMetadata fullName="AL" label="Alessandria"/>
+          <sfValueSetValueMetadata fullName="AP" label="Amapá"/>
+          <sfValueSetValueMetadata fullName="AM" label="Amazonas"/>
+          <sfValueSetValueMetadata fullName="AN" label="Ancona"/>
+          <sfValueSetValueMetadata fullName="AN" label="Andaman and Nicobar Islands"/>
+          <sfValueSetValueMetadata fullName="AP" label="Andhra Pradesh"/>
+          <sfValueSetValueMetadata fullName="34" label="Anhui"/>
+          <sfValueSetValueMetadata fullName="AO" label="Aosta"/>
+          <sfValueSetValueMetadata fullName="AR" label="Arezzo"/>
+          <sfValueSetValueMetadata fullName="AZ" label="Arizona"/>
+          <sfValueSetValueMetadata fullName="AR" label="Arkansas"/>
+          <sfValueSetValueMetadata fullName="AR" label="Arunachal Pradesh"/>
+          <sfValueSetValueMetadata fullName="AP" label="Ascoli Piceno"/>
+          <sfValueSetValueMetadata fullName="AS" label="Assam"/>
+          <sfValueSetValueMetadata fullName="AT" label="Asti"/>
+          <sfValueSetValueMetadata fullName="ACT" label="Australian Capital Territory"/>
+          <sfValueSetValueMetadata fullName="AV" label="Avellino"/>
+          <sfValueSetValueMetadata fullName="BA" label="Bahia"/>
+          <sfValueSetValueMetadata fullName="BC" label="Baja California"/>
+          <sfValueSetValueMetadata fullName="BS" label="Baja California Sur"/>
+          <sfValueSetValueMetadata fullName="BA" label="Bari"/>
+          <sfValueSetValueMetadata fullName="BT" label="Barletta-Andria-Trani"/>
+          <sfValueSetValueMetadata fullName="11" label="Beijing"/>
+          <sfValueSetValueMetadata fullName="BL" label="Belluno"/>
+          <sfValueSetValueMetadata fullName="BN" label="Benevento"/>
+          <sfValueSetValueMetadata fullName="BG" label="Bergamo"/>
+          <sfValueSetValueMetadata fullName="BI" label="Biella"/>
+          <sfValueSetValueMetadata fullName="BR" label="Bihar"/>
+          <sfValueSetValueMetadata fullName="BO" label="Bologna"/>
+          <sfValueSetValueMetadata fullName="BZ" label="Bolzano"/>
+          <sfValueSetValueMetadata fullName="BS" label="Brescia"/>
+          <sfValueSetValueMetadata fullName="BR" label="Brindisi"/>
+          <sfValueSetValueMetadata fullName="BC" label="British Columbia"/>
+          <sfValueSetValueMetadata fullName="CA" label="Cagliari"/>
+          <sfValueSetValueMetadata fullName="CA" label="California"/>
+          <sfValueSetValueMetadata fullName="CL" label="Caltanissetta"/>
+          <sfValueSetValueMetadata fullName="CM" label="Campeche"/>
+          <sfValueSetValueMetadata fullName="CB" label="Campobasso"/>
+          <sfValueSetValueMetadata fullName="CI" label="Carbonia-Iglesias"/>
+          <sfValueSetValueMetadata fullName="CW" label="Carlow"/>
+          <sfValueSetValueMetadata fullName="CE" label="Caserta"/>
+          <sfValueSetValueMetadata fullName="CT" label="Catania"/>
+          <sfValueSetValueMetadata fullName="CZ" label="Catanzaro"/>
+          <sfValueSetValueMetadata fullName="CN" label="Cavan"/>
+          <sfValueSetValueMetadata fullName="CE" label="Ceará"/>
+          <sfValueSetValueMetadata fullName="CH" label="Chandigarh"/>
+          <sfValueSetValueMetadata fullName="CT" label="Chhattisgarh"/>
+          <sfValueSetValueMetadata fullName="CS" label="Chiapas"/>
+          <sfValueSetValueMetadata fullName="CH" label="Chieti"/>
+          <sfValueSetValueMetadata fullName="CH" label="Chihuahua"/>
+          <sfValueSetValueMetadata fullName="50" label="Chongqing"/>
+          <sfValueSetValueMetadata fullName="CE" label="Clare"/>
+          <sfValueSetValueMetadata fullName="CO" label="Coahuila"/>
+          <sfValueSetValueMetadata fullName="CL" label="Colima"/>
+          <sfValueSetValueMetadata fullName="CO" label="Colorado"/>
+          <sfValueSetValueMetadata fullName="CO" label="Como"/>
+          <sfValueSetValueMetadata fullName="CT" label="Connecticut"/>
+          <sfValueSetValueMetadata fullName="CO" label="Cork"/>
+          <sfValueSetValueMetadata fullName="CS" label="Cosenza"/>
+          <sfValueSetValueMetadata fullName="CR" label="Cremona"/>
+          <sfValueSetValueMetadata fullName="KR" label="Crotone"/>
+          <sfValueSetValueMetadata fullName="CN" label="Cuneo"/>
+          <sfValueSetValueMetadata fullName="DN" label="Dadra and Nagar Haveli"/>
+          <sfValueSetValueMetadata fullName="DD" label="Daman and Diu"/>
+          <sfValueSetValueMetadata fullName="DE" label="Delaware"/>
+          <sfValueSetValueMetadata fullName="DL" label="Delhi"/>
+          <sfValueSetValueMetadata fullName="DC" label="District of Columbia"/>
+          <sfValueSetValueMetadata fullName="DF" label="Distrito Federal"/>
+          <sfValueSetValueMetadata fullName="DL" label="Donegal"/>
+          <sfValueSetValueMetadata fullName="D" label="Dublin"/>
+          <sfValueSetValueMetadata fullName="DG" label="Durango"/>
+          <sfValueSetValueMetadata fullName="EN" label="Enna"/>
+          <sfValueSetValueMetadata fullName="ES" label="Espírito Santo"/>
+          <sfValueSetValueMetadata fullName="DF" label="Federal District"/>
+          <sfValueSetValueMetadata fullName="FM" label="Fermo"/>
+          <sfValueSetValueMetadata fullName="FE" label="Ferrara"/>
+          <sfValueSetValueMetadata fullName="FI" label="Florence"/>
+          <sfValueSetValueMetadata fullName="FL" label="Florida"/>
+          <sfValueSetValueMetadata fullName="FG" label="Foggia"/>
+          <sfValueSetValueMetadata fullName="FC" label="Forlì-Cesena"/>
+          <sfValueSetValueMetadata fullName="FR" label="Frosinone"/>
+          <sfValueSetValueMetadata fullName="35" label="Fujian"/>
+          <sfValueSetValueMetadata fullName="G" label="Galway"/>
+          <sfValueSetValueMetadata fullName="62" label="Gansu"/>
+          <sfValueSetValueMetadata fullName="GE" label="Genoa"/>
+          <sfValueSetValueMetadata fullName="GA" label="Georgia"/>
+          <sfValueSetValueMetadata fullName="GA" label="Goa"/>
+          <sfValueSetValueMetadata fullName="GO" label="Goiás"/>
+          <sfValueSetValueMetadata fullName="GO" label="Gorizia"/>
+          <sfValueSetValueMetadata fullName="GR" label="Grosseto"/>
+          <sfValueSetValueMetadata fullName="GT" label="Guanajuato"/>
+          <sfValueSetValueMetadata fullName="44" label="Guangdong"/>
+          <sfValueSetValueMetadata fullName="45" label="Guangxi"/>
+          <sfValueSetValueMetadata fullName="GR" label="Guerrero"/>
+          <sfValueSetValueMetadata fullName="52" label="Guizhou"/>
+          <sfValueSetValueMetadata fullName="GJ" label="Gujarat"/>
+          <sfValueSetValueMetadata fullName="46" label="Hainan"/>
+          <sfValueSetValueMetadata fullName="HR" label="Haryana"/>
+          <sfValueSetValueMetadata fullName="HI" label="Hawaii"/>
+          <sfValueSetValueMetadata fullName="13" label="Hebei"/>
+          <sfValueSetValueMetadata fullName="23" label="Heilongjiang"/>
+          <sfValueSetValueMetadata fullName="41" label="Henan"/>
+          <sfValueSetValueMetadata fullName="HG" label="Hidalgo"/>
+          <sfValueSetValueMetadata fullName="HP" label="Himachal Pradesh"/>
+          <sfValueSetValueMetadata fullName="91" label="Hong Kong"/>
+          <sfValueSetValueMetadata fullName="42" label="Hubei"/>
+          <sfValueSetValueMetadata fullName="43" label="Hunan"/>
+          <sfValueSetValueMetadata fullName="ID" label="Idaho"/>
+          <sfValueSetValueMetadata fullName="IL" label="Illinois"/>
+          <sfValueSetValueMetadata fullName="IM" label="Imperia"/>
+          <sfValueSetValueMetadata fullName="IN" label="Indiana"/>
+          <sfValueSetValueMetadata fullName="IA" label="Iowa"/>
+          <sfValueSetValueMetadata fullName="IS" label="Isernia"/>
+          <sfValueSetValueMetadata fullName="JA" label="Jalisco"/>
+          <sfValueSetValueMetadata fullName="JK" label="Jammu and Kashmir"/>
+          <sfValueSetValueMetadata fullName="JH" label="Jharkhand"/>
+          <sfValueSetValueMetadata fullName="32" label="Jiangsu"/>
+          <sfValueSetValueMetadata fullName="36" label="Jiangxi"/>
+          <sfValueSetValueMetadata fullName="22" label="Jilin"/>
+          <sfValueSetValueMetadata fullName="KS" label="Kansas"/>
+          <sfValueSetValueMetadata fullName="KA" label="Karnataka"/>
+          <sfValueSetValueMetadata fullName="KY" label="Kentucky"/>
+          <sfValueSetValueMetadata fullName="KL" label="Kerala"/>
+          <sfValueSetValueMetadata fullName="KY" label="Kerry"/>
+          <sfValueSetValueMetadata fullName="KE" label="Kildare"/>
+          <sfValueSetValueMetadata fullName="KK" label="Kilkenny"/>
+          <sfValueSetValueMetadata fullName="AQ" label="L'Aquila"/>
+          <sfValueSetValueMetadata fullName="SP" label="La Spezia"/>
+          <sfValueSetValueMetadata fullName="LD" label="Lakshadweep"/>
+          <sfValueSetValueMetadata fullName="LS" label="Laois"/>
+          <sfValueSetValueMetadata fullName="LT" label="Latina"/>
+          <sfValueSetValueMetadata fullName="LE" label="Lecce"/>
+          <sfValueSetValueMetadata fullName="LC" label="Lecco"/>
+          <sfValueSetValueMetadata fullName="LM" label="Leitrim"/>
+          <sfValueSetValueMetadata fullName="21" label="Liaoning"/>
+          <sfValueSetValueMetadata fullName="LK" label="Limerick"/>
+          <sfValueSetValueMetadata fullName="LI" label="Livorno"/>
+          <sfValueSetValueMetadata fullName="LO" label="Lodi"/>
+          <sfValueSetValueMetadata fullName="LD" label="Longford"/>
+          <sfValueSetValueMetadata fullName="LA" label="Louisiana"/>
+          <sfValueSetValueMetadata fullName="LH" label="Louth"/>
+          <sfValueSetValueMetadata fullName="LU" label="Lucca"/>
+          <sfValueSetValueMetadata fullName="92" label="Macao"/>
+          <sfValueSetValueMetadata fullName="MC" label="Macerata"/>
+          <sfValueSetValueMetadata fullName="MP" label="Madhya Pradesh"/>
+          <sfValueSetValueMetadata fullName="MH" label="Maharashtra"/>
+          <sfValueSetValueMetadata fullName="ME" label="Maine"/>
+          <sfValueSetValueMetadata fullName="MN" label="Manipur"/>
+          <sfValueSetValueMetadata fullName="MB" label="Manitoba"/>
+          <sfValueSetValueMetadata fullName="MN" label="Mantua"/>
+          <sfValueSetValueMetadata fullName="MA" label="Maranhão"/>
+          <sfValueSetValueMetadata fullName="MD" label="Maryland"/>
+          <sfValueSetValueMetadata fullName="MS" label="Massa and Carrara"/>
+          <sfValueSetValueMetadata fullName="MA" label="Massachusetts"/>
+          <sfValueSetValueMetadata fullName="MT" label="Matera"/>
+          <sfValueSetValueMetadata fullName="MT" label="Mato Grosso"/>
+          <sfValueSetValueMetadata fullName="MS" label="Mato Grosso do Sul"/>
+          <sfValueSetValueMetadata fullName="MO" label="Mayo"/>
+          <sfValueSetValueMetadata fullName="MH" label="Meath"/>
+          <sfValueSetValueMetadata fullName="VS" label="Medio Campidano"/>
+          <sfValueSetValueMetadata fullName="ML" label="Meghalaya"/>
+          <sfValueSetValueMetadata fullName="ME" label="Messina"/>
+          <sfValueSetValueMetadata fullName="ME" label="Mexico State"/>
+          <sfValueSetValueMetadata fullName="MI" label="Michigan"/>
+          <sfValueSetValueMetadata fullName="MI" label="Michoacán"/>
+          <sfValueSetValueMetadata fullName="MI" label="Milan"/>
+          <sfValueSetValueMetadata fullName="MG" label="Minas Gerais"/>
+          <sfValueSetValueMetadata fullName="MN" label="Minnesota"/>
+          <sfValueSetValueMetadata fullName="MS" label="Mississippi"/>
+          <sfValueSetValueMetadata fullName="MO" label="Missouri"/>
+          <sfValueSetValueMetadata fullName="MZ" label="Mizoram"/>
+          <sfValueSetValueMetadata fullName="MO" label="Modena"/>
+          <sfValueSetValueMetadata fullName="MN" label="Monaghan"/>
+          <sfValueSetValueMetadata fullName="MT" label="Montana"/>
+          <sfValueSetValueMetadata fullName="MB" label="Monza and Brianza"/>
+          <sfValueSetValueMetadata fullName="MO" label="Morelos"/>
+          <sfValueSetValueMetadata fullName="NL" label="Nagaland"/>
+          <sfValueSetValueMetadata fullName="NA" label="Naples"/>
+          <sfValueSetValueMetadata fullName="NA" label="Nayarit"/>
+          <sfValueSetValueMetadata fullName="NE" label="Nebraska"/>
+          <sfValueSetValueMetadata fullName="15" label="Nei Mongol"/>
+          <sfValueSetValueMetadata fullName="NV" label="Nevada"/>
+          <sfValueSetValueMetadata fullName="NB" label="New Brunswick"/>
+          <sfValueSetValueMetadata fullName="NH" label="New Hampshire"/>
+          <sfValueSetValueMetadata fullName="NJ" label="New Jersey"/>
+          <sfValueSetValueMetadata fullName="NM" label="New Mexico"/>
+          <sfValueSetValueMetadata fullName="NSW" label="New South Wales"/>
+          <sfValueSetValueMetadata fullName="NY" label="New York"/>
+          <sfValueSetValueMetadata fullName="NL" label="Newfoundland and Labrador"/>
+          <sfValueSetValueMetadata fullName="64" label="Ningxia"/>
+          <sfValueSetValueMetadata fullName="NC" label="North Carolina"/>
+          <sfValueSetValueMetadata fullName="ND" label="North Dakota"/>
+          <sfValueSetValueMetadata fullName="NT" label="Northern Territory"/>
+          <sfValueSetValueMetadata fullName="NT" label="Northwest Territories"/>
+          <sfValueSetValueMetadata fullName="NS" label="Nova Scotia"/>
+          <sfValueSetValueMetadata fullName="NO" label="Novara"/>
+          <sfValueSetValueMetadata fullName="NL" label="Nuevo León"/>
+          <sfValueSetValueMetadata fullName="NU" label="Nunavut"/>
+          <sfValueSetValueMetadata fullName="NU" label="Nuoro"/>
+          <sfValueSetValueMetadata fullName="OA" label="Oaxaca"/>
+          <sfValueSetValueMetadata fullName="OR" label="Odisha"/>
+          <sfValueSetValueMetadata fullName="OY" label="Offaly"/>
+          <sfValueSetValueMetadata fullName="OG" label="Ogliastra"/>
+          <sfValueSetValueMetadata fullName="OH" label="Ohio"/>
+          <sfValueSetValueMetadata fullName="OK" label="Oklahoma"/>
+          <sfValueSetValueMetadata fullName="OT" label="Olbia-Tempio"/>
+          <sfValueSetValueMetadata fullName="ON" label="Ontario"/>
+          <sfValueSetValueMetadata fullName="OR" label="Oregon"/>
+          <sfValueSetValueMetadata fullName="OR" label="Oristano"/>
+          <sfValueSetValueMetadata fullName="PD" label="Padua"/>
+          <sfValueSetValueMetadata fullName="PA" label="Palermo"/>
+          <sfValueSetValueMetadata fullName="PR" label="Paraná"/>
+          <sfValueSetValueMetadata fullName="PB" label="Paraíba"/>
+          <sfValueSetValueMetadata fullName="PR" label="Parma"/>
+          <sfValueSetValueMetadata fullName="PA" label="Pará"/>
+          <sfValueSetValueMetadata fullName="PV" label="Pavia"/>
+          <sfValueSetValueMetadata fullName="PA" label="Pennsylvania"/>
+          <sfValueSetValueMetadata fullName="PE" label="Pernambuco"/>
+          <sfValueSetValueMetadata fullName="PG" label="Perugia"/>
+          <sfValueSetValueMetadata fullName="PU" label="Pesaro and Urbino"/>
+          <sfValueSetValueMetadata fullName="PE" label="Pescara"/>
+          <sfValueSetValueMetadata fullName="PC" label="Piacenza"/>
+          <sfValueSetValueMetadata fullName="PI" label="Piauí"/>
+          <sfValueSetValueMetadata fullName="PI" label="Pisa"/>
+          <sfValueSetValueMetadata fullName="PT" label="Pistoia"/>
+          <sfValueSetValueMetadata fullName="PN" label="Pordenone"/>
+          <sfValueSetValueMetadata fullName="PZ" label="Potenza"/>
+          <sfValueSetValueMetadata fullName="PO" label="Prato"/>
+          <sfValueSetValueMetadata fullName="PE" label="Prince Edward Island"/>
+          <sfValueSetValueMetadata fullName="PY" label="Puducherry"/>
+          <sfValueSetValueMetadata fullName="PB" label="Puebla"/>
+          <sfValueSetValueMetadata fullName="PB" label="Punjab"/>
+          <sfValueSetValueMetadata fullName="63" label="Qinghai"/>
+          <sfValueSetValueMetadata fullName="QC" label="Quebec"/>
+          <sfValueSetValueMetadata fullName="QLD" label="Queensland"/>
+          <sfValueSetValueMetadata fullName="QE" label="Querétaro"/>
+          <sfValueSetValueMetadata fullName="QR" label="Quintana Roo"/>
+          <sfValueSetValueMetadata fullName="RG" label="Ragusa"/>
+          <sfValueSetValueMetadata fullName="RJ" label="Rajasthan"/>
+          <sfValueSetValueMetadata fullName="RA" label="Ravenna"/>
+          <sfValueSetValueMetadata fullName="RC" label="Reggio Calabria"/>
+          <sfValueSetValueMetadata fullName="RE" label="Reggio Emilia"/>
+          <sfValueSetValueMetadata fullName="RI" label="Rhode Island"/>
+          <sfValueSetValueMetadata fullName="RI" label="Rieti"/>
+          <sfValueSetValueMetadata fullName="RN" label="Rimini"/>
+          <sfValueSetValueMetadata fullName="RN" label="Rio Grande do Norte"/>
+          <sfValueSetValueMetadata fullName="RS" label="Rio Grande do Sul"/>
+          <sfValueSetValueMetadata fullName="RJ" label="Rio de Janeiro"/>
+          <sfValueSetValueMetadata fullName="RM" label="Rome"/>
+          <sfValueSetValueMetadata fullName="RO" label="Rondônia"/>
+          <sfValueSetValueMetadata fullName="RR" label="Roraima"/>
+          <sfValueSetValueMetadata fullName="RN" label="Roscommon"/>
+          <sfValueSetValueMetadata fullName="RO" label="Rovigo"/>
+          <sfValueSetValueMetadata fullName="SA" label="Salerno"/>
+          <sfValueSetValueMetadata fullName="SL" label="San Luis Potosí"/>
+          <sfValueSetValueMetadata fullName="SC" label="Santa Catarina"/>
+          <sfValueSetValueMetadata fullName="SK" label="Saskatchewan"/>
+          <sfValueSetValueMetadata fullName="SS" label="Sassari"/>
+          <sfValueSetValueMetadata fullName="SV" label="Savona"/>
+          <sfValueSetValueMetadata fullName="SE" label="Sergipe"/>
+          <sfValueSetValueMetadata fullName="61" label="Shaanxi"/>
+          <sfValueSetValueMetadata fullName="37" label="Shandong"/>
+          <sfValueSetValueMetadata fullName="31" label="Shanghai"/>
+          <sfValueSetValueMetadata fullName="14" label="Shanxi"/>
+          <sfValueSetValueMetadata fullName="51" label="Sichuan"/>
+          <sfValueSetValueMetadata fullName="SI" label="Siena"/>
+          <sfValueSetValueMetadata fullName="SK" label="Sikkim"/>
+          <sfValueSetValueMetadata fullName="SI" label="Sinaloa"/>
+          <sfValueSetValueMetadata fullName="SO" label="Sligo"/>
+          <sfValueSetValueMetadata fullName="SO" label="Sondrio"/>
+          <sfValueSetValueMetadata fullName="SO" label="Sonora"/>
+          <sfValueSetValueMetadata fullName="SA" label="South Australia"/>
+          <sfValueSetValueMetadata fullName="SC" label="South Carolina"/>
+          <sfValueSetValueMetadata fullName="SD" label="South Dakota"/>
+          <sfValueSetValueMetadata fullName="SR" label="Syracuse"/>
+          <sfValueSetValueMetadata fullName="SP" label="São Paulo"/>
+          <sfValueSetValueMetadata fullName="TB" label="Tabasco"/>
+          <sfValueSetValueMetadata fullName="71" label="Taiwan"/>
+          <sfValueSetValueMetadata fullName="TM" label="Tamaulipas"/>
+          <sfValueSetValueMetadata fullName="TN" label="Tamil Nadu"/>
+          <sfValueSetValueMetadata fullName="TA" label="Taranto"/>
+          <sfValueSetValueMetadata fullName="TAS" label="Tasmania"/>
+          <sfValueSetValueMetadata fullName="TN" label="Tennessee"/>
+          <sfValueSetValueMetadata fullName="TE" label="Teramo"/>
+          <sfValueSetValueMetadata fullName="TR" label="Terni"/>
+          <sfValueSetValueMetadata fullName="TX" label="Texas"/>
+          <sfValueSetValueMetadata fullName="12" label="Tianjin"/>
+          <sfValueSetValueMetadata fullName="TA" label="Tipperary"/>
+          <sfValueSetValueMetadata fullName="TL" label="Tlaxcala"/>
+          <sfValueSetValueMetadata fullName="TO" label="Tocantins"/>
+          <sfValueSetValueMetadata fullName="TP" label="Trapani"/>
+          <sfValueSetValueMetadata fullName="TN" label="Trento"/>
+          <sfValueSetValueMetadata fullName="TV" label="Treviso"/>
+          <sfValueSetValueMetadata fullName="TS" label="Trieste"/>
+          <sfValueSetValueMetadata fullName="TR" label="Tripura"/>
+          <sfValueSetValueMetadata fullName="TO" label="Turin"/>
+          <sfValueSetValueMetadata fullName="UD" label="Udine"/>
+          <sfValueSetValueMetadata fullName="UT" label="Utah"/>
+          <sfValueSetValueMetadata fullName="UP" label="Uttar Pradesh"/>
+          <sfValueSetValueMetadata fullName="UT" label="Uttarakhand"/>
+          <sfValueSetValueMetadata fullName="VA" label="Varese"/>
+          <sfValueSetValueMetadata fullName="VE" label="Venice"/>
+          <sfValueSetValueMetadata fullName="VE" label="Veracruz"/>
+          <sfValueSetValueMetadata fullName="VB" label="Verbano-Cusio-Ossola"/>
+          <sfValueSetValueMetadata fullName="VC" label="Vercelli"/>
+          <sfValueSetValueMetadata fullName="VT" label="Vermont"/>
+          <sfValueSetValueMetadata fullName="VR" label="Verona"/>
+          <sfValueSetValueMetadata fullName="VV" label="Vibo Valentia"/>
+          <sfValueSetValueMetadata fullName="VI" label="Vicenza"/>
+          <sfValueSetValueMetadata fullName="VIC" label="Victoria"/>
+          <sfValueSetValueMetadata fullName="VA" label="Virginia"/>
+          <sfValueSetValueMetadata fullName="VT" label="Viterbo"/>
+          <sfValueSetValueMetadata fullName="WA" label="Washington"/>
+          <sfValueSetValueMetadata fullName="WD" label="Waterford"/>
+          <sfValueSetValueMetadata fullName="WB" label="West Bengal"/>
+          <sfValueSetValueMetadata fullName="WV" label="West Virginia"/>
+          <sfValueSetValueMetadata fullName="WA" label="Western Australia"/>
+          <sfValueSetValueMetadata fullName="WH" label="Westmeath"/>
+          <sfValueSetValueMetadata fullName="WX" label="Wexford"/>
+          <sfValueSetValueMetadata fullName="WW" label="Wicklow"/>
+          <sfValueSetValueMetadata fullName="WI" label="Wisconsin"/>
+          <sfValueSetValueMetadata fullName="WY" label="Wyoming"/>
+          <sfValueSetValueMetadata fullName="65" label="Xinjiang"/>
+          <sfValueSetValueMetadata fullName="54" label="Xizang"/>
+          <sfValueSetValueMetadata fullName="YU" label="Yucatán"/>
+          <sfValueSetValueMetadata fullName="YT" label="Yukon Territories"/>
+          <sfValueSetValueMetadata fullName="53" label="Yunnan"/>
+          <sfValueSetValueMetadata fullName="ZA" label="Zacatecas"/>
+          <sfValueSetValueMetadata fullName="33" label="Zhejiang"/>
+        </values>
+      </value>
+    </entry>
+    <entry>
+      <key valueClass="string">CountryCode</key>
+      <value fullName="CountryCode" restricted="true" valueClass="sfValueSetMetadata">
+        <values>
+          <sfValueSetValueMetadata fullName="AD" label="Andorra"/>
+          <sfValueSetValueMetadata fullName="AE" label="United Arab Emirates"/>
+          <sfValueSetValueMetadata fullName="AF" label="Afghanistan"/>
+          <sfValueSetValueMetadata fullName="AG" label="Antigua and Barbuda"/>
+          <sfValueSetValueMetadata fullName="AI" label="Anguilla"/>
+          <sfValueSetValueMetadata fullName="AL" label="Albania"/>
+          <sfValueSetValueMetadata fullName="AM" label="Armenia"/>
+          <sfValueSetValueMetadata fullName="AO" label="Angola"/>
+          <sfValueSetValueMetadata fullName="AQ" label="Antarctica"/>
+          <sfValueSetValueMetadata fullName="AR" label="Argentina"/>
+          <sfValueSetValueMetadata fullName="AT" label="Austria"/>
+          <sfValueSetValueMetadata fullName="AU" label="Australia"/>
+          <sfValueSetValueMetadata fullName="AW" label="Aruba"/>
+          <sfValueSetValueMetadata fullName="AX" label="Aland Islands"/>
+          <sfValueSetValueMetadata fullName="AZ" label="Azerbaijan"/>
+          <sfValueSetValueMetadata fullName="BA" label="Bosnia and Herzegovina"/>
+          <sfValueSetValueMetadata fullName="BB" label="Barbados"/>
+          <sfValueSetValueMetadata fullName="BD" label="Bangladesh"/>
+          <sfValueSetValueMetadata fullName="BE" label="Belgium"/>
+          <sfValueSetValueMetadata fullName="BF" label="Burkina Faso"/>
+          <sfValueSetValueMetadata fullName="BG" label="Bulgaria"/>
+          <sfValueSetValueMetadata fullName="BH" label="Bahrain"/>
+          <sfValueSetValueMetadata fullName="BI" label="Burundi"/>
+          <sfValueSetValueMetadata fullName="BJ" label="Benin"/>
+          <sfValueSetValueMetadata fullName="BL" label="Saint Barthélemy"/>
+          <sfValueSetValueMetadata fullName="BM" label="Bermuda"/>
+          <sfValueSetValueMetadata fullName="BN" label="Brunei Darussalam"/>
+          <sfValueSetValueMetadata fullName="BO" label="Bolivia, Plurinational State of"/>
+          <sfValueSetValueMetadata fullName="BQ" label="Bonaire, Sint Eustatius and Saba"/>
+          <sfValueSetValueMetadata fullName="BR" label="Brazil"/>
+          <sfValueSetValueMetadata fullName="BS" label="Bahamas"/>
+          <sfValueSetValueMetadata fullName="BT" label="Bhutan"/>
+          <sfValueSetValueMetadata fullName="BV" label="Bouvet Island"/>
+          <sfValueSetValueMetadata fullName="BW" label="Botswana"/>
+          <sfValueSetValueMetadata fullName="BY" label="Belarus"/>
+          <sfValueSetValueMetadata fullName="BZ" label="Belize"/>
+          <sfValueSetValueMetadata fullName="CA" label="Canada"/>
+          <sfValueSetValueMetadata fullName="CC" label="Cocos (Keeling) Islands"/>
+          <sfValueSetValueMetadata fullName="CD" label="Congo, the Democratic Republic of the"/>
+          <sfValueSetValueMetadata fullName="CF" label="Central African Republic"/>
+          <sfValueSetValueMetadata fullName="CG" label="Congo"/>
+          <sfValueSetValueMetadata fullName="CH" label="Switzerland"/>
+          <sfValueSetValueMetadata fullName="CI" label="Cote d'Ivoire"/>
+          <sfValueSetValueMetadata fullName="CK" label="Cook Islands"/>
+          <sfValueSetValueMetadata fullName="CL" label="Chile"/>
+          <sfValueSetValueMetadata fullName="CM" label="Cameroon"/>
+          <sfValueSetValueMetadata fullName="CN" label="China"/>
+          <sfValueSetValueMetadata fullName="CO" label="Colombia"/>
+          <sfValueSetValueMetadata fullName="CR" label="Costa Rica"/>
+          <sfValueSetValueMetadata fullName="CU" label="Cuba"/>
+          <sfValueSetValueMetadata fullName="CV" label="Cape Verde"/>
+          <sfValueSetValueMetadata fullName="CW" label="Curaçao"/>
+          <sfValueSetValueMetadata fullName="CX" label="Christmas Island"/>
+          <sfValueSetValueMetadata fullName="CY" label="Cyprus"/>
+          <sfValueSetValueMetadata fullName="CZ" label="Czech Republic"/>
+          <sfValueSetValueMetadata fullName="DE" label="Germany"/>
+          <sfValueSetValueMetadata fullName="DJ" label="Djibouti"/>
+          <sfValueSetValueMetadata fullName="DK" label="Denmark"/>
+          <sfValueSetValueMetadata fullName="DM" label="Dominica"/>
+          <sfValueSetValueMetadata fullName="DO" label="Dominican Republic"/>
+          <sfValueSetValueMetadata fullName="DZ" label="Algeria"/>
+          <sfValueSetValueMetadata fullName="EC" label="Ecuador"/>
+          <sfValueSetValueMetadata fullName="EE" label="Estonia"/>
+          <sfValueSetValueMetadata fullName="EG" label="Egypt"/>
+          <sfValueSetValueMetadata fullName="EH" label="Western Sahara"/>
+          <sfValueSetValueMetadata fullName="ER" label="Eritrea"/>
+          <sfValueSetValueMetadata fullName="ES" label="Spain"/>
+          <sfValueSetValueMetadata fullName="ET" label="Ethiopia"/>
+          <sfValueSetValueMetadata fullName="FI" label="Finland"/>
+          <sfValueSetValueMetadata fullName="FJ" label="Fiji"/>
+          <sfValueSetValueMetadata fullName="FK" label="Falkland Islands (Malvinas)"/>
+          <sfValueSetValueMetadata fullName="FO" label="Faroe Islands"/>
+          <sfValueSetValueMetadata fullName="FR" label="France"/>
+          <sfValueSetValueMetadata fullName="GA" label="Gabon"/>
+          <sfValueSetValueMetadata fullName="GB" label="United Kingdom"/>
+          <sfValueSetValueMetadata fullName="GD" label="Grenada"/>
+          <sfValueSetValueMetadata fullName="GE" label="Georgia"/>
+          <sfValueSetValueMetadata fullName="GF" label="French Guiana"/>
+          <sfValueSetValueMetadata fullName="GG" label="Guernsey"/>
+          <sfValueSetValueMetadata fullName="GH" label="Ghana"/>
+          <sfValueSetValueMetadata fullName="GI" label="Gibraltar"/>
+          <sfValueSetValueMetadata fullName="GL" label="Greenland"/>
+          <sfValueSetValueMetadata fullName="GM" label="Gambia"/>
+          <sfValueSetValueMetadata fullName="GN" label="Guinea"/>
+          <sfValueSetValueMetadata fullName="GP" label="Guadeloupe"/>
+          <sfValueSetValueMetadata fullName="GQ" label="Equatorial Guinea"/>
+          <sfValueSetValueMetadata fullName="GR" label="Greece"/>
+          <sfValueSetValueMetadata fullName="GS" label="South Georgia and the South Sandwich Islands"/>
+          <sfValueSetValueMetadata fullName="GT" label="Guatemala"/>
+          <sfValueSetValueMetadata fullName="GW" label="Guinea-Bissau"/>
+          <sfValueSetValueMetadata fullName="GY" label="Guyana"/>
+          <sfValueSetValueMetadata fullName="HM" label="Heard Island and McDonald Islands"/>
+          <sfValueSetValueMetadata fullName="HN" label="Honduras"/>
+          <sfValueSetValueMetadata fullName="HR" label="Croatia"/>
+          <sfValueSetValueMetadata fullName="HT" label="Haiti"/>
+          <sfValueSetValueMetadata fullName="HU" label="Hungary"/>
+          <sfValueSetValueMetadata fullName="ID" label="Indonesia"/>
+          <sfValueSetValueMetadata fullName="IE" label="Ireland"/>
+          <sfValueSetValueMetadata fullName="IL" label="Israel"/>
+          <sfValueSetValueMetadata fullName="IM" label="Isle of Man"/>
+          <sfValueSetValueMetadata fullName="IN" label="India"/>
+          <sfValueSetValueMetadata fullName="IO" label="British Indian Ocean Territory"/>
+          <sfValueSetValueMetadata fullName="IQ" label="Iraq"/>
+          <sfValueSetValueMetadata fullName="IR" label="Iran, Islamic Republic of"/>
+          <sfValueSetValueMetadata fullName="IS" label="Iceland"/>
+          <sfValueSetValueMetadata fullName="IT" label="Italy"/>
+          <sfValueSetValueMetadata fullName="JE" label="Jersey"/>
+          <sfValueSetValueMetadata fullName="JM" label="Jamaica"/>
+          <sfValueSetValueMetadata fullName="JO" label="Jordan"/>
+          <sfValueSetValueMetadata fullName="JP" label="Japan"/>
+          <sfValueSetValueMetadata fullName="KE" label="Kenya"/>
+          <sfValueSetValueMetadata fullName="KG" label="Kyrgyzstan"/>
+          <sfValueSetValueMetadata fullName="KH" label="Cambodia"/>
+          <sfValueSetValueMetadata fullName="KI" label="Kiribati"/>
+          <sfValueSetValueMetadata fullName="KM" label="Comoros"/>
+          <sfValueSetValueMetadata fullName="KN" label="Saint Kitts and Nevis"/>
+          <sfValueSetValueMetadata fullName="KP" label="Korea, Democratic People's Republic of"/>
+          <sfValueSetValueMetadata fullName="KR" label="Korea, Republic of"/>
+          <sfValueSetValueMetadata fullName="KW" label="Kuwait"/>
+          <sfValueSetValueMetadata fullName="KY" label="Cayman Islands"/>
+          <sfValueSetValueMetadata fullName="KZ" label="Kazakhstan"/>
+          <sfValueSetValueMetadata fullName="LA" label="Lao People's Democratic Republic"/>
+          <sfValueSetValueMetadata fullName="LB" label="Lebanon"/>
+          <sfValueSetValueMetadata fullName="LC" label="Saint Lucia"/>
+          <sfValueSetValueMetadata fullName="LI" label="Liechtenstein"/>
+          <sfValueSetValueMetadata fullName="LK" label="Sri Lanka"/>
+          <sfValueSetValueMetadata fullName="LR" label="Liberia"/>
+          <sfValueSetValueMetadata fullName="LS" label="Lesotho"/>
+          <sfValueSetValueMetadata fullName="LT" label="Lithuania"/>
+          <sfValueSetValueMetadata fullName="LU" label="Luxembourg"/>
+          <sfValueSetValueMetadata fullName="LV" label="Latvia"/>
+          <sfValueSetValueMetadata fullName="LY" label="Libya"/>
+          <sfValueSetValueMetadata fullName="MA" label="Morocco"/>
+          <sfValueSetValueMetadata fullName="MC" label="Monaco"/>
+          <sfValueSetValueMetadata fullName="MD" label="Moldova, Republic of"/>
+          <sfValueSetValueMetadata fullName="ME" label="Montenegro"/>
+          <sfValueSetValueMetadata fullName="MF" label="Saint Martin (French part)"/>
+          <sfValueSetValueMetadata fullName="MG" label="Madagascar"/>
+          <sfValueSetValueMetadata fullName="MK" label="Macedonia, the former Yugoslav Republic of"/>
+          <sfValueSetValueMetadata fullName="ML" label="Mali"/>
+          <sfValueSetValueMetadata fullName="MM" label="Myanmar"/>
+          <sfValueSetValueMetadata fullName="MN" label="Mongolia"/>
+          <sfValueSetValueMetadata fullName="MO" label="Macao"/>
+          <sfValueSetValueMetadata fullName="MQ" label="Martinique"/>
+          <sfValueSetValueMetadata fullName="MR" label="Mauritania"/>
+          <sfValueSetValueMetadata fullName="MS" label="Montserrat"/>
+          <sfValueSetValueMetadata fullName="MT" label="Malta"/>
+          <sfValueSetValueMetadata fullName="MU" label="Mauritius"/>
+          <sfValueSetValueMetadata fullName="MV" label="Maldives"/>
+          <sfValueSetValueMetadata fullName="MW" label="Malawi"/>
+          <sfValueSetValueMetadata fullName="MX" label="Mexico"/>
+          <sfValueSetValueMetadata fullName="MY" label="Malaysia"/>
+          <sfValueSetValueMetadata fullName="MZ" label="Mozambique"/>
+          <sfValueSetValueMetadata fullName="NA" label="Namibia"/>
+          <sfValueSetValueMetadata fullName="NC" label="New Caledonia"/>
+          <sfValueSetValueMetadata fullName="NE" label="Niger"/>
+          <sfValueSetValueMetadata fullName="NF" label="Norfolk Island"/>
+          <sfValueSetValueMetadata fullName="NG" label="Nigeria"/>
+          <sfValueSetValueMetadata fullName="NI" label="Nicaragua"/>
+          <sfValueSetValueMetadata fullName="NL" label="Netherlands"/>
+          <sfValueSetValueMetadata fullName="NO" label="Norway"/>
+          <sfValueSetValueMetadata fullName="NP" label="Nepal"/>
+          <sfValueSetValueMetadata fullName="NR" label="Nauru"/>
+          <sfValueSetValueMetadata fullName="NU" label="Niue"/>
+          <sfValueSetValueMetadata fullName="NZ" label="New Zealand"/>
+          <sfValueSetValueMetadata fullName="OM" label="Oman"/>
+          <sfValueSetValueMetadata fullName="PA" label="Panama"/>
+          <sfValueSetValueMetadata fullName="PE" label="Peru"/>
+          <sfValueSetValueMetadata fullName="PF" label="French Polynesia"/>
+          <sfValueSetValueMetadata fullName="PG" label="Papua New Guinea"/>
+          <sfValueSetValueMetadata fullName="PH" label="Philippines"/>
+          <sfValueSetValueMetadata fullName="PK" label="Pakistan"/>
+          <sfValueSetValueMetadata fullName="PL" label="Poland"/>
+          <sfValueSetValueMetadata fullName="PM" label="Saint Pierre and Miquelon"/>
+          <sfValueSetValueMetadata fullName="PN" label="Pitcairn"/>
+          <sfValueSetValueMetadata fullName="PS" label="Palestine"/>
+          <sfValueSetValueMetadata fullName="PT" label="Portugal"/>
+          <sfValueSetValueMetadata fullName="PY" label="Paraguay"/>
+          <sfValueSetValueMetadata fullName="QA" label="Qatar"/>
+          <sfValueSetValueMetadata fullName="RE" label="Reunion"/>
+          <sfValueSetValueMetadata fullName="RO" label="Romania"/>
+          <sfValueSetValueMetadata fullName="RS" label="Serbia"/>
+          <sfValueSetValueMetadata fullName="RU" label="Russian Federation"/>
+          <sfValueSetValueMetadata fullName="RW" label="Rwanda"/>
+          <sfValueSetValueMetadata fullName="SA" label="Saudi Arabia"/>
+          <sfValueSetValueMetadata fullName="SB" label="Solomon Islands"/>
+          <sfValueSetValueMetadata fullName="SC" label="Seychelles"/>
+          <sfValueSetValueMetadata fullName="SD" label="Sudan"/>
+          <sfValueSetValueMetadata fullName="SE" label="Sweden"/>
+          <sfValueSetValueMetadata fullName="SG" label="Singapore"/>
+          <sfValueSetValueMetadata fullName="SH" label="Saint Helena, Ascension and Tristan da Cunha"/>
+          <sfValueSetValueMetadata fullName="SI" label="Slovenia"/>
+          <sfValueSetValueMetadata fullName="SJ" label="Svalbard and Jan Mayen"/>
+          <sfValueSetValueMetadata fullName="SK" label="Slovakia"/>
+          <sfValueSetValueMetadata fullName="SL" label="Sierra Leone"/>
+          <sfValueSetValueMetadata fullName="SM" label="San Marino"/>
+          <sfValueSetValueMetadata fullName="SN" label="Senegal"/>
+          <sfValueSetValueMetadata fullName="SO" label="Somalia"/>
+          <sfValueSetValueMetadata fullName="SR" label="Suriname"/>
+          <sfValueSetValueMetadata fullName="SS" label="South Sudan"/>
+          <sfValueSetValueMetadata fullName="ST" label="Sao Tome and Principe"/>
+          <sfValueSetValueMetadata fullName="SV" label="El Salvador"/>
+          <sfValueSetValueMetadata fullName="SX" label="Sint Maarten (Dutch part)"/>
+          <sfValueSetValueMetadata fullName="SY" label="Syrian Arab Republic"/>
+          <sfValueSetValueMetadata fullName="SZ" label="Swaziland"/>
+          <sfValueSetValueMetadata fullName="TC" label="Turks and Caicos Islands"/>
+          <sfValueSetValueMetadata fullName="TD" label="Chad"/>
+          <sfValueSetValueMetadata fullName="TF" label="French Southern Territories"/>
+          <sfValueSetValueMetadata fullName="TG" label="Togo"/>
+          <sfValueSetValueMetadata fullName="TH" label="Thailand"/>
+          <sfValueSetValueMetadata fullName="TJ" label="Tajikistan"/>
+          <sfValueSetValueMetadata fullName="TK" label="Tokelau"/>
+          <sfValueSetValueMetadata fullName="TL" label="Timor-Leste"/>
+          <sfValueSetValueMetadata fullName="TM" label="Turkmenistan"/>
+          <sfValueSetValueMetadata fullName="TN" label="Tunisia"/>
+          <sfValueSetValueMetadata fullName="TO" label="Tonga"/>
+          <sfValueSetValueMetadata fullName="TR" label="Turkey"/>
+          <sfValueSetValueMetadata fullName="TT" label="Trinidad and Tobago"/>
+          <sfValueSetValueMetadata fullName="TV" label="Tuvalu"/>
+          <sfValueSetValueMetadata fullName="TW" label="Taiwan"/>
+          <sfValueSetValueMetadata fullName="TZ" label="Tanzania, United Republic of"/>
+          <sfValueSetValueMetadata fullName="UA" label="Ukraine"/>
+          <sfValueSetValueMetadata fullName="UG" label="Uganda"/>
+          <sfValueSetValueMetadata default="true" fullName="US" label="United States"/>
+          <sfValueSetValueMetadata fullName="UY" label="Uruguay"/>
+          <sfValueSetValueMetadata fullName="UZ" label="Uzbekistan"/>
+          <sfValueSetValueMetadata fullName="VA" label="Holy See (Vatican City State)"/>
+          <sfValueSetValueMetadata fullName="VC" label="Saint Vincent and the Grenadines"/>
+          <sfValueSetValueMetadata fullName="VE" label="Venezuela, Bolivarian Republic of"/>
+          <sfValueSetValueMetadata fullName="VG" label="Virgin Islands, British"/>
+          <sfValueSetValueMetadata fullName="VN" label="Vietnam"/>
+          <sfValueSetValueMetadata fullName="VU" label="Vanuatu"/>
+          <sfValueSetValueMetadata fullName="WF" label="Wallis and Futuna"/>
+          <sfValueSetValueMetadata fullName="WS" label="Samoa"/>
+          <sfValueSetValueMetadata fullName="YE" label="Yemen"/>
+          <sfValueSetValueMetadata fullName="YT" label="Mayotte"/>
+          <sfValueSetValueMetadata fullName="ZA" label="South Africa"/>
+          <sfValueSetValueMetadata fullName="ZM" label="Zambia"/>
+          <sfValueSetValueMetadata fullName="ZW" label="Zimbabwe"/>
+        </values>
+      </value>
+    </entry>
+    <entry>
+      <key valueClass="string">Salutation</key>
+      <value fullName="Salutation" valueClass="sfValueSetMetadata">
+        <values>
+          <sfValueSetValueMetadata fullName="Mr." label="Mr."/>
+          <sfValueSetValueMetadata fullName="Ms." label="Ms."/>
+          <sfValueSetValueMetadata fullName="Mrs." label="Mrs."/>
+          <sfValueSetValueMetadata fullName="Dr." label="Dr."/>
+          <sfValueSetValueMetadata fullName="Prof." label="Prof."/>
+        </values>
+      </value>
+    </entry>
+  </standardValueSets>
+</toolingObjectInfo>

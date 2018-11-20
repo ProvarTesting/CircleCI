@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Provar&apos;s Test Case Execution object allows you to record individual test results for a specific test name. This allows you to analyse your test results across multiple runs and determine if any particular tests seem more brittle than others, plus chart differences in the average performance ofd specific tests. Test Case Executions are aggregated at the Test Suite level to represent the results for a complete test run.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>LocalField__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>LocalField</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>provarti__Build_Version__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If you have a system of versioning you can capture a specific build version for reporting purposes. For example, you may want to collate all your Summer 18 test results into a single report.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Build Version</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>provarti__Comments__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Any additional comments about this test case that you wish to record. For example, in the event of a test failure you may wish to log additional details of the test case and the data that was being used in the processing at that time.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>provarti__Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If the Test Start Date/Time and End Date/Time are provided the duration of the test is calculated automatically in minutes. Note that test execution times will vary with network and platform performance and should ideally be considered as part of an average across multiple executions.</description>
+        <externalId>false</externalId>
+        <formula>(provarti__End_Date_Time__c - provarti__Start_Date_Time__c) *24 * 60</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duration (Mins)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>provarti__End_Date_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Test End Date/Time can be populated to log the finish time of a specific test case execution. It is used in the calculation of the Duration, if provided.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>End Date Time</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>provarti__Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of this Test Case, such as the Provar Test Case name so that you can analyse by grouping of the test name and identify where the same test is passing and failing over time.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Test Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>provarti__Start_Date_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Test Start Date/Time can be populated to log the start time of a specific test case execution. Ensure you measure all tests from the same starting point, either before their Connection step or immediately after any other test setup step you wish to exclude from Duration calculations..</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Start Date/Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>provarti__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The outcome of the Test execution in terms of Pass, Fail or Skipped for reporting purposes. The picklist is unrestricted so that you can insert additional status values should you wish.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <color>#78C953</color>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <color>#CC0000</color>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>Skipped</fullName>
+                    <color>#E27001</color>
+                    <default>false</default>
+                    <label>Skipped</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>provarti__Test_Suite_Execution__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The related Test Suite for which this test case execution is part of so that results can be reported for a complete test run.</description>
+        <externalId>false</externalId>
+        <label>Test Suite Execution</label>
+        <referenceTo>provarti__Test_Suite_Execution__c</referenceTo>
+        <relationshipLabel>Test Cases Execution</relationshipLabel>
+        <relationshipName>Test_Cases_Execution</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Test Case Execution</label>
+    <listViews>
+        <fullName>provarti__All</fullName>
+        <columns>NAME</columns>
+        <columns>provarti__Name__c</columns>
+        <columns>provarti__Test_Suite_Execution__c</columns>
+        <columns>provarti__Build_Version__c</columns>
+        <columns>provarti__Status__c</columns>
+        <columns>provarti__Start_Date_Time__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>TCE-{0000}</displayFormat>
+        <label>Test Case Execution Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Test Cases Executions</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>provarti__Test_Suite_Execution__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>provarti__Build_Version__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>provarti__Duration__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>provarti__Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>provarti__Start_Date_Time__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>provarti__End_Date_Time__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>provarti__Test_Suite_Execution__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>provarti__Build_Version__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>provarti__Status__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>provarti__Test_Suite_Execution__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>provarti__Build_Version__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>provarti__Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>provarti__Duration__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>
